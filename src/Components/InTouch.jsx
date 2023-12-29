@@ -100,7 +100,7 @@ function InTouch() {
                 <img className='opacity-[0.3]' src={bg5} alt="_bg"/>
             </div> */}
             <div className="w-full lg:w-[30%]  bg-[#2E4630] rounded-[20px] lg:rounded-tl-[0px] lg:rounded-bl-[0px] flex justify-center items-center py-80 lg:py-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.1350832140897!2d-80.31032752424937!3d25.89792947726656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bacc1220b1b3%3A0x83454a8092179fd7!2s14011%20Lake%20Lure%20Ct%2C%20Hialeah%2C%20FL%2033014%2C%20USA!5e0!3m2!1sen!2s!4v1703794324186!5m2!1sen!2s" width="100%" height="519" style={{border:0,borderRadius:10,position:'absolute', maxWidth: "404px"}} className="lg:left-[55%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.1350832140897!2d-80.31032752424937!3d25.89792947726656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5dbdcf2b%3A0x50c19a70c7e5f119!2s8275%20W%2012th%20Ave%2C%20Hialeah%2C%20FL%2033014%2C%20USA!5e0!3m2!1sen!2s!4v1703827886302!5m2!1sen!2s" width="100%" height="519" style={{border:0,borderRadius:10,position:'absolute', maxWidth: "404px"}} className="lg:left-[55%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
