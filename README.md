@@ -1,3 +1,9 @@
+# Beauty Parlour Landing Page React App
+
+This is a landing page for a beauty parlour in Miami Florida
+
+## ----------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
