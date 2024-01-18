@@ -1,10 +1,10 @@
-import bg from "../Assets/product-bg.svg";
+// import bg from "../Assets/product-bg.svg";
 import cartIcon from "../Assets/cart-icon.svg";
-import collapseIcon from "../Assets/collapse-icon.svg";
+// import collapseIcon from "../Assets/collapse-icon.svg";
 import productImg1 from "../Assets/product-img-1.png";
 import productImg2 from "../Assets/product-img-2.png";
 import productImg3 from "../Assets/product-img-3.png";
-import productMainImg from "../Assets/product-main-img.png";
+// import productMainImg from "../Assets/product-main-img.png";
 import productBg2 from "../Assets/product-bg-2.svg";
 
 function Products() {

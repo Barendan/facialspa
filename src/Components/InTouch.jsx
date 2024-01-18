@@ -3,11 +3,11 @@
 import phoneIcon from "../Assets/phone-icon.svg";
 import locationIcon from "../Assets/location-icon.svg";
 import mailIcon from "../Assets/mail-icon.svg";
-import bg1 from "../Assets/touch-bg-1.svg";
+// import bg1 from "../Assets/touch-bg-1.svg";
 import bg2 from "../Assets/touch-bg-2.svg";
 import bg3 from "../Assets/touch-bg-3.svg";
-import bg4 from "../Assets/touch-bg-4.svg";
-import bg5 from "../Assets/touch-bg-5.svg";
+// import bg4 from "../Assets/touch-bg-4.svg";
+// import bg5 from "../Assets/touch-bg-5.svg";
 
 function InTouch() {
   
@@ -119,7 +119,7 @@ function InTouch() {
 
             <div className="w-full lg:w-[30%]  bg-[#2E4630] rounded-[20px] lg:rounded-tl-[0px] lg:rounded-bl-[0px] flex justify-center items-center py-80 lg:py-0">
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" width="100%" height="519" style={{border:0,borderRadius:10,position:'absolute', maxWidth: "404px"}} className="lg:left-[55%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" title="Esperanza Location" width="100%" height="519" style={{border:0,borderRadius:10,position:'absolute', maxWidth: "404px"}} className="lg:left-[55%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>

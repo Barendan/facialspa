@@ -2,7 +2,7 @@ import serviceIcon1 from "../Assets/service-icon-1.svg";
 import serviceIcon2 from "../Assets/service-icon-2.svg";
 import serviceIcon3 from "../Assets/service-icon-3.svg";
 import serviceIcon4 from "../Assets/service-icon-4.svg";
-import serviceBg from "../Assets/service-bg.svg";
+// import serviceBg from "../Assets/service-bg.svg";
 import serviceImg1 from "../Assets/service-img-1.png";
 import serviceImg2 from "../Assets/service-img-2.png";
 import serviceImg3 from "../Assets/service-img-3.png";
@@ -10,12 +10,12 @@ import serviceImg4 from "../Assets/service-img-4.png";
 import serviceImg6 from "../Assets/service-img-6.png";
 
 function Services() {
-  const serviceIcon = [
-    { name: "Face Treatments", img: serviceIcon1 },
-    { name: "Detox Massage", img: serviceIcon2 },
-    { name: "Foot Massage", img: serviceIcon3 },
-    { name: "Candle Relaxing", img: serviceIcon4 },
-  ];
+  // const serviceIcon = [
+  //   { name: "Face Treatments", img: serviceIcon1 },
+  //   { name: "Detox Massage", img: serviceIcon2 },
+  //   { name: "Foot Massage", img: serviceIcon3 },
+  //   { name: "Candle Relaxing", img: serviceIcon4 },
+  // ];
 
   const serviceList1 = [
     {

@@ -1,5 +1,5 @@
 import aboutImg from "../Assets/about-img.svg";
-import aboutImg2 from "../Assets/about-img2.jpg";
+// import aboutImg2 from "../Assets/about-img2.jpg";
 import aboutBg1 from "../Assets/about-bg-1.svg";
 import aboutBg2 from "../Assets/about-bg-2.svg";
 
