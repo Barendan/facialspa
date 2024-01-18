@@ -20,46 +20,46 @@ function Services() {
   const serviceList1 = [
     {
       img: serviceImg1,
-      heading: "Salt Massage",
+      heading: "Microneedling",
       description:
-        "Salt massage, also known as salt therapy or halotherapy, is a wellness practice that involves the use of salt, typically.....",
+        "Activate your skin's innate healing capabilities and rejuvenate.",
       green: false,
     },
     {
       img: serviceImg2,
-      heading: "Body Care",
+      heading: "Chemical peels",
       description:
-        "Body care refers to a comprehensive approach to maintaining the health and well-being of the skin and body. It involves .... ",
-      green: true,
+        "Gently exfoliate and revitalize your skin while erasing the marks of time.",
+      green: false,
     },
     {
       img: serviceImg3,
-      heading: "Face Treatment",
+      heading: "Oxygenation Trio",
       description:
-        "Face treatment encompasses a variety of skincare practices and products specifically designed to address and improve .....",
+        "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
       green: false,
     },
   ];
   const serviceList2 = [
     {
       img: serviceImg4,
-      heading: "BlissfulBody Therapies",
+      heading: "Radio Frequency",
       description:
-        "Indulge in the blissful experience of BlissfulBody Therapies. Our expert practitioners tailor each massage to your needs,...",
+        "Non-surgical skin-tightening method that utilizes energy waves",
       green: false,
     },
     {
       img: serviceImg1,
-      heading: "RejuvaRelax Wellness",
+      heading: "Microdermabrasion",
       description:
-        "Discover the epitome of relaxation at RejuvaRelax Wellness. Our wellness experts are dedicated to rejuvenating your body and mind .....",
+        "A diamond tip to gently remove the outermost layer of the skin",
       green: false,
     },
     {
       img: serviceImg6,
-      heading: "SootheSphere Massage",
+      heading: "Hydro-Facial",
       description:
-        "At SootheSphere, our skilled therapists are dedicated to creating a personalized experience tailored to your unique needs....",
+        "Delicately hydrates and revitalizes by cleansing every pore with precision",
       green: false,
     },
   ];
@@ -67,12 +67,13 @@ function Services() {
   return (
     <>
       <div id="servicesSection" className="flex flex-col bg-white z-[1]">
-        <img
+        {/* <img
           className="hidden md:block absolute mt-[377px]"
           src={serviceBg}
           alt="_bg"
-        />
-        <div className="bg-[#785445] flex flex-col md:flex-row gap-16 lg:gap-[200px] justify-center px-4 sm:px-6 md:px-24 py-24">
+        /> */}
+
+        {/* <div className="bg-[#785445] flex flex-col md:flex-row gap-16 lg:gap-[200px] justify-center px-4 sm:px-6 md:px-24 py-24">
           {serviceIcon.map((item, index) => (
             <div key={index} className="flex flex-col gap-5 justify-center items-center">
               <img src={item.img} alt="_service" />
@@ -81,38 +82,54 @@ function Services() {
               </p>
             </div>
           ))}
-        </div>
-        <div className="bg-white pt-40 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-16 justify-center items-center">
-          <div className="flex flex-col gap-8 justify-center items-center z-[1]">
-            <div className="flex flex-col gap-5 justify-center items-center">
-              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal">
+        </div> */}
+
+        <div className="bg-white py-20 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-10 justify-center items-center">
+
+          <div className="flex flex-col gap-1 justify-center items-center z-[1]">
+            
+            <div className="flex flex-col gap-2 justify-center items-center">
+              
+              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal" data-aos="fade-down-right">
                 Services
               </p>
-              <p className="text-[#2E4630] text-2xl leading-normal max-w-[679px] fontAbril text-center">
+
+              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center" data-aos="fade-down-right" data-aos-delay="50">
                 Take A Deep Breath And Just Enjoy Life
               </p>
+
             </div>
-            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center">
+
+            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center" data-aos="fade-down-right" data-aos-delay="100">
               Without making it feel so…. clinical. We believe in having your
               cake and eating it too, with clinically proven treatments,
               licensed and insured aestheticians, ambient lighting, heated beds,
             </p>
+
           </div>
-          <div className="flex flex-col gap-16 justify-center itesm-center">
-            <div className="flex flex-col xl:flex-row gap-10 md:gap-5">
+          
+          <div className="flex flex-col gap-16 justify-center items-center">
+            <div className="flex flex-col xl:flex-row gap-10 md:gap-16">
+              
               {serviceList1.map((item, index) => (
-                <div key={index} className="md:w-[407px] flex flex-col justify-center items-center">
+                <div key={index} className="md:w-[320px] flex flex-col justify-center items-center">
+                  
                   <img
-                    className="w-[300px] h-[200px] md:w-[407px] md:h-[396px] rounded-md"
+                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
                     src={item.img}
                     alt="_service"
+                    data-aos="fade-up"
                   />
-                  <div className="flex flex-col justify-center items-center w-[260px] md:w-[335px] h-[224px] mt-[-60px] md:mt-[-130px]">
+
+                  <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-130px]">
+                    
                     <div
+                      data-aos="fade-up"
                       className={`flex flex-col gap-3 justify-center items-center ${
                         item.green ? "bg-[#2E4630]" : "bg-white"
                       } rounded-md px-5 py-6 pb-12`}
                     >
+
                       <p
                         className={`${
                           item.green ? "text-white" : "text-[#2E4630]"
@@ -120,16 +137,20 @@ function Services() {
                       >
                         {item.heading}
                       </p>
+
                       <p
                         className={`${
                           item.green ? "text-white" : "text-[#666]"
-                        } fontQuicksand text-base leading-normal text-center`}
+                        } fontQuicksand text-small leading-normal text-center`}
                       >
                         {item.description}
                       </p>
+
                     </div>
+
                     <button
                       onClick={() => console.log("Read Now Clicked!")}
+                      data-aos="fade-up"
                       className={`w-fit flex ${
                         item.green ? "text-[#2E4630]" : "text-white"
                       } text-lg font-quicksand leading-normal ${
@@ -138,30 +159,45 @@ function Services() {
                     >
                       Read More
                     </button>
+
                   </div>
                 </div>
               ))}
+
             </div>
-            <div className="flex flex-col xl:flex-row gap-10 md:gap-5">
+            <div className="flex flex-col xl:flex-row gap-10 md:gap-16">
               {serviceList2.map((item, index) => (
-                <div key={index} className="md:w-[407px] flex flex-col justify-center items-center">
+                <div key={index} className="md:w-[320px] flex flex-col justify-center items-center">
+                  
                   <img
-                    className="w-[300px] h-[200px] md:w-[407px] md:h-[396px] rounded-md"
+                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px] rounded-md"
                     src={item.img}
                     alt="_service"
+                    data-aos="slide-up"
                   />
+                  
                   <div className="flex flex-col justify-center items-center w-[260px] md:w-[335px] h-[224px] mt-[-60px] md:mt-[-130px]">
-                    <div className="flex flex-col gap-3 justify-center items-center bg-white rounded-md px-5 py-6 pb-12">
+                    
+                    <div 
+                    data-aos="slide-up"
+                    className="flex flex-col gap-3 justify-center items-center bg-white rounded-md px-5 py-6 pb-12">
+                      
                       <p className="text-[#2E4630] fontQuicksand text-[20px] leading-normal">
                         {item.heading}
                       </p>
+
                       <p className="text-[#666] fontQuicksand text-base leading-normal text-center">
                         {item.description}
                       </p>
+
                     </div>
-                    <button onClick={() => console.log("Read Now Clicked!")} className="hover:shadow-lg hover:font-bold w-fit flex text-white text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mt-[-34px]">
+
+                    <button 
+                    data-aos="slide-up"
+                    onClick={() => console.log("Read Now Clicked!")} className="hover:shadow-lg hover:font-bold w-fit flex text-white text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mt-[-34px]">
                       Read More
                     </button>
+
                   </div>
                 </div>
               ))}
