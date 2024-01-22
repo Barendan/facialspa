@@ -1,15 +1,13 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./App.css";
 
-import About from "./Components/About";
 import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import InTouch from "./Components/InTouch";
 import Navbar from "./Components/Navbar";
-import Products from "./Components/Products";
-import Services from "./Components/Services";
+import ServiceDetail from "./Components/ServiceDetails";
+import LandingPage from "./Components/LandingPage";
 
 
 function App() {
@@ -18,15 +16,16 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Products />
-      <About />
-      <InTouch/>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/services/:serviceId" element={<ServiceDetail />} />
+          </Routes>
+          <Footer />
+      </div>
+    </Router>
   );
 }
 

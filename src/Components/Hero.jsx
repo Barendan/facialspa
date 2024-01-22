@@ -2,6 +2,8 @@ import lineBg from "../Assets/line-bg.svg";
 // import leaveBg1 from "../Assets/hero-leave-bg.svg";
 // import leaveBG2 from "../Assets/leave-bg-2.svg";
 import bg from "../Assets/hero-bg.png";
+import bgMobile from "../Assets/heroBgMobile.png";
+
 
 function Hero() {
   return (
