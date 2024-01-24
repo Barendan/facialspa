@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <div id="aboutSection" 
-      data-aos="zoom-out"
+      // data-aos="zoom-out"
       className="flex flex-col lg:flex-row gap-20 md:gap-4 justify-center otems-center px-4 sm:px-6 md:px-8 lg:px-24 bg-[#785445]" >
         <div className="absolute flex w-[96%] lg:w-full justify-between">
           <img

@@ -20,24 +20,25 @@ function ServiceDetail() {
   };
   useEffect(()=>{      window.scrollTo(0, 0);
   },[])
+
   const serviceList = [
     {
       img: serviceImg1,
-      heading: "Salt Massage",
+      heading: "Microneedling",
       description:
         "Salt massage, also known as salt therapy or halotherapy, is a wellness practice that involves the use of salt, typically.....",
       green: false,
     },
     {
       img: serviceImg2,
-      heading: "Body Care",
+      heading: "Chemical Peels",
       description:
         "Body care refers to a comprehensive approach to maintaining the health and well-being of the skin and body. It involves .... ",
       green: true,
     },
     {
       img: serviceImg3,
-      heading: "Face Treatment",
+      heading: "Oxygenation Trio",
       description:
         "Face treatment encompasses a variety of skincare practices and products specifically designed to address and improve .....",
       green: false,
@@ -45,21 +46,21 @@ function ServiceDetail() {
 
     {
       img: serviceImg4,
-      heading: "BlissfulBody Therapies",
+      heading: "Radio Frequency",
       description:
         "Indulge in the blissful experience of BlissfulBody Therapies. Our expert practitioners tailor each massage to your needs,...",
       green: false,
     },
     {
       img: serviceImg1,
-      heading: "RejuvaRelax Wellness",
+      heading: "Microdermabrasion",
       description:
         "Discover the epitome of relaxation at RejuvaRelax Wellness. Our wellness experts are dedicated to rejuvenating your body and mind .....",
       green: false,
     },
     {
       img: serviceImg6,
-      heading: "SootheSphere Massage",
+      heading: "Hydro-Facial",
       description:
         "At SootheSphere, our skilled therapists are dedicated to creating a personalized experience tailored to your unique needs....",
       green: false,

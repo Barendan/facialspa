@@ -21,7 +21,11 @@ function InTouch() {
           <img className="hidden sm:block opacity-[0.3] z-[-1]" src={bg3} alt="_bg" />
         </div>
 
-        <div data-aos="flip-up" data-aos-delay="200" className="flex flex-col relative w-[90%]">
+        <div 
+          // data-aos="flip-up" 
+          data-aos-delay="200" 
+          className="flex flex-col relative w-[90%]"
+        >
 
           <div className="flex flex-col lg:flex-row">
             

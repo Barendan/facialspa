@@ -1,15 +1,21 @@
-import serviceIcon1 from "../Assets/service-icon-1.svg";
-import serviceIcon2 from "../Assets/service-icon-2.svg";
-import serviceIcon3 from "../Assets/service-icon-3.svg";
-import serviceIcon4 from "../Assets/service-icon-4.svg";
+// import serviceIcon1 from "../Assets/service-icon-1.svg";
+// import serviceIcon2 from "../Assets/service-icon-2.svg";
+// import serviceIcon3 from "../Assets/service-icon-3.svg";
+// import serviceIcon4 from "../Assets/service-icon-4.svg";
 // import serviceBg from "../Assets/service-bg.svg";
 import serviceImg1 from "../Assets/service-img-1.png";
 import serviceImg2 from "../Assets/service-img-2.png";
 import serviceImg3 from "../Assets/service-img-3.png";
 import serviceImg4 from "../Assets/service-img-4.png";
 import serviceImg6 from "../Assets/service-img-6.png";
+import floralImg from "../Assets/floral.png";
+
+import { useNavigate } from "react-router-dom";
+
 
 function Services() {
+  const navigate = useNavigate();
+
   // const serviceIcon = [
   //   { name: "Face Treatments", img: serviceIcon1 },
   //   { name: "Detox Massage", img: serviceIcon2 },
@@ -39,8 +45,6 @@ function Services() {
         "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
       green: false,
     },
-  ];
-  const serviceList2 = [
     {
       img: serviceImg4,
       heading: "Radio Frequency",
@@ -67,6 +71,7 @@ function Services() {
   return (
     <>
       <div id="servicesSection" className="flex flex-col bg-white z-[1]">
+
         {/* <img
           className="hidden md:block absolute mt-[377px]"
           src={serviceBg}
@@ -86,6 +91,7 @@ function Services() {
 
         <div className="bg-white py-20 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-10 justify-center items-center">
 
+          {/* Section Top Text */}
           <div className="flex flex-col gap-1 justify-center items-center z-[1]">
             
             <div className="flex flex-col gap-2 justify-center items-center">
@@ -108,101 +114,66 @@ function Services() {
 
           </div>
           
-          <div className="flex flex-col gap-16 justify-center items-center">
-            <div className="flex flex-col xl:flex-row gap-10 md:gap-16">
-              
-              {serviceList1.map((item, index) => (
-                <div key={index} className="md:w-[320px] flex flex-col justify-center items-center">
+
+          {/* <div className="flex gap-16 justify-center items-center"> */}
+
+          <div className="flex flex-row flex-wrap gap-12 justify-center items-center w-full 2xl:gap-40">
+            
+          <div className="flex justify-around flex-wrap flex-row xl:flex-row gap-0 md:gap-12 2xl:gap-40 w-full">
+            {serviceList1.map((item, index) => (
+              <div key={index} className="md:w-[325px] w-[10rem] mb-6 md:mb-0 flex flex-col justify-center items-center">
+
+                <img
+                  className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                  src={item.img}
+                  alt="_service"
+                  // data-aos="fade-up"
+                />
+
+                <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-130px]">
                   
-                  <img
-                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
-                    src={item.img}
-                    alt="_service"
-                    data-aos="fade-up"
-                  />
+                  <div
+                    // data-aos="fade-up"
+                    className={`flex flex-col gap-3 justify-center items-center 
+                    bg-white text-black rounded-md mx-3 px-2 md:px-5 py-3 md:py-6 pb-12`}
+                  >
 
-                  <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-130px]">
-                    
-                    <div
-                      data-aos="fade-up"
-                      className={`flex flex-col gap-3 justify-center items-center ${
-                        item.green ? "bg-[#2E4630]" : "bg-white"
-                      } rounded-md px-5 py-6 pb-12`}
+                    <p
+                      className={`${
+                        item.green ? "text-white" : "text-[#2E4630]"
+                      }  fontQuicksand text-[20px] leading-normal`}
                     >
+                      {item.heading}
+                    </p>
 
-                      <p
-                        className={`${
-                          item.green ? "text-white" : "text-[#2E4630]"
-                        }  fontQuicksand text-[20px] leading-normal`}
-                      >
-                        {item.heading}
-                      </p>
-
-                      <p
-                        className={`${
-                          item.green ? "text-white" : "text-[#666]"
-                        } fontQuicksand text-small leading-normal text-center`}
-                      >
-                        {item.description}
-                      </p>
-
-                    </div>
-
-                    <button
-                      onClick={() => console.log("Read Now Clicked!")}
-                      data-aos="fade-up"
-                      className={`w-fit flex ${
-                        item.green ? "text-[#2E4630]" : "text-white"
-                      } text-lg font-quicksand leading-normal ${
-                        item.green ? "bg-white" : "bg-[#2E4630]"
-                      } rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mt-[-34px] hover:shadow-lg hover:font-bold`}
+                    <p
+                      className={`${
+                        item.green ? "text-white" : "text-[#666]"
+                      } fontQuicksand text-small leading-normal text-center`}
                     >
-                      Read More
-                    </button>
+                      {item.description}
+                    </p>
 
                   </div>
+
+                  <button
+                    onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
+                    // data-aos="fade-up"
+                    className={`w-fit flex  text-white
+                    text-base md:text-lg font-quicksand leading-normal
+                         bg-[#2E4630]
+                      rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-4 px-3 md:px-6 mt-[-34px] hover:shadow-lg hover:font-bold`}
+                  >
+                    Read More
+                  </button>
+
                 </div>
-              ))}
+              </div>
+            ))}
 
-            </div>
-            <div className="flex flex-col xl:flex-row gap-10 md:gap-16">
-              {serviceList2.map((item, index) => (
-                <div key={index} className="md:w-[320px] flex flex-col justify-center items-center">
-                  
-                  <img
-                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px] rounded-md"
-                    src={item.img}
-                    alt="_service"
-                    data-aos="slide-up"
-                  />
-                  
-                  <div className="flex flex-col justify-center items-center w-[260px] md:w-[335px] h-[224px] mt-[-60px] md:mt-[-130px]">
-                    
-                    <div 
-                    data-aos="slide-up"
-                    className="flex flex-col gap-3 justify-center items-center bg-white rounded-md px-5 py-6 pb-12">
-                      
-                      <p className="text-[#2E4630] fontQuicksand text-[20px] leading-normal">
-                        {item.heading}
-                      </p>
-
-                      <p className="text-[#666] fontQuicksand text-base leading-normal text-center">
-                        {item.description}
-                      </p>
-
-                    </div>
-
-                    <button 
-                    data-aos="slide-up"
-                    onClick={() => console.log("Read Now Clicked!")} className="hover:shadow-lg hover:font-bold w-fit flex text-white text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mt-[-34px]">
-                      Read More
-                    </button>
-
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
+          </div>
+
         </div>
       </div>
     </>
