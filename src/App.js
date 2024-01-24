@@ -4,10 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./App.css";
 
-import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import ServiceDetail from "./Components/ServiceDetails";
+import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
+import ServiceDetail from "./Components/ServiceDetails";
 
 
 function App() {

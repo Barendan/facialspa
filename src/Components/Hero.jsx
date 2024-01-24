@@ -29,9 +29,9 @@ function Hero() {
           />
         </div> */}
 
-        <img className="z-[99] w-fit" src={bg} alt="_bg" data-aos="fade-right"/>
+        <img className="z-[99] w-fit hidden md:block" src={bg} alt="_bg" data-aos="fade-right"/>
 
-        <div className="flex flex-col gap-10 justify-center items-start z-[99] px-4 sm:px-6 lg:pr-32">
+        <div className="hidden md:flex flex-col gap-10 justify-center items-start z-[99] px-4 sm:px-6 lg:pr-32">
 
           <p 
             className="max-w-[626px] text-[#2E4630] text-[70px] font-medium fontAbril" data-aos="fade-left"
@@ -40,15 +40,58 @@ function Hero() {
             A Healthy Body Is A Guest-Chamber For The Soul
           </p>
 
-          <button 
-            onClick={() => console.log("Get Your Appointment Clicked!")} 
-            className="flex  hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-lg font-light font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6"
-            data-aos="fade-left"
-            data-aos-delay="100"
-          >
-            Book an appointment
-          </button>
+          <div className="flex">
 
+            <button 
+              onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+              className="flex hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-lg font-light font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mr-10"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              >
+              Book an appointment
+            </button>
+            
+            <button 
+              onClick={() => window.location.href = "https://esperanzawellness.store/"} 
+              className="flex  hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-lg font-light font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              >
+              Our Store
+            </button>
+            
+          </div>
+
+        </div>
+
+
+        {/* Mobile version of page */}
+        <div className="flex md:hidden flex-row md:flex-col justify-start md:justify-center items-center md:items-start z-[99]  lg:pr-32">
+          
+          <img className="z-[99] w-fit md:hidden" src={bgMobile} alt="_bg" />
+
+          <span className="flex flex-col items-start mx-4 md:mx-0">
+            {" "}
+            
+            <p className="max-w-[626px]  text-[#2E4630] text-2xl md:text-[70px] font-normal md:font-medium fontAbril">
+              A Healthy Body Is A Guest-Chamber For The Soul
+            </p>
+            
+            <button
+              onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+              className="flex mt-4 hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-xs md:text-lg font-normal md:font-light font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-6"
+            >
+              Book an appointment
+            </button>
+
+            <button
+              onClick={() => window.location.href = "https://esperanzawellness.store/"}
+              className="flex mt-4 hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-xs md:text-lg font-normal md:font-light font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-6"
+            >
+              Our Store
+            </button>
+
+          </span>
         </div>
 
       </div>
