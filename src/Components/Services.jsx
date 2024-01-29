@@ -1,16 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 // import serviceIcon1 from "../Assets/service-icon-1.svg";
 // import serviceIcon2 from "../Assets/service-icon-2.svg";
 // import serviceIcon3 from "../Assets/service-icon-3.svg";
 // import serviceIcon4 from "../Assets/service-icon-4.svg";
 // import serviceBg from "../Assets/service-bg.svg";
-import serviceImg1 from "../Assets/service-img-1.png";
+import rfServiceImg from "../Assets/radiofrequency.jpg";
+import cpServiceImg from "../Assets/chemicalpeel.jpg";
+import mnServiceImg from "../Assets/microneedling.jpg";
 import serviceImg2 from "../Assets/service-img-2.png";
 import serviceImg3 from "../Assets/service-img-3.png";
-import serviceImg4 from "../Assets/service-img-4.png";
 import serviceImg6 from "../Assets/service-img-6.png";
 import floralImg from "../Assets/floral.png";
-
-import { useNavigate } from "react-router-dom";
 
 
 function Services() {
@@ -23,9 +24,9 @@ function Services() {
   //   { name: "Candle Relaxing", img: serviceIcon4 },
   // ];
 
-  const serviceList1 = [
+  const serviceList = [
     {
-      img: serviceImg1,
+      img: mnServiceImg,
       heading: "Microneedling",
       description:
         "Activate your skin's innate healing capabilities and rejuvenate.",
@@ -33,37 +34,37 @@ function Services() {
     },
     {
       img: serviceImg2,
-      heading: "Chemical peels",
+      heading: "Oxygenation Trio",
+      description:
+      "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
+      green: false,
+    },
+    {
+      img: cpServiceImg,
+      heading: "Chemical Peels",
       description:
         "Gently exfoliate and revitalize your skin while erasing the marks of time.",
       green: false,
     },
     {
       img: serviceImg3,
-      heading: "Oxygenation Trio",
+      heading: "Hydro-Facial",
       description:
-        "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
-      green: false,
-    },
-    {
-      img: serviceImg4,
-      heading: "Radio Frequency",
-      description:
-        "Non-surgical skin-tightening method that utilizes energy waves",
-      green: false,
-    },
-    {
-      img: serviceImg1,
-      heading: "Microdermabrasion",
-      description:
-        "A diamond tip to gently remove the outermost layer of the skin",
+        "Delicately hydrates and revitalizes by cleansing every pore with precision",
       green: false,
     },
     {
       img: serviceImg6,
-      heading: "Hydro-Facial",
+      heading: "Microdermabrasion",
       description:
-        "Delicately hydrates and revitalizes by cleansing every pore with precision",
+      "A diamond tip to gently remove the outermost layer of the skin",
+      green: false,
+    },
+    {
+      img: rfServiceImg,
+      heading: "Radio Frequency",
+      description:
+        "Non-surgical skin-tightening method that utilizes energy waves",
       green: false,
     },
   ];
@@ -89,7 +90,9 @@ function Services() {
           ))}
         </div> */}
 
-        <div className="bg-white py-20 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-10 justify-center items-center">
+        <div 
+        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'center', backgroundColor: "#6d4d2d30"}}
+        className="md:bg-white py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
 
           {/* Section Top Text */}
           <div className="flex flex-col gap-1 justify-center items-center z-[1]">
@@ -119,29 +122,40 @@ function Services() {
 
           <div className="flex flex-row flex-wrap gap-12 justify-center items-center w-full 2xl:gap-40">
             
-          <div className="flex justify-around flex-wrap flex-row xl:flex-row gap-0 md:gap-12 2xl:gap-40 w-full">
-            {serviceList1.map((item, index) => (
+          <div className="flex justify-center flex-wrap flex-row xl:flex-row gap-0 md:gap-12 2xl:gap-32 w-full">
+            {serviceList.map((item, index) => (
+              
               <div key={index} className="md:w-[325px] w-[10rem] mb-6 md:mb-0 flex flex-col justify-center items-center">
 
-                <img
-                  className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
-                  src={item.img}
-                  alt="_service"
-                  // data-aos="fade-up"
-                />
+                {/* Chemical Peels image needs to be adjusted slightly but no others */}
+                { item.heading === "Chemical Peels" ? 
+                  <div 
+                    style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover", backgroundPosition: "100% 100%" }}
+                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                  />
+                  :
+                  <div 
+                    style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
+                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                  />
+                }
 
-                <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-130px]">
+                {/* <div 
+                  style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
+                  className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                /> */}
+
+
+                <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-100px]">
                   
                   <div
-                    // data-aos="fade-up"
-                    className={`flex flex-col gap-3 justify-center items-center 
-                    bg-white text-black rounded-md mx-3 px-2 md:px-5 py-3 md:py-6 pb-12`}
+                    data-aos="fade-up"
+                    style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
+                    className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 py-3 md:py-3 pb-12 border-solid border"}
                   >
 
                     <p
-                      className={`${
-                        item.green ? "text-white" : "text-[#2E4630]"
-                      }  fontQuicksand text-[20px] leading-normal`}
+                      className={"text-[#2E4630] fontQuicksand text-[20px] leading-normal"}
                     >
                       {item.heading}
                     </p>
@@ -149,7 +163,7 @@ function Services() {
                     <p
                       className={`${
                         item.green ? "text-white" : "text-[#666]"
-                      } fontQuicksand text-small leading-normal text-center`}
+                      } fontQuicksand text-[14px] leading-normal text-center`}
                     >
                       {item.description}
                     </p>
@@ -158,11 +172,8 @@ function Services() {
 
                   <button
                     onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                    // data-aos="fade-up"
-                    className={`w-fit flex  text-white
-                    text-base md:text-lg font-quicksand leading-normal
-                         bg-[#2E4630]
-                      rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-4 px-3 md:px-6 mt-[-34px] hover:shadow-lg hover:font-bold`}
+                    data-aos="fade-up"
+                    className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-3 px-3 md:px-6 mt-[-10px] hover:shadow-lg hover:font-bold`}
                   >
                     Read More
                   </button>

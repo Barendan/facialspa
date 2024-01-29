@@ -1,4 +1,5 @@
-import aboutImg from "../Assets/about-img.svg";
+// import aboutImg from "../Assets/about-img.svg";
+import aboutImg from "../Assets/about-portrait2.png";
 // import aboutImg2 from "../Assets/about-img2.jpg";
 import aboutBg1 from "../Assets/about-bg-1.svg";
 import aboutBg2 from "../Assets/about-bg-2.svg";
@@ -8,7 +9,7 @@ function About() {
     <>
       <div id="aboutSection" 
       // data-aos="zoom-out"
-      className="flex flex-col lg:flex-row gap-20 md:gap-4 justify-center otems-center px-4 sm:px-6 md:px-8 lg:px-24 bg-[#785445]" >
+      className="flex flex-col lg:flex-row gap-20 md:gap-4 justify-center otems-center px-4 sm:px-6 md:px-8 lg:px-24 pb-20 bg-[#785445]" >
         <div className="absolute flex w-[96%] lg:w-full justify-between">
           <img
             className="mt-[-1311px] lg:mt-[-436px] opacity-[0.5]"
@@ -21,7 +22,7 @@ function About() {
             alt="_bg"
           />
         </div>
-        <div className="lg:w-[50%] xl:w-auto flex flex-col gap-6 pt-32 z-[1]">
+        <div className="lg:w-[50%] xl:w-auto flex flex-col gap-6 pt-32 md:pt-16 z-[1]">
           <div className="flex flex-col gap-5">
             
             <p className="text-white fontQuicksand text-2xl font-medium leading-normal">
@@ -49,10 +50,12 @@ function About() {
 
           </div>
         </div>
-        <div className="lg:w-[50%] xl:w-auto z-[1]">
-          <img className="pb-24" src={aboutImg} alt="_about" />
+
+        <div className="lg:w-[40%] z-[1]">
+          <img className="py-24 px-6 ml-6" src={aboutImg} alt="_about" />
           {/* <img className="pb-24" src={aboutImg2} alt="_about" /> */}
         </div>
+        
       </div>
     </>
   );

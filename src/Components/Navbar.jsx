@@ -2,8 +2,10 @@ import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
+
 // import { FiMenu } from "react-icons/fi";
-import logo from "../Assets/logo.svg";
+// import logo from "../Assets/logo.svg";
+import logo from "../Assets/esper-logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,10 +37,10 @@ function Navbar() {
   return (
     <>
       <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 lg:px-24'>
-        
+
         {/* Desktop Menu */}
         <img 
-          className="z-[1] hidden md:block cursor-pointer" 
+          className="z-[1] hidden md:block cursor-pointer w-[12%]" 
           src={logo} 
           alt="_logo"
           data-aos="fade-down"

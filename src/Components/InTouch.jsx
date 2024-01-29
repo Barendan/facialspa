@@ -6,11 +6,9 @@ import phoneIcon from "../Assets/phone-icon.svg";
 import locationIcon from "../Assets/location-icon.svg";
 import mailIcon from "../Assets/mail-icon.svg";
 
-// import bg1 from "../Assets/touch-bg-1.svg";
 import bg2 from "../Assets/touch-bg-2.svg";
 import bg3 from "../Assets/touch-bg-3.svg";
-// import bg4 from "../Assets/touch-bg-4.svg";
-// import bg5 from "../Assets/touch-bg-5.svg";
+import bg4 from "../Assets/touch-bg-4.svg";
 
 
 
@@ -36,7 +34,7 @@ function InTouch() {
       from_name: formData.name,
       email: formData.email,
       phone: formData.phone,
-      to_name: "Danielbarenboim",
+      to_name: "Esperanza Wellness",
       message: formData.message,
     };
 
@@ -72,6 +70,8 @@ function InTouch() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // console.log('submit clicked')
+
     if (!validateForm()) {
       return;
     }
@@ -97,7 +97,7 @@ function InTouch() {
     <>
       <ToastContainer />
 
-      <div id="inTouchSection" className="flex justify-center items-center py-20 px-4 sm:px-6 md:px-8 lg:px-24">
+      <div id="inTouchSection" className="bg-[#DDDAD2] flex justify-center items-center py-20 px-4 sm:px-6 md:px-8 lg:px-24">
 
         <div className="absolute flex justify-between w-full mt-[-1431px] lg:mt-[-714px]">
           {/* <img className="opacity-[0.9]" src={bg1} alt="_bg" /> */}
@@ -106,18 +106,17 @@ function InTouch() {
         </div>
 
 
-
-
         <div 
-          // data-aos="flip-up" 
+          data-aos="flip-up" 
           // data-aos-delay="200" 
-          className="flex flex-col relative w-[90%]"
+          className="z-10 flex flex-col relative w-[90%]"
         >
 
           <div className="flex flex-col lg:flex-row">
             
-            <div className="w-full lg:w-[70%] bg-[#EDEBE4] pb-[10rem] md:pb-0 rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-8 p-3 md:p-20 lg:pr-[200px] xl:pr-[300px]">
+            <div className="w-full lg:w-[70%] bg-[#EDEBE4] pb-[10rem] md:pb-0 rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 lg:pr-[200px]">
               
+
               {/* Intro Text and Form */}
               <div className="flex flex-col gap-8 px-6">
                 
@@ -129,6 +128,7 @@ function InTouch() {
                     We would love to make you feel amazing. Contact us and let's make it happen!
                   </p>
                 </div>
+
 
                 <div className="flex flex-col gap-4">
                   <input
@@ -167,7 +167,7 @@ function InTouch() {
 
                   <button 
                     onClick={handleSubmit}
-                    className="rounded-full text-white bg-[#2E4630] p-3 fontQuicksand text-md leading-normal hover:shadow-md cursor-pointer"
+                    className="z-10 rounded-full text-white bg-[#2E4630] p-3 fontQuicksand text-md leading-normal hover:shadow-md cursor-pointer"
                   >
                     Send Message
                   </button>
@@ -178,16 +178,18 @@ function InTouch() {
 
               
               {/* Contact Information */}
-              <div className="flex gap-6 justify-start flex-wrap items-center pb-20 px-10">
+              <div className="flex gap-6 justify-start flex-wrap items-center pb-20 md:pb-10 px-10">
 
                 <div className="flex gap-3 justify-start items-center">
 
                   <img src={phoneIcon} className="md:hidden" width={42} height={42} alt="_phone" />
-                  {/* <img src={phoneIcon} 
-                  className="hidden md:block" 
-                  alt="_phone" /> */}
+                  <img src={phoneIcon} 
+                    width={28} height={28}
+                    className="hidden md:block" 
+                    alt="_phone" 
+                  />
 
-                  <div className="fex flex-col gap-1">
+                  <div className="flex flex-col">
                     <p className="fontMont font-medium text-lg leading-normal text-[#2E4630]">
                       Phone
                     </p>
@@ -201,9 +203,9 @@ function InTouch() {
                 <div className="flex gap-3 justify-start items-center">
                   
                   <img src={mailIcon} className="md:hidden" width={42} height={42} alt="_email" />
-                  <img src={mailIcon} className="hidden md:block" alt="_email" />
+                  <img src={mailIcon} className="hidden md:block" width={28} height={28} alt="_email" />
 
-                  <div className="fex flex-col gap-1">
+                  <div className="flex flex-col">
                     <p className="fontMont font-medium text-lg leading-normal text-[#2E4630]">
                       Email
                     </p>
@@ -217,9 +219,9 @@ function InTouch() {
                 <div className="flex gap-3 justify-start items-center">
                   
                   <img src={locationIcon} className="md:hidden" width={42} height={42} alt="_location" />
-                  <img src={locationIcon} className="hidden md:block" alt="_location" />
+                  <img src={locationIcon} className="hidden md:block" width={28} height={28} alt="_location" />
 
-                  <div className="fex flex-col gap-1">
+                  <div className="flex flex-col">
                     <p className="fontMont font-medium text-lg leading-normal text-[#2E4630]">
                       Location
                     </p>
@@ -233,14 +235,6 @@ function InTouch() {
               </div>
               
             </div>
-
-
-            {/* <div className='absolute mt-[577px] ml-[577px]'>
-                <img className='opacity-[0.3]' src={bg5} alt="_bg"/>
-            </div> */}
-
-            {/* <div className="w-full lg:w-[30%]  bg-[#2E4630] rounded-[20px] lg:rounded-tl-[0px] lg:rounded-bl-[0px] flex justify-center items-center py-80 lg:py-0"> */}
-
 
 
             {/* Two google maps, one for desktop and one for mobile */}
@@ -273,20 +267,11 @@ function InTouch() {
 
           </div>
 
-          {/* <div className="flex justify-center items-center mt-[-325px]">
-            <img
-              className="opacity-[0.3] w-[185px] h-[322px]"
-              src={bg5}
-              alt="_bg"
-            />
-          </div> */}
-
         </div>
 
-        <div className="absolute flex justify-between w-full mt-[460px]">
+        <div className="absolute flex justify-between w-full mt-[260px]">
           <img className="opacity-[0.3] z-[-1]" src={bg2} alt="_bg" />
-          <img className="hidden sm:block opacity-[0.2]" src={bg2} alt="_bg" />
-          {/* <img className="hidden sm:block opacity-[0.9]" src={bg4} alt="_bg" /> */}
+          <img className="hidden sm:block opacity-[0.6]" src={bg4} alt="_bg" />
         </div>
 
       </div>
