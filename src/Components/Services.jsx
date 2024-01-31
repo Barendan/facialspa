@@ -130,7 +130,7 @@ function Services() {
                 {/* Chemical Peels image needs to be adjusted slightly but no others */}
                 { item.heading === "Chemical Peels" ? 
                   <div 
-                    style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover", backgroundPosition: "100% 100%" }}
+                    style={{ backgroundImage: `url(${item.img})`, backgroundSize: "cover", backgroundPosition: "100% 100%" }}
                     className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
                   />
                   :
