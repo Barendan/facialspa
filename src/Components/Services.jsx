@@ -11,7 +11,7 @@ import mnServiceImg from "../Assets/microneedling.jpg";
 import serviceImg2 from "../Assets/service-img-2.png";
 import serviceImg3 from "../Assets/service-img-3.png";
 import serviceImg6 from "../Assets/service-img-6.png";
-import floralImg from "../Assets/floral.png";
+import floralImg from "../Assets/floral-bg2.png";
 
 
 function Services() {
@@ -73,25 +73,8 @@ function Services() {
     <>
       <div id="servicesSection" className="flex flex-col bg-white z-[1]">
 
-        {/* <img
-          className="hidden md:block absolute mt-[377px]"
-          src={serviceBg}
-          alt="_bg"
-        /> */}
-
-        {/* <div className="bg-[#785445] flex flex-col md:flex-row gap-16 lg:gap-[200px] justify-center px-4 sm:px-6 md:px-24 py-24">
-          {serviceIcon.map((item, index) => (
-            <div key={index} className="flex flex-col gap-5 justify-center items-center">
-              <img src={item.img} alt="_service" />
-              <p className="max-w-[150px] text-center text-white leading-normal fontMont text-[20px]">
-                {item.name}
-              </p>
-            </div>
-          ))}
-        </div> */}
-
         <div 
-        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'center', backgroundColor: "#6d4d2d30"}}
+        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'center' }}
         className="md:bg-white py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
 
           {/* Section Top Text */}
@@ -112,7 +95,7 @@ function Services() {
             <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center" data-aos="fade-down-right" data-aos-delay="100">
               Without making it feel so…. clinical. We believe in having your
               cake and eating it too, with clinically proven treatments,
-              licensed and insured aestheticians, ambient lighting, heated beds,
+              licensed and insured aestheticians, ambient lighting, heated beds.
             </p>
 
           </div>

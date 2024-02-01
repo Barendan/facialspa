@@ -10,7 +10,7 @@ function Hero() {
     <>
       <div
         id="heroSection"
-        className="bg-[#DDDAD2] flex flex-col flex-col-reverse lg:flex-row gap-16 lg:gap-10 xl:gap-40 overflow-hidden pt-40 mt-[-137px] bg-cover bg-no-repeat"
+        className="bg-[#DDDAD2] flex flex-col flex-col-reverse lg:flex-row gap-16 lg:gap-10 xl:gap-32 overflow-hidden pt-40 mt-[-137px] bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${lineBg})` }}
       >
 
@@ -43,20 +43,32 @@ function Hero() {
 
           <div className="flex mt-5">
 
-            <button 
+            {/* <button 
               onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-              className="flex hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-lg font-light font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mr-10"
-              data-aos="fade-left"
+              className="flex mt-4 hover:shadow-md hover:bg-[#2E4630] text-white text-2xl font-normal font-quicksand leading-normal bg-[#785445] rounded-tl-[30px] rounded-br-[30px] py-4 px-6 mr-10 shadow-xl hover:duration-300"
+              // style={{ boxShadow: "2px 2px 2px" }}
+              // data-aos="fade-left"
               data-aos-delay="200"
               >
-              Book an appointment
-            </button>
+              Book an Appointment
+            </button> */}
+
+            <button
+                onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+                className="flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-2xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-10 mr-8 hover:duration-300 shadow-lg"
+                style={{ boxShadow: "2px 2px 2px" }}
+                // data-aos="fade-left"
+                // data-aos-delay="200"
+              >
+                Book an Appointment
+              </button>
             
             <button 
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="flex hover:shadow-md hover:bg-white hover:text-[#2E4630] text-white text-lg font-light font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6"
-              data-aos="fade-left"
-              data-aos-delay="200"
+              className="flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-2xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-6 mr-5 hover:duration-300 shadow-lg"
+              style={{ boxShadow: "2px 2px 2px" }}
+              // data-aos="fade-left"
+              // data-aos-delay="200"
               >
               Our Store
             </button>

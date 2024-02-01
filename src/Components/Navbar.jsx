@@ -39,15 +39,16 @@ function Navbar() {
       <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 lg:px-24'>
 
         {/* Desktop Menu */}
-        <img 
-          className="z-[1] hidden md:block cursor-pointer w-[12%]" 
-          src={logo} 
-          alt="_logo"
-          data-aos="fade-down"
-        />
-
+        <a className="z-[1] hidden md:block cursor-pointer w-[12%]" href="https://www.esperanzawellness.com/">
+          <img 
+            src={logo} 
+            alt="_logo"
+            data-aos="fade-down"
+          />
+        </a>
+        
         <div 
-          className="z-10 hidden md:flex justify-center items-center gap-12"
+          className="z-10 hidden md:flex justify-center items-center gap-6 pt-3 nav"
           data-aos="fade-down"
           data-aos-delay="50"
         >
@@ -56,7 +57,7 @@ function Navbar() {
             <span
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className="cursor-pointer text-[#333] text-lg font-quicksand leading-normal"
+              className="cursor-pointer text-[#333] text-2xl font-quicksand leading-normal"
             >
               {section.label}
             </span>
@@ -66,8 +67,9 @@ function Navbar() {
 
         <button 
           onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-          className="hidden md:flex text-white text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tl-[30px] rounded-br-[30px] py-4 px-6"
-          data-aos="fade-down"
+          className="hidden md:flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-lg font-medium font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-3 px-8 hover:duration-500 shadow-md"
+          style={{ boxShadow: "1px 1px 2px" }}
+          // data-aos="fade-down"
           data-aos-delay="200"
         >
           Book Now
@@ -77,13 +79,14 @@ function Navbar() {
         {/* Mobile Menu */}
         <div className="flex md:hidden w-full justify-between items-center">
 
-          <img
-            className="z-[1] md:hidden"
-            src={logo}
-            height={35}
-            width={35}
-            alt="_logo"
-          />
+          <a className="z-[1] md:hidden cursor-pointer w-[100%]" href="https://www.esperanzawellness.com/">
+            <img
+              src={logo}
+              height={50}
+              width={50}
+              alt="_logo"
+            />
+          </a>
 
           <div ref={ref}>
             <Hamburger size={30} toggled={menuOpen} toggle={setMenuOpen} />
