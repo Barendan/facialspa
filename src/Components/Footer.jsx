@@ -81,7 +81,7 @@ const Footer = () => {
 
               <ul> 
                 <li>
-                  <a href="#">
+                  <a href="https://www.esperanzawellness.com/">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -94,7 +94,7 @@ const Footer = () => {
                   </a> 
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/esperanzaskin/">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -106,7 +106,7 @@ const Footer = () => {
                   </a> 
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/esperanzaskin/">
                     <span></span>
                     <span></span>
                     <span></span>
