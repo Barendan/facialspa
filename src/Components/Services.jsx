@@ -11,7 +11,7 @@ import mnServiceImg from "../Assets/microneedling.jpg";
 import serviceImg2 from "../Assets/service-img-2.png";
 import serviceImg3 from "../Assets/service-img-3.png";
 import serviceImg6 from "../Assets/service-img-6.png";
-import floralImg from "../Assets/floral-bg2.png";
+import floralImg from "../Assets/floral-bg3.png";
 
 
 function Services() {
@@ -74,7 +74,7 @@ function Services() {
       <div id="servicesSection" className="flex flex-col bg-white z-[1]">
 
         <div 
-        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'center' }}
+        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
         className="md:bg-white py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
 
           {/* Section Top Text */}
@@ -108,7 +108,7 @@ function Services() {
           <div className="flex justify-center flex-wrap flex-row xl:flex-row gap-3 md:gap-12 2xl:gap-32 w-full">
             {serviceList.map((item, index) => (
               
-              <div key={index} className="w-auto md:w-[325px] mb-6 md:mb-0 flex flex-col justify-center items-center">
+              <div key={index} className="w-auto md:w-[325px] mb-6 md:mb-3 flex flex-col justify-center items-center">
 
                 {/* Chemical Peels image needs to be adjusted slightly but no others */}
                 { item.heading === "Chemical Peels" ? 
@@ -128,18 +128,18 @@ function Services() {
                   
                   <div
                     style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
-                    className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 py-3 md:py-3 pb-6 md:pb-12 shadow-lg"}
+                    className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 pt-3 pb-6 md:pb-6 shadow-lg"}
                     // data-aos="fade-up"
                   >
 
                     <p
-                      className={"text-[#2E4630] fontQuicksand text-[20px] md:text-[20px] leading-normal"}
+                      className={"text-[#2E4630] fontQuicksand text-[20px] md:text-[20px] font-medium leading-normal"}
                     >
                       {item.heading}
                     </p>
 
                     <p
-                      className={"text-[#2E4630] fontQuicksand text-center text-[12px] md:text-[20px] leading-normal"}
+                      className={"text-[#2E4630] fontQuicksand text-center text-[12px] lg:text-[12px] xl:text-[14px] leading-normal"}
                       // className={`${
                       //   item.green ? "text-white" : "text-[#666]"
                       // } fontQuicksand text-[14px] leading-normal text-center`}

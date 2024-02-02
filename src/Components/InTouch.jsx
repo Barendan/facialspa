@@ -98,7 +98,7 @@ function InTouch() {
     <>
       <ToastContainer />
 
-      <div id="inTouchSection" className="bg-[#DDDAD2] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-8 lg:px-24">
+      <div id="inTouchSection" className="bg-[#DDDAD2] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-6 lg:px-6">
 
         <div className="absolute flex justify-between w-full mt-[-1431px] lg:mt-[-714px]">
           {/* <img className="opacity-[0.9]" src={bg1} alt="_bg" /> */}
@@ -115,10 +115,10 @@ function InTouch() {
 
           <div className="flex flex-col lg:flex-row">
             
-            <div className="w-full lg:w-[70%] bg-[#EDEBE4] pb-[10rem] md:pb-0 rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 lg:pr-[200px]">
+            <div className="w-full lg:w-[70%] bg-[#EDEBE4] pb-[10rem] lg:pb-[4rem] rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 lg:pr-[200px]">
 
               {/* Intro Text and Form */}
-              <div className="flex flex-col gap-8 px-6 pb-10">
+              <div className="flex flex-col gap-8 px-8 lg:px-16 xl:px-24 pb-10 lg:pb-0">
                 
                 <div className="flex flex-col gap-3">
                   <p className="text-[#232323] text-[47px] fontAbril font-medium leading-normal ">
@@ -180,15 +180,13 @@ function InTouch() {
 
 
             {/* Two google maps, one for desktop and one for mobile */}
-            <div className="w-full lg:w-[30%] bg-[#2E4630] rounded-bl-[20px] rounded-br-[20px] lg:rounded-tl-[0px] lg:rounded-tr-[20px] lg:rounded-bl-[0px] flex justify-center items-center py-20 md:py-80 lg:py-0">
+            <div className="w-full lg:w-[30%] bg-[#2E4630] rounded-bl-[20px] rounded-br-[20px] lg:rounded-tl-[0px] lg:rounded-tr-[20px] lg:rounded-bl-[0px] flex justify-center items-center py-28 lg:py-0">
 
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" 
                 title="Esperanza Location" 
-                width="336px"
-                height="280px"
-                style={{ border: 0, borderRadius: 10, position: "absolute", maxWidth: "404px", top: "71%" }}
-                className="md:hidden"
+                style={{ border: 0, borderRadius: 10, position: "absolute", top: "55%" }}
+                className="lg:hidden w-[24rem] sm:w-[30rem] h-[300px]"
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
               /> 
@@ -197,9 +195,9 @@ function InTouch() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" 
                 title="Esperanza Location" 
                 width="100%"
-                height="419"
-                style={{ border: 0, borderRadius: 10, position: "absolute", maxWidth: "404px" }}
-                className="hidden md:block lg:left-[55%]"
+                height="440"
+                style={{ border: 0, borderRadius: 10, position: "absolute", maxWidth: "420px" }}
+                className="hidden lg:block lg:left-[53%] xl:left-[55%]"
                 // allowfullscreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -211,7 +209,7 @@ function InTouch() {
 
            
               {/* Contact Information */}
-              <div className="flex gap-12 justify-center flex-wrap items-center pt-10">
+              <div className="flex gap-6 lg:gap-12 justify-start lg:justify-center flex-wrap items-center pt-10">
 
                 <div className="flex gap-3 justify-start items-center">
 
