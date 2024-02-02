@@ -82,20 +82,20 @@ function Services() {
             
             <div className="flex flex-col gap-2 justify-center items-center">
               
-              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal" data-aos="fade-down-right">
+              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal">
                 Services
               </p>
 
-              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center" data-aos="fade-down-right" data-aos-delay="50">
+              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center" data-aos="fade-down-right">
                 Take A Deep Breath And Just Enjoy Life
               </p>
 
             </div>
 
-            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center" data-aos="fade-down-right" data-aos-delay="100">
+            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center" data-aos="fade-down-right" data-aos-delay="50">
               Without making it feel so…. clinical. We believe in having your
               cake and eating it too, with clinically proven treatments,
-              licensed and insured aestheticians, ambient lighting, heated beds.
+              licensed and insured aestheticians, ambient lighting, & heated beds.
             </p>
 
           </div>
@@ -105,48 +105,44 @@ function Services() {
 
           <div className="flex flex-row flex-wrap gap-12 justify-center items-center w-full 2xl:gap-40">
             
-          <div className="flex justify-center flex-wrap flex-row xl:flex-row gap-0 md:gap-12 2xl:gap-32 w-full">
+          <div className="flex justify-center flex-wrap flex-row xl:flex-row gap-3 md:gap-12 2xl:gap-32 w-full">
             {serviceList.map((item, index) => (
               
-              <div key={index} className="md:w-[325px] w-[10rem] mb-6 md:mb-0 flex flex-col justify-center items-center">
+              <div key={index} className="w-auto md:w-[325px] mb-6 md:mb-0 flex flex-col justify-center items-center">
 
                 {/* Chemical Peels image needs to be adjusted slightly but no others */}
                 { item.heading === "Chemical Peels" ? 
                   <div 
                     style={{ backgroundImage: `url(${item.img})`, backgroundSize: "cover", backgroundPosition: "100% 100%" }}
-                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                    className="w-[220px] h-[200px] md:w-[320px] md:h-[346px]"
                   />
                   :
                   <div 
                     style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
-                    className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
+                    className="w-[220px] h-[200px] md:w-[320px] md:h-[346px]"
                   />
                 }
 
-                {/* <div 
-                  style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
-                  className="w-[300px] h-[200px] md:w-[320px] md:h-[346px]"
-                /> */}
 
-
-                <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[224px] mt-[-60px] md:mt-[-100px]">
+                <div className="flex flex-col items-center w-[260px] md:w-[265px] h-[204px] mt-[-30px] md:mt-[-100px]">
                   
                   <div
-                    data-aos="fade-up"
                     style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
-                    className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 py-3 md:py-3 pb-12 border-solid border"}
+                    className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 py-3 md:py-3 pb-6 md:pb-12 shadow-lg"}
+                    // data-aos="fade-up"
                   >
 
                     <p
-                      className={"text-[#2E4630] fontQuicksand text-[20px] leading-normal"}
+                      className={"text-[#2E4630] fontQuicksand text-[20px] md:text-[20px] leading-normal"}
                     >
                       {item.heading}
                     </p>
 
                     <p
-                      className={`${
-                        item.green ? "text-white" : "text-[#666]"
-                      } fontQuicksand text-[14px] leading-normal text-center`}
+                      className={"text-[#2E4630] fontQuicksand text-center text-[12px] md:text-[20px] leading-normal"}
+                      // className={`${
+                      //   item.green ? "text-white" : "text-[#666]"
+                      // } fontQuicksand text-[14px] leading-normal text-center`}
                     >
                       {item.description}
                     </p>
@@ -155,8 +151,8 @@ function Services() {
 
                   <button
                     onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                    data-aos="fade-up"
-                    className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-3 px-3 md:px-6 mt-[-10px] hover:shadow-lg hover:font-bold`}
+                    className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-3 px-3 md:px-6 mt-[-10px] shadow-xl hover:shadow-sm`}
+                    // data-aos="fade-up"
                   >
                     Read More
                   </button>

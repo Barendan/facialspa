@@ -31,7 +31,7 @@ function Products() {
 
   return (
     <>
-      <div id="productsSection" className="px-4 sm:px-6 md:px-8 lg:px-24 py-16 md:py-40 flex justify-center items-center bg-[#DDDAD2] pt-10 md:pt-32">
+      <div id="productsSection" className="px-4 sm:px-6 md:px-8 lg:px-24 py-16 md:py-20 flex justify-center items-center bg-[#DDDAD2] pt-10 md:pt-32">
 
         <div className="absolute flex w-full justify-end mt-[-624px]">
           <img className="" src={bg} alt="_bg" />
@@ -40,8 +40,8 @@ function Products() {
         <div className="flex flex-col xl:flex-row rounded-[20px] w-full z-[1]">
           
           <div
-            className="w-full xl:w-[30%] 2xl:w-[35%] flex flex-col gap-5 px-8 py-8 md:py-40 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover"
-            style={{ backgroundImage: `url(${productMainImg})` ,backgroundPosition:'center', backgroundSize:'cover'}}
+            className="w-full xl:w-[30%] 2xl:w-[35%] flex flex-col gap-5 px-8 py-8 lg:py-40 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover bg-[#2E4630]"
+            // style={{ backgroundImage: `url(${productMainImg})` ,backgroundPosition:'center', backgroundSize:'cover'}}
             // data-aos="zoom-in-right"
           >
 
@@ -49,7 +49,7 @@ function Products() {
               <p className="text-white fontQuicksand text-sm md:text-2xl font-semibold md:font-medium leading-normal">
                 Our Products
               </p>
-              <p className="text-white fontAbril text-2xl md:text-[50px] font-medium md:font-medium leading-normal xl:max-w-[318px]">
+              <p className="text-white fontAbril text-5xl font-medium xl:leading-normal xl:max-w-[318px]">
                 Feel Better With Beauty Studio
               </p>
             </div>
@@ -84,9 +84,7 @@ function Products() {
                 // data-aos="zoom-in-right"
                 // data-aos="slide-up"
                 // data-aos="zoom-in"
-                className={`h-fit w-[30%] md:w-[30%] flex flex-col gap-6 p-4 rounded-[16px] border border-[#CFC4C0] ${
-                  item.brownBg ? "bg-[#CFC4C0]" : "bg-transparent"
-                } ${item.brownBg ? "shadow-md" : ""}`}
+                className={`h-fit w-[30%] md:w-[30%] flex flex-col gap-6 p-4 rounded-[16px] border border-[#CFC4C0]`}
               >
                 {/* Images for Products (Desktop and Mobile) */}
                 <img
