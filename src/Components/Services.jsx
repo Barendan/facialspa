@@ -75,7 +75,7 @@ function Services() {
 
         <div 
         style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
-        className="md:bg-white py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
+        className="py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
 
           {/* Section Top Text */}
           <div className="flex flex-col gap-1 justify-center items-center z-[1]">
@@ -105,7 +105,7 @@ function Services() {
 
           <div className="flex flex-row flex-wrap gap-12 justify-center items-center w-full 2xl:gap-40">
             
-          <div className="flex justify-center flex-wrap flex-row xl:flex-row gap-3 md:gap-12 2xl:gap-32 w-full">
+          <div className="flex justify-center flex-wrap flex-row lg:flex-row gap-3 md:gap-10 lg:gap-3 2xl:gap-20 w-full">
             {serviceList.map((item, index) => (
               
               <div key={index} className="w-auto md:w-[325px] mb-6 md:mb-3 flex flex-col justify-center items-center">
@@ -114,12 +114,12 @@ function Services() {
                 { item.heading === "Chemical Peels" ? 
                   <div 
                     style={{ backgroundImage: `url(${item.img})`, backgroundSize: "cover", backgroundPosition: "100% 100%" }}
-                    className="w-[220px] h-[200px] md:w-[320px] md:h-[346px]"
+                    className="w-[220px] h-[200px] md:w-[280px] md:h-[300px]"
                   />
                   :
                   <div 
                     style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
-                    className="w-[220px] h-[200px] md:w-[320px] md:h-[346px]"
+                    className="w-[220px] h-[200px] md:w-[280px] md:h-[300px]"
                   />
                 }
 
@@ -139,7 +139,7 @@ function Services() {
                     </p>
 
                     <p
-                      className={"text-[#2E4630] fontQuicksand text-center text-[12px] lg:text-[12px] xl:text-[14px] leading-normal"}
+                      className={"text-[#2E4630] fontQuicksand text-center text-[12px] md:text-[14px] leading-normal"}
                       // className={`${
                       //   item.green ? "text-white" : "text-[#666]"
                       // } fontQuicksand text-[14px] leading-normal text-center`}
@@ -151,7 +151,7 @@ function Services() {
 
                   <button
                     onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                    className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 md:py-3 px-3 md:px-6 mt-[-10px] shadow-xl hover:shadow-sm`}
+                    className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 px-6 md:py-3 mt-[-10px] shadow-xl hover:shadow-sm opacity-90 hover:opacity-100`}
                     // data-aos="fade-up"
                   >
                     Read More
