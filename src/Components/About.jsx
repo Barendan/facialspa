@@ -1,6 +1,4 @@
-// import aboutImg from "../Assets/about-img.svg";
 import aboutImg from "../Assets/about-portrait2.png";
-// import aboutImg2 from "../Assets/about-img2.jpg";
 import aboutBg1 from "../Assets/about-bg-1.svg";
 import aboutBg2 from "../Assets/about-bg-2.svg";
 
@@ -9,19 +7,19 @@ function About() {
     <>
       <div id="aboutSection" 
         className=" bg-[#785445] flex flex-col lg:flex-row justify-center items-center px-12 pb-16 md:px-8 lg:px-16 gap-10 md:gap-10"
-        // data-aos="zoom-out"
+        data-aos="zoom-out"
       >
 
         <div className="absolute flex w-[96%] lg:w-full justify-between">
           <img
             className="mt-[-1311px] lg:mt-[-436px] opacity-[0.5]"
             src={aboutBg1}
-            alt="_bg"
+            alt="plant leaf 1"
           />
           <img
             className="hidden sm:block mt-[321px]"
             src={aboutBg2}
-            alt="_bg"
+            alt="plant leaf 2"
           />
         </div>
 
@@ -53,7 +51,7 @@ function About() {
         </div>
 
         <div className="w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] z-[1]">
-          <img className="lg:py-20 lg:px-6 lg:ml-6 lg:mt-6" src={aboutImg} alt="_about" />
+          <img className="lg:py-20 lg:px-6 lg:ml-6 lg:mt-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" />
         </div>
         
       </div>

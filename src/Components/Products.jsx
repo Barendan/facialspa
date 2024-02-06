@@ -1,6 +1,5 @@
 import bg from "../Assets/product-bg.svg";
 import cartIcon from "../Assets/cart-icon.svg";
-// import collapseIcon from "../Assets/collapse-icon.svg";
 import productImg1 from "../Assets/product-img-11.jpg";
 import productImg2 from "../Assets/product-img-22.jpg";
 import productImg3 from "../Assets/product-img-33.jpg";
@@ -31,7 +30,7 @@ function Products() {
       <div id="productsSection" className="flex justify-center items-center bg-[#DDDAD2] pt-12 pb-24 lg:pt-32 px-4 sm:px-6 md:px-8 lg:px-12 md:py-20">
 
         <div className="absolute flex w-full justify-end mt-[-100px] md:mt-[-624px]">
-          <img className="" src={bg} alt="_bg" />
+          <img className="" src={bg} alt="a leaf" />
         </div>
 
         <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1]">
@@ -91,7 +90,7 @@ function Products() {
                   <img
                     className="md:flex min-h-[155px] rounded-lg py-2"
                     src={item.img}
-                    alt="_product"
+                    alt="a skincare product"
                     />
                 
                 </div>
@@ -99,7 +98,7 @@ function Products() {
                 {/* <img
                   className="md:hidden md:min-w-[210px] md:min-h-[242px] rounded-lg"
                   src={item.img}
-                  alt="_product"
+                  alt="a skincare product"
                   width={105}
                   height={115}
                 /> */}
@@ -124,7 +123,7 @@ function Products() {
 
                     <img 
                       src={cartIcon} 
-                      alt="_cart" 
+                      alt="a shopping cart icon" 
                       className="rounded-full shadow-lg hover:scale-125" 
                     />
 

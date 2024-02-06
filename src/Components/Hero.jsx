@@ -18,7 +18,7 @@ function Hero() {
           <img
             className=" mb-[476px] lg:mb-0 md:mt-[-400px] xl:mt-[-350px] ml-[40px]"
             src={leaveBg1}
-            alt="_leave"
+            alt="a leaf"
           />
         </div> */}
 
@@ -26,11 +26,11 @@ function Hero() {
           <img
             className="mt-[478px] lg:mt-[558px]  ml-[512px]"
             src={leaveBG2}
-            alt="_leave"
+            alt="a leaf"
           />
         </div> */}
 
-        <img className="z-[99] w-fit hidden md:block" src={bg} alt="_bg" data-aos="fade-right"/>
+        <img className="z-[99] w-fit hidden md:block" src={bg} alt="a woman wearing facial cream on her face and a towel on her head at the spa" data-aos="fade-right"/>
 
         <div className="hidden md:flex flex-col gap-10 justify-center items-start z-[99] px-4 sm:px-6 lg:pr-32">
 
@@ -81,7 +81,7 @@ function Hero() {
         {/* Mobile version of page */}
         <div className="flex md:hidden flex-col justify-start items-center z-[99]">
           
-          <img className="opacity-30 w-[100%] md:hidden" src={bgMobile} alt="_bg" />
+          <img className="opacity-30 w-[100%] md:hidden" src={bgMobile} alt="a woman wearing facial cream on her face and a towel on her head at the spa" />
 
           <div className="absolute top-40 flex flex-col mx-6">
             

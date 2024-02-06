@@ -101,9 +101,9 @@ function InTouch() {
       <div id="inTouchSection" className="bg-[#DDDAD2] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-6 lg:px-6">
 
         <div className="absolute flex justify-between w-full mt-[-1431px] lg:mt-[-714px]">
-          {/* <img className="opacity-[0.9]" src={bg1} alt="_bg" /> */}
-          <img className="hidden sm:block opacity-[0.0] z-[-1]" src={bg3} alt="_bg" />
-          <img className="hidden sm:block opacity-[0.3] z-[-1]" src={bg3} alt="_bg" />
+          {/* <img className="opacity-[0.9]" src={bg1} alt="a leaf" /> */}
+          <img className="hidden sm:block opacity-[0.0] z-[-1]" src={bg3} alt="a leaf" />
+          <img className="hidden sm:block opacity-[0.3] z-[-1]" src={bg3} alt="a leaf" />
         </div>
 
 
@@ -213,11 +213,11 @@ function InTouch() {
 
                 <div className="flex gap-3 justify-start items-center">
 
-                  <img src={phoneIcon} className="md:hidden" width={42} height={42} alt="_phone" />
+                  <img src={phoneIcon} className="md:hidden" width={42} height={42} alt="a phone icon" />
                   <img src={phoneIcon} 
                     width={28} height={28}
                     className="hidden md:block" 
-                    alt="_phone" 
+                    alt="a phone icon" 
                   />
 
                   <div className="flex flex-col">
@@ -233,8 +233,8 @@ function InTouch() {
 
                 <div className="flex gap-3 justify-start items-center">
                   
-                  <img src={mailIcon} className="md:hidden" width={42} height={42} alt="_email" />
-                  <img src={mailIcon} className="hidden md:block" width={28} height={28} alt="_email" />
+                  <img src={mailIcon} className="md:hidden" width={42} height={42} alt="an email icon" />
+                  <img src={mailIcon} className="hidden md:block" width={28} height={28} alt="an email icon" />
 
                   <div className="flex flex-col">
                     <p className="fontMont font-medium text-lg leading-normal text-[#2E4630]">
@@ -249,8 +249,8 @@ function InTouch() {
 
                 <div className="flex gap-3 justify-start items-center">
                   
-                  <img src={locationIcon} className="md:hidden" width={42} height={42} alt="_location" />
-                  <img src={locationIcon} className="hidden md:block" width={28} height={28} alt="_location" />
+                  <img src={locationIcon} className="md:hidden" width={42} height={42} alt="a map location icon" />
+                  <img src={locationIcon} className="hidden md:block" width={28} height={28} alt="a map location icon" />
 
                   <div className="flex flex-col">
                     <p className="fontMont font-medium text-lg leading-normal text-[#2E4630]">
@@ -269,8 +269,8 @@ function InTouch() {
         </div>
 
         <div className="absolute flex justify-between w-full mt-[260px]">
-          <img className="opacity-[0.3] z-[-1]" src={bg2} alt="_bg" />
-          <img className="hidden sm:block opacity-[0.6]" src={bg4} alt="_bg" />
+          <img className="opacity-[0.3] z-[-1]" src={bg2} alt="a leaf" />
+          <img className="hidden sm:block opacity-[0.6]" src={bg4} alt="a leaf" />
         </div>
 
       </div>

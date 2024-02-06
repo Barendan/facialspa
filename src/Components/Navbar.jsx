@@ -44,7 +44,7 @@ function Navbar() {
         <a className="z-[1] hidden md:block cursor-pointer w-[12%]" href="https://www.esperanzawellness.com/">
           <img 
             src={logo} 
-            alt="_logo"
+            alt="esperanza wellness logo"
             data-aos="fade-down"
           />
         </a>
@@ -82,7 +82,7 @@ function Navbar() {
         <div className="flex md:hidden w-full justify-between items-center">
 
           <a className="z-[1] cursor-pointer w-[25%] md:hidden" href="https://www.esperanzawellness.com/">
-            <img src={logo} alt="_logo" />
+            <img src={logo} alt="esperanza wellness logo" />
           </a>
 
 

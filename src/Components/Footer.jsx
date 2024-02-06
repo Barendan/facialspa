@@ -1,5 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import fb from "../Assets/fb.svg";
 import li from "../Assets/li.svg";
@@ -34,7 +34,7 @@ const Footer = () => {
         
         {/* Left Side Leaf background image */}
         <div className="absolute flex justify-start items-start w-full mt-[-200px]">
-          <img src={bg} alt="_bg" />
+          <img src={bg} alt="a leaf" />
         </div>
 
         <div className="flex gap-6 justify-between items-center border border-[#2E4630] rounded-[20px] shadow-md px-4 md:px-1 pb-3 shadow-lg">
@@ -62,23 +62,11 @@ const Footer = () => {
             <a className="cursor-pointer w-[30%] md:w-[20%] lg:w-[15%] md:pt-0" href="https://www.esperanzawellness.com/">
               <img
                 src={logo}
-                alt="_logo"
+                alt="esperanza wellness logo"
               />
             </a>
 
             <div className="flex flex-wrap gap-4 justify-center items-center social-icons">
-{/*               
-              <a className="cursor-pointer" href="https://www.esperanzawellness.com/">
-                <img src={li} alt="_LinkedIn" />
-              </a>
-
-              <a className="cursor-pointer" href="https://www.instagram.com/esperanzaskin/">
-                <img src={insta} alt="_Insta" />
-              </a>
-
-              <a className="cursor-pointer" href="https://www.facebook.com/esperanzaskin/">
-                <img src={fb} alt="_fb" />
-              </a> */}
 
               <ul> 
                 <li>
@@ -88,7 +76,7 @@ const Footer = () => {
                     <span></span>
                     <span></span>
                     <span className="fa fa-facebook">
-                <img src={fb} alt="_fb" />
+                <img src={fb} alt="facebook logo" />
 
 
                     </span>
@@ -101,7 +89,7 @@ const Footer = () => {
                     <span></span>
                     <span></span>
                     <span className="fa fa-instagram">
-                <img src={insta} alt="_Insta" />
+                <img src={insta} alt="instagram logo" />
 
                     </span>
                   </a> 
@@ -113,7 +101,7 @@ const Footer = () => {
                     <span></span>
                     <span></span>
                     <span className="fa fa-linkedin">
-                    <img src={li} alt="_LinkedIn" />
+                    <img src={li} alt="Linkedin logo" />
 
                     </span>
                   </a> 
@@ -123,9 +111,6 @@ const Footer = () => {
             </div>
            
           </div>
-
-
-
 
 {/* 
           <div className="md:hidden text-[#666] fontManrope text-xs leading-normal">

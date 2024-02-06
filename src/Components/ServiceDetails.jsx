@@ -120,6 +120,7 @@ function ServiceDetail() {
         <div 
           style={{ backgroundImage: `url(${selectedService.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
           className="w-[100%] h-[340px] lg:w-[500px] lg:h-[500px]"
+          alt="spa treatment being applied to the face"
         />
 
         <div className="flex flex-col w-100 lg:w-[40%]">
