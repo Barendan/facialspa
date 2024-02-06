@@ -108,7 +108,7 @@ function Navbar() {
                     >
 
                       <a
-                        href="#"
+                        href="/"
                         onClick={() => scrollToSection(section.id)}
                         className="cursor-pointer text-xl font-quicksand leading-normal hover:text-[#2E4630]"
                       >
