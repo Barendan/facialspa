@@ -51,7 +51,7 @@ function Navbar() {
         
         <div 
           className="z-10 hidden md:flex justify-center items-center gap-3 xl:gap-6 pt-3 nav"
-          // data-aos="fade-down"
+          data-aos="fade-down"
           data-aos-delay="50"
         >
 
@@ -71,7 +71,7 @@ function Navbar() {
           onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
           className="hidden md:flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-lg font-medium font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-3 px-8 hover:duration-500 shadow-md"
           style={{ boxShadow: "1px 1px 2px" }}
-          // data-aos="fade-down"
+          data-aos="fade-down"
           data-aos-delay="200"
         >
           Book Now
@@ -86,7 +86,7 @@ function Navbar() {
           </a>
 
 
-          <div className="container">
+          <div className="container" />
 
             <button 
               id="burger" 
@@ -96,7 +96,6 @@ function Navbar() {
               <span className="burger"></span>
               <span className="burger-text">Menu</span>
             </button>
-
             {menuOpen && (
               <nav className="main-nav is-open" id="main-nav">
                 <ul>
@@ -105,6 +104,8 @@ function Navbar() {
                     <li
                       key={section.id}
                       className=""
+                      data-aos="zoom-in-right"
+                      data-aos-delay={ idx * 50 }
                     >
 
                       <a
@@ -121,8 +122,6 @@ function Navbar() {
                 </ul>
               </nav>
             )}
-
-          </div>
 
           
 

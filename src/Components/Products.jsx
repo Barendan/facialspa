@@ -38,7 +38,7 @@ function Products() {
           <div
             className="w-full lg:w-[45%] 2xl:w-[35%] flex flex-col gap-5 px-8 py-8 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover mb-6"
             // style={{ backgroundImage: `url(${productMainImg})` ,backgroundPosition:'center', backgroundSize:'cover'}}
-            // data-aos="zoom-in-right"
+            data-aos="zoom-in-right"
           >
 
             <div className="flex flex-col gap-2">
@@ -59,8 +59,8 @@ function Products() {
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
               className="w-fit flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-sm md:text-xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-6 mr-5 hover:duration-300 shadow-lg"
               // style={{ boxShadow: "2px 2px 2px" }}
-              // data-aos="fade-left"
-              // data-aos-delay="200"
+              data-aos="fade-left"
+              data-aos-delay="200"
             >
               View Our Store
             </button>
@@ -73,13 +73,13 @@ function Products() {
             // style={{ backgroundImage: `url(${productBg2})` }}
           >
 
-            {products.map((item, index) => (
+            {products.map((item, i) => (
               
               <div
-                key={index}
+                key={i}
                 // data-aos="zoom-in-right"
-                // data-aos="slide-up"
-                // data-aos="zoom-in"
+                data-aos="fade-right"
+                data-aos-delay={ i * 200}
                 className={`bg-[#EDEBE4] h-fit w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2] cursor-pointer`}
                 onClick={() => window.location.href = "https://esperanzawellness.store/"}
               >

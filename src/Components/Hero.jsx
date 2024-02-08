@@ -57,8 +57,8 @@ function Hero() {
                 onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
                 className="flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-2xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-10 mr-8 hover:duration-300 shadow-lg"
                 style={{ boxShadow: "2px 2px 2px" }}
-                // data-aos="fade-left"
-                // data-aos-delay="200"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 Book an Appointment
               </button>
@@ -67,8 +67,8 @@ function Hero() {
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
               className="flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-2xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-4 md:px-6 mr-5 hover:duration-300 shadow-lg"
               style={{ boxShadow: "2px 2px 2px" }}
-              // data-aos="fade-left"
-              // data-aos-delay="200"
+              data-aos="fade-left"
+              data-aos-delay="200"
               >
               Our Store
             </button>
@@ -87,8 +87,8 @@ function Hero() {
             
             <p 
               className="max-w-[626px] text-[#2E4630] text-6xl font-semibold fontTest"
-              // data-aos="fade-left"
-              // data-aos-delay="50"
+              data-aos="fade-left"
+              data-aos-delay="50"
             >
               A Healthy Body Is A Guest-Chamber For The Soul
             </p>
@@ -99,8 +99,8 @@ function Hero() {
                 onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
                 className="flex mt-6 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-6 mr-20 hover:duration-300 shadow-lg"
                 style={{ boxShadow: "2px 2px 2px" }}
-                // data-aos="fade-left"
-                // data-aos-delay="200"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 Book an Appointment
               </button>
@@ -109,8 +109,8 @@ function Hero() {
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
               className="flex mt-6 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-6 mr-20 hover:duration-300 shadow-lg"
               style={{ boxShadow: "2px 2px 2px" }}
-              // data-aos="fade-left"
-              // data-aos-delay="200"
+              data-aos="fade-left"
+              data-aos-delay="200"
             >
               Our Store
             </button>

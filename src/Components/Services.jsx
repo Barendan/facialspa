@@ -74,25 +74,26 @@ function Services() {
       <div id="servicesSection" className="flex flex-col bg-white z-[1]">
 
         <div 
-        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
-        className="py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
+          style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
+          className="py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
 
           {/* Section Top Text */}
           <div className="flex flex-col gap-1 justify-center items-center z-[1]">
             
             <div className="flex flex-col gap-2 justify-center items-center">
               
-              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal">
+              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal"
+               data-aos="zoom-out" >
                 Services
               </p>
 
-              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center" data-aos="fade-down-right">
+              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center">
                 Take A Deep Breath And Just Enjoy Life
               </p>
 
             </div>
 
-            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center" data-aos="fade-down-right" data-aos-delay="50">
+            <p className="text-[#666] text-lg leading-normal max-w-[743px] fontQuicksand text-center">
               Without making it feel so…. clinical. We believe in having your
               cake and eating it too, with clinically proven treatments,
               licensed and insured aestheticians, ambient lighting, & heated beds.
@@ -129,7 +130,7 @@ function Services() {
                   <div
                     style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
                     className={"flex flex-col gap-1 justify-center items-center bg-white text-black mx-3 px-2 md:px-6 pt-3 pb-6 md:pb-6 shadow-lg"}
-                    // data-aos="fade-up"
+                    data-aos="fade-up"
                   >
 
                     <p
@@ -152,7 +153,7 @@ function Services() {
                   <button
                     onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
                     className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 px-6 md:py-3 mt-[-10px] shadow-xl hover:shadow-sm opacity-90 hover:opacity-100`}
-                    // data-aos="fade-up"
+                    data-aos="fade-up"
                   >
                     Read More
                   </button>

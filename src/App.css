@@ -107,7 +107,7 @@ code {
   bottom: 0;
   left: 0;
   right: -15px;
-  background: linear-gradient(to bottom, #96866e, #886339);
+  background: linear-gradient(to bottom, #ffd89d, #004116);
   transform-origin: 0 0;
   transform: skew(-14deg) translateX(-120%);
   transition: all .275s .1s;
@@ -144,37 +144,14 @@ code {
   transform: translateY(0);
 }
 
-.main-nav li:nth-child(1) a {
-  transition: all 275ms 175ms
-}
-.main-nav li:nth-child(2) a {
-  transition: all 275ms 225ms
-}
-.main-nav li:nth-child(3) a {
-  transition: all 275ms 275ms
-}
-.main-nav li:nth-child(4) a {
-  transition: all 275ms 325ms
-}
-.main-nav li:nth-child(5) a {
-  transition: all 275ms 375ms
-}
-
-
-/* Decoration */
-.main-nav ul,
-.main-nav li {
-  list-style: none;
-  padding: 0;
-}
-
 .main-nav a {
   display: block;
   padding: 12px 0;
   color: white;
-  font-size: 1.4em;
+  font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
+  font-family: Quicksand;
 }
 
 .open-main-nav {

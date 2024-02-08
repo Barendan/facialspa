@@ -76,9 +76,7 @@ const Footer = () => {
                     <span></span>
                     <span></span>
                     <span className="fa fa-facebook">
-                <img src={fb} alt="facebook logo" />
-
-
+                       <img src={fb} alt="facebook logo" />
                     </span>
                   </a> 
                 </li>
@@ -89,8 +87,7 @@ const Footer = () => {
                     <span></span>
                     <span></span>
                     <span className="fa fa-instagram">
-                <img src={insta} alt="instagram logo" />
-
+                      <img src={insta} alt="instagram logo" />
                     </span>
                   </a> 
                 </li>

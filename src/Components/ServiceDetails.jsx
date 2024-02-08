@@ -67,13 +67,10 @@ function ServiceDetail() {
   const navigate = useNavigate();
   const { serviceId } = useParams();
 
-  useEffect(()=>{      window.scrollTo(0, 0);
+  useEffect(()=>{ window.scrollTo(0, 0);
   },[])
   
   const handleMenuItemClick = (id) => {
-    // Save the current id to local storage
-    // localStorage.setItem("currentId", id);
-    // Navigate to home
     navigate("/");
   };
 
@@ -84,20 +81,6 @@ function ServiceDetail() {
   if (!selectedService) {
     return <div>Service not found</div>;
   }
-
-  // const displayBenefits = () => {
-  //   let benefitsArr = selectedService.benefits.split(".")
-
-  //   {console.log("showtell", benefitsArr)}
-
-  //   return (
-  //     <ul>
-  //       {selectedService.benefits.split(".").forEach((element) =>
-  //         <li>{element}</li>
-  //       )}
-  //     </ul>
-  //   )
-  // }
 
   return (
     <div className="bg-[#DDDAD2] fontQuicksand">
@@ -124,19 +107,23 @@ function ServiceDetail() {
         />
 
         <div className="flex flex-col w-100 lg:w-[40%]">
-          <p className="text-base font-normal text-[#9BA858]">
+          <p className="text-base font-normal text-[#9BA858]"
+            data-aos="fade-in"
+          >
             WE ARE EXPERTS
           </p>
           
-          <h2 className="font-medium mb-6 text-5xl text-[#2E4630]">
+          <h2 className="font-medium mb-6 text-5xl text-[#2E4630]"
+            data-aos="zoom-out"
+            >
             {selectedService.heading}
           </h2>
           
           <div className="text-[green] mb-3">
             <ul>
 
-              {selectedService.benefits.split(".").slice(0, -3).map((element) => {
-                return <li> 
+              {selectedService.benefits.split(".").slice(0, -3).map((element, i) => {
+                return <li data-aos="zoom-in" data-aos-delay={i * 200}> 
                   <span className="text-[green] font-bold text-[20px]">+</span>{element} 
                 </li>
               }
@@ -153,7 +140,7 @@ function ServiceDetail() {
             className="flex shadow-lg hover:shadow-md hover:bg-[#DDDAD2] hover:text-black text-[#2E4630] text-lg md:text-xl font-quicksand leading-normal py-4 px-6 hover:duration-300 border border-[#bbb] hover:border-black"
             // style={{ boxShadow: "1px 1px 2px 1px" }}
             // data-aos="fade-left"
-            // data-aos-delay="200"
+            // data-aos-delay="100"
           >
             Book this Treatment
           </button>
