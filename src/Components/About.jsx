@@ -34,11 +34,11 @@ function About() {
               About Us
             </p>
             
-            <p className="text-white fontAbril text-center text-4xl sm:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
+            <p className="text-white fontAbril text-center text-3xl sm:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
               A Healthy Body Is A Guest-Chamber For The Soul
             </p>
             
-            <p className="text-white text-base fontMont leading-normal">
+            <p className="hidden md:flex text-white text-base fontMont leading-normal">
               “Go On – Treat Yourself”
             </p>
 
@@ -53,7 +53,7 @@ function About() {
           </div>
         </div>
 
-        <div className="w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] z-[1]">
+        <div className="w-[95%] sm:w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] ml-8 sm:ml-0">
           <img className="lg:py-20 lg:px-6 lg:ml-6 lg:mt-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
             data-aos="fade"
           />

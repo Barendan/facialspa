@@ -69,7 +69,7 @@ function Products() {
 
 
           {/* Products container with items inside */}
-          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-16 md:py-20 xl:py-0 md:px-6  lg:px-12 justify-center items-center bg-no-repeat bg-cover bg-opacity-50"
+          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] sm:w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 sm:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 justify-center items-center bg-no-repeat bg-cover bg-opacity-50 mx-auto"
             // style={{ backgroundImage: `url(${productBg2})` }}
           >
 
@@ -80,7 +80,7 @@ function Products() {
                 // data-aos="zoom-in-right"
                 data-aos="fade-right"
                 data-aos-delay={ i * 200}
-                className={`bg-[#EDEBE4] h-fit w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2] cursor-pointer`}
+                className={`bg-[#EDEBE4] h-fit w-[70%] sm:w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 mb-10 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2] cursor-pointer`}
                 onClick={() => window.location.href = "https://esperanzawellness.store/"}
               >
                 {/* Images for Products (Desktop and Mobile) */}
@@ -117,18 +117,14 @@ function Products() {
 
                 </div>
 
-                <div className="flex justify-center items-center mb-[-30px] cursor-pointer w-[40%]">
-
+                <div className="flex justify-center items-center mb-[-30px] cursor-pointer w-[70%] sm:w-[40%]">
                   <a href="https://esperanzawellness.store/">
-
                     <img 
                       src={cartIcon} 
                       alt="a shopping cart icon" 
                       className="rounded-full shadow-lg hover:scale-125" 
                     />
-
                   </a>
-
                 </div>
 
               </div>
