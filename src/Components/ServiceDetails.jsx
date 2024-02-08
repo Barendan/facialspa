@@ -98,7 +98,7 @@ function ServiceDetail() {
       
 
 
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-16 bg-[#DDDAD2] items-center px-20 pt-6 pb-20 md:px-40 lg:pt-20 lg:pb-40 lg:px-20 justify-center">
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-16 bg-[#DDDAD2] items-center px-10 pt-6 pb-20 md:px-40 lg:pt-20 lg:pb-40 lg:px-20 justify-center">
 
         <div 
           style={{ backgroundImage: `url(${selectedService.img})`, backgroundPosition:'center', backgroundSize: "cover" }}

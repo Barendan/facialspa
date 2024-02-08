@@ -41,7 +41,7 @@ function Navbar() {
       <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-6 lg:px-16'>
 
         {/* Desktop Menu */}
-        <a className="z-[1] hidden md:block cursor-pointer w-[12%]" href="https://www.esperanzawellness.com/">
+        <a className="z-[101] hidden md:block cursor-pointer w-[12%]" href="https://www.esperanzawellness.com/">
           <img 
             src={logo} 
             alt="esperanza wellness logo"
@@ -81,7 +81,7 @@ function Navbar() {
         {/* Mobile Menu */}
         <div className="flex md:hidden w-full justify-between items-center">
 
-          <a className="z-[1] cursor-pointer w-[25%] md:hidden" href="https://www.esperanzawellness.com/">
+          <a className="z-[101] cursor-pointer w-[25%] md:hidden" href="https://www.esperanzawellness.com/">
             <img src={logo} alt="esperanza wellness logo" />
           </a>
 
@@ -109,7 +109,7 @@ function Navbar() {
                     >
 
                       <a
-                        href="/"
+                        href="#"
                         onClick={() => scrollToSection(section.id)}
                         className="cursor-pointer text-xl font-quicksand leading-normal hover:text-[#2E4630]"
                       >
