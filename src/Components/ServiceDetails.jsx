@@ -89,8 +89,8 @@ function ServiceDetail() {
         className="flex items-center mx-10 pt-1 lg:pt-6 gap-2 font-bold cursor-pointer"
         onClick={() => handleMenuItemClick("heroSection")}
       >
-        <FiArrowLeft className="font-bold text-2xl"/> 
-        <span className="text-xl">
+        <FiArrowLeft className="z-[101] font-bold text-2xl"/> 
+        <span className="z-[101] text-xl">
           Back
         </span>
       
@@ -98,7 +98,7 @@ function ServiceDetail() {
       
 
 
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-16 bg-[#DDDAD2] items-center px-10 pt-6 pb-20 md:px-40 lg:pt-20 lg:pb-40 lg:px-20 justify-center">
+      <div className="z-[101] flex flex-col lg:flex-row gap-6 lg:gap-16 bg-[#DDDAD2] items-center px-10 pt-6 pb-20 md:px-40 lg:pt-20 lg:pb-40 lg:px-20 justify-center">
 
         <div 
           style={{ backgroundImage: `url(${selectedService.img})`, backgroundPosition:'center', backgroundSize: "cover" }}

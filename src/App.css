@@ -134,17 +134,17 @@ code {
    transform: skew(16deg);
 }
 
-.main-nav a {
+.main-nav button {
   opacity: 0;
   transform: translateY(-10px);
 }
 
-.main-nav.is-open a {
+.main-nav.is-open button {
   opacity: 1;
   transform: translateY(0);
 }
 
-.main-nav a {
+.main-nav button {
   display: block;
   padding: 12px 0;
   color: white;
@@ -155,7 +155,7 @@ code {
 }
 
 .open-main-nav {
-  position: absolute;
+  /* position: absolute; */
   top: 15px;
   padding-top: 20px;
   right: 15px;
