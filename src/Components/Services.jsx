@@ -141,7 +141,7 @@ function Services() {
                       </p>
 
                       <p
-                        className={"text-[#2E4630] pt-1 fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
+                        className={"text-[#2E4630] fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
                         // data-aos="fade-up"
                       >
                         {item.description}

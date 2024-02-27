@@ -51,8 +51,7 @@ function Products() {
             </div>
 
             <p className="text-white fontQuicksand text-sm md:text-lg font-normal leading-normal xl:max-w-[438px]">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer
+              The best quality products provided to you at an affordable price. We do our reearch and ensure there are no harmful ingredients.
             </p>
 
             <button 
@@ -83,25 +82,17 @@ function Products() {
                 className={`bg-[#EDEBE4] h-fit w-[70%] sm:w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 mb-10 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2] cursor-pointer`}
                 onClick={() => window.location.href = "https://esperanzawellness.store/"}
               >
-                {/* Images for Products (Desktop and Mobile) */}
 
-                <div className="overflow-hidden h-[155px]">
+                {/* Images for Products (Desktop and Mobile) */}
+                <div className="overflow-hidden w-[90%] h-[155px]">
 
                   <img
                     className="md:flex min-h-[155px] rounded-lg py-2"
                     src={item.img}
                     alt="a skincare product"
-                    />
+                  />
                 
                 </div>
-
-                {/* <img
-                  className="md:hidden md:min-w-[210px] md:min-h-[242px] rounded-lg"
-                  src={item.img}
-                  alt="a skincare product"
-                  width={105}
-                  height={115}
-                /> */}
 
                 {/* Product Description  */}
                 <div className="flex flex-col gap-1 md:gap-3 justify-center items-center">
@@ -122,7 +113,8 @@ function Products() {
                     <img 
                       src={cartIcon} 
                       alt="a shopping cart icon" 
-                      className="rounded-full shadow-lg hover:scale-125" 
+                      className="rounded-full shadow-lg hover:scale-125"
+                      style={{ boxShadow: "2px 2px 4px gray", opacity: "0.9"}}
                     />
                   </a>
                 </div>

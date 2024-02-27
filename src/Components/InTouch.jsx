@@ -213,7 +213,7 @@ function InTouch() {
 
             <div className="flex gap-3 justify-start items-center">
 
-              <img src={phoneIcon} className="md:hidden" width={42} height={42} alt="a phone icon" />
+              <img src={phoneIcon} className="md:hidden" width={32} height={32} alt="a phone icon" />
               <img src={phoneIcon} 
                 width={28} height={28}
                 className="hidden md:block" 
@@ -233,7 +233,7 @@ function InTouch() {
 
             <div className="flex gap-3 justify-start items-center">
               
-              <img src={mailIcon} className="md:hidden" width={42} height={42} alt="an email icon" />
+              <img src={mailIcon} className="md:hidden" width={32} height={32} alt="an email icon" />
               <img src={mailIcon} className="hidden md:block" width={28} height={28} alt="an email icon" />
 
               <div className="flex flex-col">
@@ -249,7 +249,7 @@ function InTouch() {
 
             <div className="flex gap-3 justify-start items-center">
               
-              <img src={locationIcon} className="md:hidden" width={42} height={42} alt="a map location icon" />
+              <img src={locationIcon} className="md:hidden" width={32} height={32} alt="a map location icon" />
               <img src={locationIcon} className="hidden md:block" width={28} height={28} alt="a map location icon" />
 
               <div className="flex flex-col">
