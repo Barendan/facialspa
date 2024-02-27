@@ -1,8 +1,8 @@
 import aboutImg from "../Assets/about-portrait2.png";
 import aboutBg1 from "../Assets/about-bg-1.svg";
 import aboutBg2 from "../Assets/about-bg-2.svg";
-import aboutImg3 from "../Assets/about-v2.png";
-import aboutImg2 from "../Assets/about-v3.png";
+// import aboutImg3 from "../Assets/about-v2.png";
+// import aboutImg2 from "../Assets/about-v3.png";
 
 function About() {
   return (
