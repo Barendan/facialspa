@@ -134,14 +134,14 @@ function Services() {
                       >
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-medium leading-normal leading-3 sm:leading-0 pb-"}
+                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-medium leading-normal leading-3 sm:leading-0"}
                         // data-aos="fade-up"
                         >
                         {item.heading}
                       </p>
 
                       <p
-                        className={"text-[#2E4630] pt-2 fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
+                        className={"text-[#2E4630] pt-1 fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
                         // data-aos="fade-up"
                       >
                         {item.description}
