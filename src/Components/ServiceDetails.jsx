@@ -38,9 +38,9 @@ const serviceList = [
   },
   {
     img: serviceImg3,
-    heading: "Hydro-Facial",
+    heading: "Hydra-Facial",
     description:
-      "Elevate your skincare experience to the pinnacle of opulence with our  Hydro-Facial experience. Immerse yourself in the gentle embrace of powerful yet gentle hydro-dermabrasion, cleansing every pore with precision, by seamlessly marrying advanced technology with the artistry of pampering. Crafted to unveil a new standard of skincare luxury, this transcendent procedure delicately purifies, hydrates, and revitalizes your skin.",
+      "Elevate your skincare experience to the pinnacle of opulence with our  Hydra-Facial experience. Immerse yourself in the gentle embrace of powerful yet gentle hydra-dermabrasion, cleansing every pore with precision, by seamlessly marrying advanced technology with the artistry of pampering. Crafted to unveil a new standard of skincare luxury, this transcendent procedure delicately purifies, hydrates, and revitalizes your skin.",
     benefits: " Hydrates the skin. Cleanses impurities. Reduces blackheads. Restores firmness. Suitable for all skin types and tones. Gentle on the skin.",
     green: false,
   },

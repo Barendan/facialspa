@@ -16,6 +16,8 @@ code {
     monospace;
 }
 
+
+
 .fontAbril {
   font-family: Abril Fatface !important;
 }
@@ -35,6 +37,8 @@ code {
 .fontManrope {
   font-family: Manrope;
 }
+
+
 
 .control-dots{
   display:none
@@ -176,7 +180,6 @@ code {
   height: 4px;
   margin: 0 auto;
   background: black;
-  /* transform: skew(5deg); */
   transition: all .275s;
 }
 
@@ -234,67 +237,159 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 	/* background: linear-gradient(to bottom, #eee, #ddd); */
 }
 
-
-
-
-
-
-
 .nav * {
   box-sizing: border-box;
   transition: all .35s ease;
 }
 
-.nav li {
-  display: inline-block;
-  list-style: outside none none;
-  padding: 0;
-  margin: .5em 1em;
-}
-
 .nav span {
   padding: .3em .6em;
-  color: rgba(255,255,255);
+  color: #80ab85;
   position: relative;
   text-decoration: none;
-}
-
-.nav span::before,
-.nav span::after {
-  content: '';
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  transition: all .35s ease;
-  opacity: 0;
-}
-
-.nav span::before {
-  content: '';
-  right: 0;
-  top: 0;
-  border-top: 3px solid #2E4630;
-  border-right: 3px solid #3E8914;
-  transform: translate(-100%, 50%);
-}
-
-.nav span:after {
-  content: '';
-  left: 0;
-  bottom: 0;
-  border-bottom: 3px solid #3E8914;
-  border-left: 3px solid #2E4630;
-  transform: translate(100%, -50%)
-}
-
-.nav span:hover:before,
-.nav span:hover:after{
-  transform: translate(0,0);
-  opacity: 1;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  
 }
 
 .nav span:hover {
+  color: white;
+  box-shadow: 0px 0px 0px 0px #80ab85;
+  /* box-shadow: 1px 0px 1px 1px #80ab85; */
+}
+
+
+
+
+
+
+
+.spa-btn {
+  background-color: #bfd1c4;
+  justify-content: center;
+  align-items: center;
   color: #2E4630;
+  padding: .4rem 2rem;
+  font-weight: 600;
+  box-shadow: 1px 1px 1px 1px #0000003b;
+  transition-duration: 300ms;
+  
+}
+
+.spa-btn:hover {
+  color: #bfd1c4;
+  background-color: #566d5c;
+  box-shadow: 1px 0px 0px 0px white;
+}
+
+#heroSection .spa-btn {
+  width: 260px;
+  height: 60px;
+}
+
+
+
+
+
+
+/* footer social media buttons */
+section {
+  font-size: 14px;
+  text-align: center;
+}
+
+section a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 6px 0px 0px 20px;
+  opacity: .75;
+}
+
+section article {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 6px 2px #8d8c8c;
+  color: #fff;
+  transform: perspective(300px) rotateY(0deg);
+  transition: transform 0.4s linear, background-color 0s linear 0.2s, color 0s linear 0.2s;
+}
+
+section a:hover article {
+  transform: perspective(300px) rotateY(180deg);
+  color: #eee;
+  transition: transform 0.2s linear, background-color 0s linear 0.1s, color 0s linear 0.1s;
+}
+
+
+a:nth-child(1) article {
+  background-color: #3b5998;
+}
+
+a:nth-child(2) article {
+  background-color: #c32aa3;
+}
+
+a:nth-child(3) article {
+  background-color: #3399cc;
+}
+
+
+section article span {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  transition: transform 0s linear 0.2s, text-shadow 0s linear 0.2s;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: antialiased;
+}
+
+section a:hover span {
+  transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
+  transform: scale(-1, 1);
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+}
+
+
+@font-face {
+  font-family: "SSSocial";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1;
+}
+
+.ss-icon,
+.ss-icon.ss-social,
+.ss-icon.ss-social-circle,
+[class^="ss-"]:before,
+[class*=" ss-"]:before,
+[class^="ss-"][class*=" ss-social"]:before,
+[class*=" ss-"][class*=" ss-social"]:before,
+[class^="ss-"].right:after,
+[class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after,
+[class*=" ss-"][class*=" ss-social"].right:after {
+  font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -304,115 +399,44 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 
 
 
-.social-icons ul {
-  position: relative;
-  display: flex;
-/*    transform: rotate(-25deg) skew(25deg); */
-  transform-style: preserve-3d;
+
+
+@media only screen and (min-width: 768px)  {
+  section {
+    font-size: 18px;
+  }
+  
+  section a, section article span {
+    padding-top: 2px;
+    width: 60px;
+    height: 60px;
+    opacity: 1.0;
+  }  
+
+  a:nth-child(1) article,
+  a:nth-child(2) article,
+  a:nth-child(3) article {
+    background-color: #2E4630;
+  }
+
+  a:nth-child(1):hover article {
+    background-color: #3b5998;
+    color: #dddad2;
+  }
+  
+  a:nth-child(2):hover article {
+    background-color: #c32aa3;
+    color: #dddad2;
+  }
+  
+  a:nth-child(3):hover article {
+    background-color: #3399cc;
+    color: #dddad2;
+  }
+ 
+  
+
 }
-
-.social-icons ul li {
- position: relative;
- list-style: none;
- width: 40px;
- height: 40px;
- margin: 0px 20px;
-}
-
-.social-icons ul li:before{
- content: '';
- position: absolute;
- bottom: -10px;
- left: 0px;
- width: 100%;
- height: 10px;
- background: #2a2a2a;
- transform-origin: top;
- transform: skewX(-41deg);
-}
-
-.social-icons ul li:after{
- content: '';
- position: absolute;
- top:0px;
- left: -9px;
- width: 9px;
- height: 100%;
- background: #2a2a2a;
- transform-origin: right;
- transform: skewY(-49deg);
-}
-
-.social-icons ul li span{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- display: flex !important;
- background: #DDDAD2;
- justify-content: center;
- align-items: center;
- color: #fff;
- font-size: 30px !important;
- transition: 1.5s ease-out;
-}
-
-.social-icons ul li:hover span {
- z-index: 1000;
- transition: .3s;
- color: #fff;
- box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
-}
-
-.social-icons ul li:hover span:nth-child(5){
- transform: translate(40px, -40px);
- opacity: 1;
-}
-
-.social-icons ul li:hover span:nth-child(4){
- transform: translate(30px, -30px);
- opacity: .8;
-}
-
-.social-icons ul li:hover span:nth-child(3){
- transform: translate(20px, -20px);
- opacity: .6;
-}
-
-.social-icons ul li:hover span:nth-child(2){
- transform: translate(10px, -10px);
- opacity: .4;
-}
-
-.social-icons ul li:hover span:nth-child(1){
- transform: translate(0px, 0px);
- opacity: .2;
-}
-
-.social-icons ul li:nth-child(1):hover span{
- background: #2666dd !important;
-}
-
-.social-icons ul li:nth-child(2):hover span{
- background: #EA6E96 !important;
-}
-
-.social-icons ul li:nth-child(3):hover span{
-  background: #FCEB00 !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

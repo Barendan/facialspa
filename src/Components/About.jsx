@@ -17,24 +17,24 @@ function About() {
             alt="plant leaf 1"
           />
           <img
-            className="hidden sm:block mt-[321px]"
+            className="z-10 hidden sm:block mt-[321px]"
             src={aboutBg2}
             alt="plant leaf 2"
           />
         </div>
 
-        <div className="z-[1] lg:w-[60%] xl:w-auto flex flex-col gap-6 pt-12 md:pt-16 justify-center items-center">
+        <div className="z-[100] lg:w-[60%] xl:w-auto flex flex-col gap-6 pt-12 md:pt-16 justify-center items-center">
 
-          <div className="flex flex-col gap-5 items-center">
+          <div className="flex flex-col gap-3 items-center">
             
             <p 
-              className="text-white fontQuicksand text-2xl font-medium leading-normal"
+              className="text-white fontQuicksand font-light text-lg lg:text-2xl leading-normal"
               data-aos="zoom-in-right"
             >
               About Us
             </p>
             
-            <p className="text-white fontAbril text-center text-3xl sm:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
+            <p className="text-white fontTest text-center text-3xl sm:text-5xl md:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
               A Healthy Body Is A Guest-Chamber For The Soul
             </p>
             
@@ -53,7 +53,7 @@ function About() {
           </div>
         </div>
 
-        <div className="w-[95%] sm:w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] ml-8 sm:ml-0">
+        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] ml-8 sm:ml-0">
           <img className="lg:py-20 lg:px-6 lg:ml-6 lg:mt-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
             data-aos="fade"
           />

@@ -48,7 +48,7 @@ function Services() {
     },
     {
       img: serviceImg3,
-      heading: "Hydro-Facial",
+      heading: "Hydra-Facial",
       description:
         "Delicately hydrates and revitalizes by cleansing every pore with precision",
       green: false,
@@ -102,44 +102,47 @@ function Services() {
           </div>
           
 
-          <div className="flex flex-row flex-wrap gap-12 justify-center items-center w-full 2xl:gap-40">
+          <div className="flex flex-row flex-wrap gap-12 justify-center items-center 2xl:gap-40 lg:max-w-[1000px]">
               
-            <div className="flex justify-center flex-wrap flex-row lg:flex-row md:gap-10 lg:gap-3 2xl:gap-20 w-full">
+            <div className="flex justify-evenly md:justify-center flex-wrap flex-row lg:flex-row md:gap-1 lg:gap-10">
               {serviceList.map((item, index) => (
                 
-                <div key={index} className="w-auto md:w-[325px] flex flex-col md:mb-3 justify-center items-center">
+                <div 
+                  key={index} 
+                  className="w-[45%] sm:w-[40%] lg:w-[30%] flex flex-col md:mb-3 justify-center items-center"
+                >
 
                   {/* Chemical Peels image needs to be adjusted slightly but no others */}
                   { item.heading === "Chemical Peels" ? 
                     <div 
                       style={{ backgroundImage: `url(${item.img})`, backgroundSize: "cover", backgroundPosition: "100% 100%" }}
-                      className="w-[240px] h-[160px] md:w-[280px] md:h-[300px]"
+                      className="w-[100%] h-[160px] md:w-[265px] md:h-[300px]"
                     />
                     :
                     <div 
                       style={{ backgroundImage: `url(${item.img})`, backgroundPosition:'center', backgroundSize: "cover" }}
-                      className="w-[240px] h-[160px] md:w-[280px] md:h-[300px]"
+                      className="w-[100%] h-[160px] md:w-[265px] md:h-[300px]"
                     />
                   }
 
 
-                  <div className="flex flex-col items-center w-[240px] h-[204px] md:w-[265px] my-0 md:mt-[-100px]">
+                  <div className="flex flex-col items-center w-[100%] h-[204px] md:w-[265px] my-0 md:mt-[-100px]">
                     
                     <div
                       style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
-                      className={"flex flex-col h-[50%] md:h-auto gap-1 justify-center items-center bg-white text-black px-2 md:px-6 pt-3 pb-6 md:pb-6 shadow-lg"}
+                      className={"flex flex-col h-[50%] md:h-auto gap-1 items-center px-2 md:px-6 pt-3 md:pb-6 shadow-md"}
                       >
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-[20px] md:text-[20px] font-medium leading-normal"}
-                        data-aos="fade-up"
+                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-medium leading-normal leading-3 sm:leading-0 pb-"}
+                        // data-aos="fade-up"
                         >
                         {item.heading}
                       </p>
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-center text-[12px] md:text-[14px] leading-normal"}
-                        data-aos="fade-up"
+                        className={"text-[#2E4630] pt-2 fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
+                        // data-aos="fade-up"
                       >
                         {item.description}
                       </p>
@@ -148,8 +151,12 @@ function Services() {
 
                     <button
                       onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                      className={`w-fit flex text-white text-base md:text-lg font-quicksand leading-normal bg-[#2E4630] rounded-tr-[30px] rounded-bl-[30px] py-2 px-6 md:py-3 mt-[-10px] shadow-xl hover:shadow-sm opacity-90 hover:opacity-100`}
-                      data-aos="fade-up"
+                      className={`w-fit flex text-white text-[12px] sm:text-md lg:text-lg font-quicksand bg-[#2E4630] mt-[-10px] opacity-90 hover:opacity-100`}
+                      style={{ boxShadow: "3px 2px 6px #45452d",
+                        padding: "4% 12%",
+                      }}
+
+                      // data-aos="fade-up"
                     >
                       Read More
                     </button>

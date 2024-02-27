@@ -225,7 +225,7 @@ function InTouch() {
                   Phone
                 </p>
                 <p className="fontMont text-md leading-normal text-[#666]">
-                  (305) 306 7522
+                  (305) 968 9862
                 </p>
               </div>
 

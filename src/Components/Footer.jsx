@@ -1,9 +1,9 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import fb from "../Assets/fb.svg";
-import li from "../Assets/li.svg";
-import insta from "../Assets/insta.svg";
+// import fb from "../Assets/fb.svg";
+// import li from "../Assets/li.svg";
+// import insta from "../Assets/insta.svg";
 import bg from "../Assets/footer-bg.svg";
 import rating from "../Assets/stars-icon.svg";
 import logo from "../Assets/esper-logo.png";
@@ -68,42 +68,11 @@ const Footer = () => {
 
             <div className="flex flex-wrap gap-4 justify-center items-center social-icons">
 
-              <ul> 
-                <li>
-                  <a href="https://www.esperanzawellness.com/">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span className="fa fa-facebook">
-                       <img src={fb} alt="facebook logo" />
-                    </span>
-                  </a> 
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/esperanzaskin/">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span className="fa fa-instagram">
-                      <img src={insta} alt="instagram logo" />
-                    </span>
-                  </a> 
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/esperanzaskin/">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span className="fa fa-linkedin">
-                    <img src={li} alt="Linkedin logo" />
-
-                    </span>
-                  </a> 
-                </li>
-              </ul>  
+            <section class="ss-icon">
+              <a href="https://www.facebook.com/esperanzaskin/"><article><span>facebook</span></article></a>
+              <a href="https://www.instagram.com/esperanzaskin/"><article><span>instagram</span></article></a>
+              <a href="https://www.esperanzawellness.com/"><article><span>linkedin</span></article></a>
+            </section>
 
             </div>
            
