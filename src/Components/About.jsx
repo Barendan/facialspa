@@ -1,8 +1,7 @@
-import aboutImg from "../Assets/about-portrait2.png";
+// import aboutImg from "../Assets/about-portrait2.png";
 import aboutBg1 from "../Assets/about-bg-1.svg";
 import aboutBg2 from "../Assets/about-bg-2.svg";
-// import aboutImg3 from "../Assets/about-v2.png";
-// import aboutImg2 from "../Assets/about-v3.png";
+import aboutImg4 from "../Assets/about-v4.1.png";
 
 function About() {
   return (
@@ -55,8 +54,12 @@ function About() {
           </div>
         </div>
 
-        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[65%] xl:w-[55%] ml-8 sm:ml-0">
-          <img className="lg:py-20 lg:px-6 lg:ml-6 lg:mt-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
+        <div className="fake-shape">
+          
+        </div>
+
+        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[75%] xl:w-[75%] sm:ml-0">
+          <img className="lg:py-20 lg:mt-6" src={aboutImg4} alt="Stephanie and Esperanza smiling together" 
             data-aos="fade"
           />
         </div>
