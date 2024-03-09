@@ -80,16 +80,16 @@ function Hero() {
 
 
         {/* Mobile version of page */}
-        <div className="flex md:hidden flex-col justify-start items-center z-[99]">
+        <div className="flex flex-col justify-start items-center z-[99]">
           
-          <img className="opacity-30 w-[100%] md:hidden" src={heroImgMobile} alt="a woman wearing facial cream on her face and a towel on her head at the spa" />
+          <img className="opacity-30 w-[100%]" src={heroImgMobile} alt="a woman wearing facial cream on her face and a towel on her head at the spa" />
 
           <div className="absolute top-40 flex flex-col mx-6">
             
             <p 
               className="max-w-[626px] text-[#2E4630] text-[13vw] font-semibold fontTest"
-              data-aos="fade-left"
-              data-aos-delay="50"
+              // data-aos="fade-left"
+              // data-aos-delay="50"
             >
               A Healthy Body Is A Guest-Chamber For The Soul
             </p>
@@ -99,7 +99,7 @@ function Hero() {
               <button 
                 onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
                 className="spa-btn flex xl:mt-8 text-2xl font-normal font-quicksand mt-[10%]"
-                // data-aos="fade-left"
+                data-aos="fade-left"
                 data-aos-delay="200"
               >
                 Book Now
@@ -117,7 +117,7 @@ function Hero() {
               <button 
                 onClick={() => window.location.href = "https://esperanzawellness.store/"} 
                 className="spa-btn flex mt-8 text-2xl font-quicksand"
-                // data-aos="fade-left"
+                data-aos="fade-left"
                 data-aos-delay="200"
               >
                 Our Store
