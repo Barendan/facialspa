@@ -1,10 +1,9 @@
-import bg from "../Assets/product-bg.svg";
-import cartIcon from "../Assets/cart-icon.svg";
-import productImg1 from "../Assets/product-img-11.jpg";
-import productImg2 from "../Assets/product-img-22.jpg";
-import productImg3 from "../Assets/product-img-33.jpg";
-// import productMainImg from "../Assets/product-main-img.png";
-// import productBg2 from "../Assets/product-bg-2.svg";
+import bg from "../Assets/products/product-bg.svg";
+import cartIcon from "../Assets/products/cart-icon.svg";
+import productImg1 from "../Assets/products/product-img-11.jpg";
+import productImg2 from "../Assets/products/product-img-22.jpg";
+import productImg3 from "../Assets/products/product-img-33.jpg";
+import productVineBG from "../Assets/products/vineBG.svg";
 
 function Products() {
   const products = [
@@ -27,10 +26,16 @@ function Products() {
 
   return (
     <>
-      <div id="productsSection" className="flex justify-center items-center bg-[#DDDAD2] pt-12 pb-24 lg:pt-32 px-4 sm:px-6 md:px-8 lg:px-12 md:py-20">
+      <div id="productsSection" className="flex justify-center items-center bg-[#DDDAD2] pt-12 pb-24 lg:pt-32 px-4 sm:px-6 md:px-8 lg:px-12 md:py-20"
+      style={{ 
+        backgroundImage: `url(${productVineBG})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "-4rem 10rem",
+        backgroundSize: "100% 100%",
+      }}>
 
         <div className="absolute flex w-full justify-end mt-[-100px] md:mt-[-624px]">
-          <img className="" src={bg} alt="a leaf" />
+          <img src={bg} alt="a leaf" style={{opacity: 0.5}} />
         </div>
 
         <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1]">
@@ -42,7 +47,7 @@ function Products() {
           >
 
             <div className="flex flex-col gap-2">
-              <p className="text-white fontQuicksand text-sm md:text-2xl font-semibold md:font-medium leading-normal">
+              <p className="text-white fontTest text-sm md:text-2xl font-semibold md:font-medium leading-normal">
                 Our Products
               </p>
               <p className="text-white fontAbril text-5xl font-medium xl:leading-normal xl:max-w-[318px]">
@@ -69,7 +74,6 @@ function Products() {
 
           {/* Products container with items inside */}
           <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] sm:w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 sm:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 justify-center items-center bg-no-repeat bg-cover bg-opacity-50 mx-auto"
-            // style={{ backgroundImage: `url(${productBg2})` }}
           >
 
             {products.map((item, i) => (
@@ -89,6 +93,7 @@ function Products() {
                   <img
                     className="md:flex min-h-[155px] rounded-lg py-2"
                     src={item.img}
+                    loading="lazy"
                     alt="a skincare product"
                   />
                 

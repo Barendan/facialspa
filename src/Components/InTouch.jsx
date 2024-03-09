@@ -3,14 +3,10 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import phoneIcon from "../Assets/phone-icon.svg";
-import locationIcon from "../Assets/location-icon.svg";
-import mailIcon from "../Assets/mail-icon.svg";
-
-import bg2 from "../Assets/touch-bg-2.svg";
-import bg3 from "../Assets/touch-bg-3.svg";
-import bg4 from "../Assets/touch-bg-4.svg";
-
+import phoneIcon from "../Assets/contact/phone-icon.svg";
+import locationIcon from "../Assets/contact/location-icon.svg";
+import mailIcon from "../Assets/contact/mail-icon.svg";
+import fern from "../Assets/contact/fern.svg";
 
 
 function InTouch() {
@@ -91,21 +87,12 @@ function InTouch() {
       console.error("Email could not be sent:", error);
     }
   };
-
-
   
   return (
     <>
       <ToastContainer />
 
       <div id="inTouchSection" className="bg-[#DDDAD2] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-6 lg:px-6">
-
-        <div className="absolute flex justify-between w-full mt-[-1431px] lg:mt-[-714px]">
-          {/* <img className="opacity-[0.9]" src={bg1} alt="a leaf" /> */}
-          <img className="hidden sm:block opacity-[0.0] z-[-1]" src={bg3} alt="a leaf" />
-          <img className="hidden sm:block opacity-[0.3] z-[-1]" src={bg3} alt="a leaf" />
-        </div>
-
 
         <div 
           // data-aos="flip-up" 
@@ -198,7 +185,6 @@ function InTouch() {
                 height="440"
                 style={{ border: 0, borderRadius: 10, position: "absolute", maxWidth: "45%" }}
                 className="hidden lg:block lg:left-[53%] xl:left-[55%]"
-                // allowfullscreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
@@ -268,9 +254,8 @@ function InTouch() {
 
         </div>
 
-        <div className="absolute flex justify-between w-full mt-[260px]">
-          <img className="opacity-[0.3] z-[-1]" src={bg2} alt="a leaf" />
-          <img className="hidden sm:block opacity-[0.6]" src={bg4} alt="a leaf" />
+        <div className="absolute flex justify-end w-full">
+          <img className="opacity-[0.3]" src={fern} alt="a leaf" />
         </div>
 
       </div>

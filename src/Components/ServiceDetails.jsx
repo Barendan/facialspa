@@ -1,56 +1,46 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import rfServiceImg from "../Assets/radiofrequency.jpg";
-import cpServiceImg from "../Assets/chemicalpeel.jpg";
-import mnServiceImg from "../Assets/microneedling.jpg";
-import serviceImg2 from "../Assets/service-img-2.png";
-import serviceImg3 from "../Assets/service-img-3.png";
-import serviceImg6 from "../Assets/service-img-6.png";
+import rfServiceImg from "../Assets/services/radiofrequency.webp";
+import cpServiceImg from "../Assets/services/chemicalpeel.webp";
+import mnServiceImg from "../Assets/services/microneedling.webp";
+import otServiceImg from "../Assets/services/oxygentherapy.webp";
+import hfServiceImg from "../Assets/services/hydrafacial.webp";
+import mdServiceImg from "../Assets/services/microderm.webp";
 import { FiArrowLeft } from "react-icons/fi";
-
 
 const serviceList = [
   {
     img: mnServiceImg,
     heading: "Microneedling",
-    description:
-      `Indulge in the epitome of skincare luxury at our facial spa, where microneedling becomes an artful ritual. Our safe and minimally invasive procedure involves ultra-fine needles puncturing the skin, infusing a customized serum blend to awaken your skin's innate healing powers.
-      Experience rejuvenation, where every gentle touch resonates with precision and refinement, stimulating collagen production for a regal complexion.`,
+    description: `Indulge in the epitome of skincare luxury at our facial spa, where microneedling becomes an artful ritual. Our safe and minimally invasive procedure involves ultra-fine needles puncturing the skin, infusing a customized serum blend to awaken your skin's innate healing powers. Experience rejuvenation, where every gentle touch resonates with precision and refinement, stimulating collagen production for a regal complexion.`,
     benefits: " Increases collagen production. Minimizes fine lines and wrinkles. Minimizes pore size. Brightens complexion. Improves acne scars and stretch marks. Improves skin tone and texture.",
-    green: false,
   },
   {
-    img: serviceImg2,
+    img: otServiceImg,
     heading: "Oxygenation Trio",
-    description:
-    "The ultimate skin revitalization is finally possible with our dynamic three-step oxygenation trio, a non-invasive alternative, transcending traditional skincare. Immerse yourself in the gentle caress of pure oxygen, infusing your skin with vitality and vibrancy while promoting cellular regeneration and collagen production. This rejuvenating process repairs and prevents damage caused by free radicals, transforming sluggish, stressed, or acne-affected skin into a plump radiant glow.",
+    description: "The ultimate skin revitalization is finally possible with our dynamic three-step oxygenation trio, a non-invasive alternative, transcending traditional skincare. Immerse yourself in the gentle caress of pure oxygen, infusing your skin with vitality and vibrancy while promoting cellular regeneration and collagen production. This rejuvenating process repairs and prevents damage caused by free radicals, transforming sluggish, stressed, or acne-affected skin into a plump radiant glow.",
     benefits: " Stimulates oxygenation and circulation. Reduces inflammation. Promotes exfoliation. Provides hydration. Plumps skin.",
-    green: false,
   },
   {
     img: cpServiceImg,
     heading: "Chemical Peels",
-    description:
-      "Embark on a journey of skincare refinement with our exclusive line of Facial Peels, where the artistry of transformative rejuvenation takes center stage. This symphony of exquisite processes involves applying a blend of acids, eliminating damaged layers and diminishing various skin conditions such as fine lines, hyperpigmentation, acne, and rosacea. As you relax, each peel delicately unveils a luminous, youthful canvas beneath. ",
+    description: "Embark on a journey of skincare refinement with our exclusive line of Facial Peels, where the artistry of transformative rejuvenation takes center stage. This symphony of exquisite processes involves applying a blend of acids, eliminating damaged layers and diminishing various skin conditions such as fine lines, hyperpigmentation, acne, and rosacea. As you relax, each peel delicately unveils a luminous, youthful canvas beneath. ",
     benefits: " Improves skin texture. Increase collagen and elastin. Improves acne and acne scaring. Evens skin tone removing unwanted spots. Diminishes fine lines and wrinkles. Controls certain skin conditions",
-    green: false,
   },
   {
-    img: serviceImg3,
+    img: hfServiceImg,
     heading: "Hydra-Facial",
     description:
       "Elevate your skincare experience to the pinnacle of opulence with our  Hydra-Facial experience. Immerse yourself in the gentle embrace of powerful yet gentle hydra-dermabrasion, cleansing every pore with precision, by seamlessly marrying advanced technology with the artistry of pampering. Crafted to unveil a new standard of skincare luxury, this transcendent procedure delicately purifies, hydrates, and revitalizes your skin.",
     benefits: " Hydrates the skin. Cleanses impurities. Reduces blackheads. Restores firmness. Suitable for all skin types and tones. Gentle on the skin.",
-    green: false,
   },
   {
-    img: serviceImg6,
+    img: mdServiceImg,
     heading: "Microdermabrasion",
     description:
     "Microdermabrasion treatment, a testament to refinement beyond the ordinary. Microdermabrasion is a minimally invasive resurfacing procedure that uses a diamond tip to gently remove the outermost layer of the skin and reveal healthier skin. After resurfacing the skin, it becomes more receptive towards the next treatment, enhancing overall results. This gentle yet powerful exfoliation process meticulously refines your skin's texture, revealing a luminous, youthful glow.",
     benefits: " Improves skin texture. Lightens dark spots while removing fine lines. Reduces acne scars, enlarged pores and stretch marks. Evens out skin tone. Enhances post treatment.",
-    green: false,
   },
   {
     img: rfServiceImg,
@@ -58,10 +48,8 @@ const serviceList = [
     description:
       "Enter the future with Radiofrequency (RF) therapy, an advanced non-surgical skin-tightening method that redefines the essence of skincare luxury. This cutting-edge treatment utilizes energy waves to heat the deep layers of your skin, promoting the synthesis of collagen and elastin for enhanced firmness. The gentle yet powerful radio waves work to sculpt and tighten your skin, revealing a youthful allure. RF Treatment, is the pinnacle of skincare treatment, let it transform your skin and leave it revitalized like never before.",
     benefits: " Skin tightening and sculpting. Improves collagen production. Reduces fine lines, wrinkles and aging sagging skin. Smoothes out cellulite bulges. No downtime. Natural and safe for all kinds of skin.",
-    green: false,
   },
 ];
-
 
 function ServiceDetail() {
   const navigate = useNavigate();

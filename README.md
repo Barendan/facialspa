@@ -1,3 +1,4 @@
 Esperanza Wellness
 
-A spa with a variety of facial services.
+A spa featuring a variety of facial services.
+

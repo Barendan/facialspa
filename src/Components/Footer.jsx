@@ -1,12 +1,9 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-// import fb from "../Assets/fb.svg";
-// import li from "../Assets/li.svg";
-// import insta from "../Assets/insta.svg";
 import bg from "../Assets/footer-bg.svg";
 import rating from "../Assets/stars-icon.svg";
-import logo from "../Assets/esper-logo.png";
+import logo from "../Assets/esperanza-logo.png";
 
 
 const Testimonial = ({ text, name }) => (

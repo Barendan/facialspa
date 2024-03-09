@@ -11,19 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
 .fontAbril {
   font-family: Abril Fatface !important;
-}
-
-.fontMont {
-  font-family: Montserrat;
 }
 
 .fontQuicksand {
@@ -33,55 +22,6 @@ code {
 .fontTest {
   font-family: Barkentina Test;
 }
-
-.fontManrope {
-  font-family: Manrope;
-}
-
-
-
-.control-dots{
-  display:none
-}
-
-.thumbs-wrapper {
-  display: none;
-}
-
-.carousel-status{
-  display:none
-}
-
-.carousel.carousel-slider .control-arrow{
-  padding: 0px 11px !important;
-  height: 40px !important;
-  opacity: 1 !important;
-  border-radius: 25px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.control-prev, .control-next{
-  background: transparent !important;
-  border: 1px solid #2E4630 !important;
-  margin-top: 24px !important;
-  /* margin-left: -24px; */
-  /* margin-right: -24px; */
-}
-
-.carousel .control-prev.control-arrow:before {
-  border-right :8px solid #2E4630 !important;
-  /* margin-right: 3px; */
-}
-
-.carousel .control-next.control-arrow:before {
-  border-left :8px solid #2E4630 !important;
-  /* margin-right: 3px; */
-}
-
-
-
 
 /* new nav */
 .main-nav {
@@ -392,6 +332,45 @@ html:hover [class^="ss-"] {
   -webkit-font-smoothing: antialiased;
 }
 
+.control-dots{
+  display:none
+}
+
+.thumbs-wrapper {
+  display: none;
+}
+
+.carousel-status{
+  display:none
+}
+
+.carousel.carousel-slider .control-arrow{
+  padding: 0px 11px !important;
+  height: 40px !important;
+  opacity: 1 !important;
+  border-radius: 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.control-prev, .control-next{
+  background: transparent !important;
+  border: 1px solid #2E4630 !important;
+  margin-top: 24px !important;
+  /* margin-left: -24px; */
+  /* margin-right: -24px; */
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right :8px solid #2E4630 !important;
+  /* margin-right: 3px; */
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left :8px solid #2E4630 !important;
+  /* margin-right: 3px; */
+}
 
 
 
@@ -433,16 +412,7 @@ html:hover [class^="ss-"] {
     background-color: #3399cc;
     color: #dddad2;
   }
- 
-  
-
 }
-
-
-
-
-
-
 
 @media only screen and (min-width: 1100px)  {
   .control-next{

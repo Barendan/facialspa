@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { useLocation } from "react-router-dom";
 
-import logo from "../Assets/esper-logo.png";
+import logo from "../Assets/esperanza-logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

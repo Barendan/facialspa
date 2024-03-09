@@ -1,29 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
-// import serviceIcon1 from "../Assets/service-icon-1.svg";
-// import serviceIcon2 from "../Assets/service-icon-2.svg";
-// import serviceIcon3 from "../Assets/service-icon-3.svg";
-// import serviceIcon4 from "../Assets/service-icon-4.svg";
-// import serviceBg from "../Assets/service-bg.svg";
-import rfServiceImg from "../Assets/radiofrequency.jpg";
-import cpServiceImg from "../Assets/chemicalpeel.jpg";
-import mnServiceImg from "../Assets/microneedling.jpg";
-import serviceImg2 from "../Assets/service-img-2.png";
-import serviceImg3 from "../Assets/service-img-3.png";
-import serviceImg6 from "../Assets/service-img-6.png";
-import floralImg from "../Assets/floral-bg3.png";
+import rfServiceImg from "../Assets/services/radiofrequency.webp";
+import cpServiceImg from "../Assets/services/chemicalpeel.webp";
+import mnServiceImg from "../Assets/services/microneedling.webp";
+import otServiceImg from "../Assets/services/oxygentherapy.webp";
+import hfServiceImg from "../Assets/services/hydrafacial.webp";
+import mdServiceImg from "../Assets/services/microderm.webp";
+import floralImg from "../Assets/services/floral-bg3.webp";
 
 
 function Services() {
   const navigate = useNavigate();
-
-  // const serviceIcon = [
-  //   { name: "Face Treatments", img: serviceIcon1 },
-  //   { name: "Detox Massage", img: serviceIcon2 },
-  //   { name: "Foot Massage", img: serviceIcon3 },
-  //   { name: "Candle Relaxing", img: serviceIcon4 },
-  // ];
-
   const serviceList = [
     {
       img: mnServiceImg,
@@ -33,7 +20,7 @@ function Services() {
       green: false,
     },
     {
-      img: serviceImg2,
+      img: otServiceImg,
       heading: "Oxygenation Trio",
       description:
         "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
@@ -47,14 +34,14 @@ function Services() {
       green: false,
     },
     {
-      img: serviceImg3,
+      img: hfServiceImg,
       heading: "Hydra-Facial",
       description:
         "Delicately hydrates and revitalizes by cleansing every pore with precision",
       green: false,
     },
     {
-      img: serviceImg6,
+      img: mdServiceImg,
       heading: "Microdermabrasion",
       description:
       "A diamond tipped device gently removes the outermost layer of the skin",
@@ -82,14 +69,13 @@ function Services() {
             
             <div className="flex flex-col gap-2 justify-center items-center">
               
-              <p className="text-[#232323] fontQuicksand text-2xl font-medium leading-normal"
-               data-aos="zoom-out" >
+              <h1 className="opacity-[.7] text-3xl fontTest font-semibold md:font-medium leading-normal">
                 Services
-              </p>
+              </h1>
 
-              <p className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center">
+              <h2 className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center">
                 Take A Deep Breath And Just Enjoy Life
-              </p>
+              </h2>
 
             </div>
 
@@ -105,13 +91,15 @@ function Services() {
           <div className="flex flex-row flex-wrap gap-12 justify-center items-center 2xl:gap-40 lg:max-w-[1000px]">
               
             <div className="flex justify-evenly md:justify-center flex-wrap flex-row lg:flex-row md:gap-1 lg:gap-10">
+
+
+
               {serviceList.map((item, index) => (
                 
                 <div 
                   key={index} 
                   className="w-[45%] sm:w-[40%] lg:w-[30%] flex flex-col md:mb-3 justify-center items-center"
                 >
-
                   {/* Chemical Peels image needs to be adjusted slightly but no others */}
                   { item.heading === "Chemical Peels" ? 
                     <div 
@@ -125,7 +113,6 @@ function Services() {
                     />
                   }
 
-
                   <div className="flex flex-col items-center w-[100%] h-[204px] md:w-[265px] my-0 md:mt-[-100px]">
                     
                     <div
@@ -134,7 +121,7 @@ function Services() {
                       >
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-medium leading-normal leading-3 sm:leading-0"}
+                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-semibold leading-normal"}
                         // data-aos="fade-up"
                         >
                         {item.heading}
@@ -164,6 +151,11 @@ function Services() {
                   </div>
                 </div>
               ))}
+
+
+
+
+
 
             </div>
 

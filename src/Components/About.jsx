@@ -1,7 +1,6 @@
-// import aboutImg from "../Assets/about-portrait2.png";
-import aboutBg1 from "../Assets/about-bg-1.svg";
-import aboutBg2 from "../Assets/about-bg-2.svg";
-import aboutImg4 from "../Assets/about-v4.1.png";
+import aboutBg1 from "../Assets/about/about-bg-1.svg";
+import aboutBg2 from "../Assets/about/about-bg-2.svg";
+import aboutImg from "../Assets/about/about-portrait1.png";
 
 function About() {
   return (
@@ -13,12 +12,12 @@ function About() {
 
         <div className="absolute flex w-[96%] lg:w-full justify-between">
           <img
-            className="mt-[-1311px] lg:mt-[-436px] opacity-[0.5]"
+            className="mt-[-1311px] lg:mt-[-200px] opacity-[0.5]"
             src={aboutBg1}
             alt="plant leaf 1"
           />
           <img
-            className="z-10 hidden sm:block mt-[321px]"
+            className="z-10 hidden sm:block mt-[600px] opacity-[0.7]"
             src={aboutBg2}
             alt="plant leaf 2"
           />
@@ -29,17 +28,17 @@ function About() {
           <div className="flex flex-col gap-3 items-center">
             
             <p 
-              className="text-white fontQuicksand font-light text-lg lg:text-2xl leading-normal"
+              className="text-white fontTest font-light text-lg lg:text-2xl leading-normal"
               data-aos="zoom-in-right"
             >
               About Us
             </p>
             
-            <p className="text-white fontTest text-center text-3xl sm:text-5xl md:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
+            <p className="text-white fontAbril text-center text-3xl sm:text-5xl md:text-5xl font-medium leading-normal sm:leading-normal sm:px-12 lg:px-0">
               A Healthy Body Is A Guest-Chamber For The Soul
             </p>
             
-            <p className="hidden md:flex text-white text-base fontMont leading-normal">
+            <p className="hidden md:flex text-white text-base fontTest leading-normal">
               “Go On – Treat Yourself”
             </p>
 
@@ -54,12 +53,8 @@ function About() {
           </div>
         </div>
 
-        <div className="fake-shape">
-          
-        </div>
-
         <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[75%] xl:w-[75%] sm:ml-0">
-          <img className="lg:py-20 lg:mt-6" src={aboutImg4} alt="Stephanie and Esperanza smiling together" 
+          <img className="lg:py-20 lg:mt-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
             data-aos="fade"
           />
         </div>
