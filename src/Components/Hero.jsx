@@ -12,7 +12,8 @@ function Hero() {
 
         <img 
           className="hidden md:block w-[50%] lg:w-fit" 
-          src={heroImg} 
+          src={heroImg}
+          loading="lazy"
           alt="a woman wearing facial cream on her face and a towel on her head at the spa" data-aos="fade-right"
         />
 
@@ -31,7 +32,7 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-              className="spa-btn flex xl:mt-8 text-2xl font-normal font-quicksand mt-[10%]"
+              className="spa-btn flex xl:mt-8 text-2xl font-normal fontQuicksand mt-[10%]"
               // data-aos="fade-left"
               data-aos-delay="200"
             >
@@ -49,7 +50,7 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="spa-btn flex mt-8 text-xs md:text-2xl font-quicksand"
+              className="spa-btn flex mt-8 text-xs md:text-2xl fontQuicksand"
               // data-aos="fade-left"
               data-aos-delay="200"
               >
@@ -88,7 +89,7 @@ function Hero() {
 
               <button 
                 onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-                className="spa-btn flex xl:mt-8 text-2xl font-normal font-quicksand mt-[10%]"
+                className="spa-btn flex xl:mt-8 text-2xl font-normal fontQuicksand mt-[10%]"
                 // data-aos="fade-left"
                 data-aos-delay="200"
               >
@@ -106,7 +107,7 @@ function Hero() {
 
               <button 
                 onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-                className="spa-btn flex mt-8 text-2xl font-quicksand"
+                className="spa-btn flex mt-8 text-2xl fontQuicksand"
                 // data-aos="fade-left"
                 data-aos-delay="200"
               >

@@ -57,7 +57,7 @@ function Navbar() {
           <span
             key={section.id}
             onClick={() => scrollToSection(section.id)}
-            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl font-quicksand leading-normal"
+            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl fontQuicksand leading-normal"
           >
             {section.label}
           </span>
@@ -67,8 +67,8 @@ function Navbar() {
 
       <button 
         onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-        className="spa-btn hidden md:flex text-xs md:text-lg lg:text-xl xl:text-2xl font-quicksand mt-3"
-        // data-aos="fade-down"
+        className="spa-btn hidden md:flex text-xs md:text-lg lg:text-xl xl:text-2xl fontQuicksand mt-3"
+        data-aos="fade-down"
         data-aos-delay="200"
       >
         Book Now
