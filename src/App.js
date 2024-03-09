@@ -7,7 +7,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
-import SamplePage from "./Components/SamplePage";
+import SamplePage from "./Components/Sample/SamplePage";
 import ServiceDetail from "./Components/ServiceDetails";
 
 

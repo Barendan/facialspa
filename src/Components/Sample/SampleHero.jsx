@@ -1,6 +1,6 @@
-import lineBg from "../Assets/hero/line-bg.svg";
-import heroImg from "../Assets/hero/hero-bg.webp";
-import heroImgMobile from "../Assets/hero/heroBgMobile.webp";
+import lineBg from "../../Assets/hero/line-bg.svg";
+// import heroImg from "../../Assets/hero/hero-bg.webp";
+import heroImgMobile from "../../Assets/hero/heroBgMobile.webp";
 
 function Hero() {
   return (
@@ -9,7 +9,7 @@ function Hero() {
         className="bg-[#DDDAD2] flex flex-col flex-col-reverse md:flex-row gap-16 md:gap-6 lg:gap-10 xl:gap-16 overflow-hidden pt-40 mt-[-137px] xl:pt-30 bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${lineBg})` }}
       >
-
+{/* 
         <img 
           className="hidden md:block w-[50%] lg:w-fit" 
           src={heroImg} 
@@ -32,9 +32,13 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-              className="spa-btn flex xl:mt-8 text-2xl font-normal font-quicksand mt-[10%]"
-              // data-aos="fade-left"
-              data-aos-delay="200"
+              className="flex items-center justify-center hover:shadow-md hover:text-[#c1bdae] text-[#2E4630] text-2xl fontQuicksand bg-[#c1bdae] hover:bg-[#566d5c] hover:duration-300 mt-4 xl:mt-8"
+              style={{     
+                boxShadow: "1px 1px 1px 1px #0000008c",
+                width: "260px",
+                height: "60px",
+                fontWeight: "600",
+              }}
             >
               Book Now
               
@@ -50,34 +54,14 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="spa-btn flex mt-8 text-xs md:text-2xl font-quicksand"
-              // data-aos="fade-left"
-              data-aos-delay="200"
-              >
-              Our Store
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-              style={{    
-                width: "3rem",
-                height: "2rem",}}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
-              </svg>
-
-            </button>
-            
-            {/* Option #2 Dark Tan background with Green text */}
-            {/* <button 
-              onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="flex items-center justify-center mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-xs md:text-2xl font-quicksand bg-[#c1bdae] hover:duration-300"
+              className="flex items-center justify-center hover:shadow-md hover:text-[#c1bdae] text-[#2E4630] text-2xl fontQuicksand bg-[#c1bdae] hover:bg-[#566d5c] hover:duration-300 mt-4 xl:mt-8"
               style={{     
                 boxShadow: "1px 1px 1px 1px #0000008c",
                 width: "260px",
                 height: "60px",
                 fontWeight: "600",
               }}
-              // data-aos="fade-left"
-              data-aos-delay="200"
-              >
+            >
               Our Store
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"
               style={{    
@@ -87,12 +71,12 @@ function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
               </svg>
 
-            </button> */}
+            </button>
             
             
           </div>
 
-        </div>
+        </div> */}
 
 
         {/* Mobile version of page */}
