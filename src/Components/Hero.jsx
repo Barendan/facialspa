@@ -20,11 +20,11 @@ function Hero() {
         <div className="hidden md:flex flex-col justify-center items-start px-[2%] lg:px-4 lg:max-w-[800px] 2xl:ml-20">
 
           <p 
-            className="text-[#2E4630] text-[50px] lg:text-[60px] xl:text-[5rem] font-medium fontTest" 
+            className="text-[#2E4630] text-[50px] lg:text-[60px] xl:text-[5.5rem] fontPrata font-medium" 
             data-aos="fade-left"
             data-aos-delay="50"
           >
-            A Healthy Body Is A Guest Chamber For The Soul
+            Unveil Your Natural Beauty
           </p>
 
 
@@ -32,7 +32,7 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-              className="spa-btn flex xl:mt-8 text-2xl font-normal fontQuicksand mt-[10%]"
+              className="spa-btn flex xl:mt-8 text-2xl font-normal mt-[10%]"
               // data-aos="fade-left"
               data-aos-delay="200"
             >
@@ -50,7 +50,7 @@ function Hero() {
 
             <button 
               onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="spa-btn flex mt-8 text-xs md:text-2xl fontQuicksand"
+              className="spa-btn flex mt-8 text-xs md:text-2xl"
               // data-aos="fade-left"
               data-aos-delay="200"
               >
@@ -78,11 +78,11 @@ function Hero() {
           <div className="absolute top-40 flex flex-col mx-6">
             
             <h1
-              className="max-w-[626px] text-[#2E4630] text-[13vw] font-semibold fontTest"
+              className="max-w-[626px] text-[#2E4630] text-[13vw] font-semibold fontAbril"
               data-aos="fade-left"
               data-aos-delay="50"
             >
-              A Healthy Body Is A Guest-Chamber For The Soul
+              Unveil Your Natural Beauty
             </h1>
             
             <div className="flex flex-col justify-center items-center">

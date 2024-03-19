@@ -1,5 +1,5 @@
 import lineBg from "../../Assets/hero/line-bg.svg";
-// import heroImg from "../../Assets/hero/hero-bg.webp";
+import heroImg from "../../Assets/hero/hero-bg.webp";
 import heroImgMobile from "../../Assets/hero/heroBgMobile.webp";
 
 function Hero() {
@@ -9,7 +9,7 @@ function Hero() {
         className="bg-[#DDDAD2] flex flex-col flex-col-reverse md:flex-row gap-16 md:gap-6 lg:gap-10 xl:gap-16 overflow-hidden pt-40 mt-[-137px] xl:pt-30 bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${lineBg})` }}
       >
-{/* 
+
         <img 
           className="hidden md:block w-[50%] lg:w-fit" 
           src={heroImg} 
@@ -76,7 +76,7 @@ function Hero() {
             
           </div>
 
-        </div> */}
+        </div>
 
 
         {/* Mobile version of page */}

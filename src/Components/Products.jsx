@@ -26,7 +26,7 @@ function Products() {
 
   return (
     <>
-      <div id="productsSection" className="flex justify-center items-center bg-[#DDDAD2] pt-12 pb-24 lg:pt-32 px-4 sm:px-6 md:px-8 lg:px-12 md:py-20"
+      <div id="productsSection" className="flex justify-center items-center bg-[#DDDAD2] pt-12 pb-24 lg:pt-24 px-4 sm:px-6 md:px-8 lg:px-12 md:py-20"
       style={{ 
         backgroundImage: `url(${productVineBG})`,
         backgroundRepeat: "no-repeat",
@@ -38,25 +38,27 @@ function Products() {
           <img src={bg} alt="a leaf" style={{opacity: 0.5}} />
         </div>
 
-        <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1]">
+        <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1] max-w-[1200px]">
           
           <div
-            className="w-full lg:w-[45%] 2xl:w-[35%] flex flex-col gap-5 px-8 py-8 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover mb-6"
+            className="w-full lg:w-[45%] 2xl:w-[45%] flex flex-col gap-5 px-8 py-8 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover mb-6"
             // style={{ backgroundImage: `url(${productMainImg})` ,backgroundPosition:'center', backgroundSize:'cover'}}
             data-aos="zoom-in-right"
           >
 
             <div className="flex flex-col gap-2">
-              <p className="text-white fontTest text-sm md:text-2xl font-semibold md:font-medium leading-normal">
-                Our Products
+              <p className="text-white fontNothingYouCouldDo text-sm md:text-2xl font-semibold md:font-medium leading-normal">
+                {/* Our Products */}
+                PCA Skin
               </p>
-              <p className="text-white fontAbril text-5xl font-medium xl:leading-normal xl:max-w-[318px]">
-                Feel Better With PCA Beauty
+              <p className="text-white fontPrata text-5xl font-semibold xl:leading-normal xl:max-w-[318px]">
+                The Science of Timeless Beauty
               </p>
             </div>
 
-            <p className="text-white fontQuicksand text-sm md:text-lg font-normal leading-normal xl:max-w-[438px]">
-              The best quality products provided to you at an affordable price. We do our reearch and ensure there are no harmful ingredients.
+            <p className="text-white text-sm md:text-lg xl:max-w-[438px]">
+              {/* PCA SKIN uses clinically-backed research and science to develop safe and effective products that deliver healthy, beautiful skin delivering on our mission of improving lives through transformative skincare. */}
+              PCA SKIN uses clinically-backed research and science delivering on their mission of improving lives through transformative skincare.
             </p>
 
             <button 
@@ -73,7 +75,7 @@ function Products() {
 
 
           {/* Products container with items inside */}
-          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] sm:w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 sm:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 justify-center items-center bg-no-repeat bg-cover bg-opacity-50 mx-auto"
+          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] sm:w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 sm:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 lg:my-10 justify-center items-center bg-no-repeat bg-cover bg-opacity-50 mx-auto"
           >
 
             {products.map((item, i) => (

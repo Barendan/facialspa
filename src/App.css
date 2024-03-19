@@ -2,6 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: 'Nothing You Could Do';
+  src: url('https://fonts.gstatic.com/s/nothingyoucoulddo/v11/oY1B8fbB98iM6oCVGXZTo-k-PNq0PwLg4w.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url('https://fonts.gstatic.com/s/prata/v13/6xKjdSdOJHglUn-gDWAR3r8TKw.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,19 +19,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.fontAbril {
-  font-family: Abril Fatface !important;
-}
-
-.fontQuicksand {
+  /* font-family: Barkentina Test; */
   font-family: Quicksand;
 }
 
-.fontTest {
-  font-family: Barkentina Test;
+/* Fonts for Big letter headers */
+.fontPrata {
+  font-family: 'Prata', serif;
 }
+
+/* Section mini-headers */
+.fontNothingYouCouldDo {
+  font-family: 'Nothing You Could Do', sans-serif;
+}
+
+
+
 
 /* new nav */
 .main-nav {
@@ -209,10 +222,11 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
   align-items: center;
   color: #2E4630;
   padding: .5rem 2.3rem;
-  font-weight: 500;
+  font-weight: 600;
   box-shadow: 1px 1px 1px 1px #0000003b;
   transition-duration: 300ms;
-  
+  /* font-family: Quicksand; */
+  font-family: 'Urbanist', sans-serif;
 }
 
 .spa-btn:hover {
@@ -234,14 +248,15 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 /* footer social media buttons */
 section {
   font-size: 14px;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 section a {
-  display: inline-block;
+  /* display: inline-flex; */
   width: 36px;
   height: 36px;
-  margin: 0px 0px 0px 10px;
   opacity: .75;
 }
 
@@ -382,13 +397,13 @@ html:hover [class^="ss-"] {
 
 @media only screen and (min-width: 768px)  {
   section {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   section a, section article span {
     padding-top: 2px;
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     opacity: 1.0;
   }  
 
@@ -414,7 +429,15 @@ html:hover [class^="ss-"] {
   }
 }
 
-@media only screen and (min-width: 1100px)  {
+@media only screen and (min-width: 1030px)  {
+  section {
+    font-size: 20px;
+  }
+
+  section a, section article span {
+    width: 64px;
+    height: 64px;
+  }  
   .control-next{
     margin-right:15px !important;
     margin-left:15px !important;

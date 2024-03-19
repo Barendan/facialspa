@@ -58,28 +58,30 @@ function Services() {
 
   return (
     <>
-      <div id="servicesSection" className="flex flex-col bg-white z-[1]">
+      <div id="servicesSection" 
+        className="flex flex-col bg-white z-[1] justify-center items-center"
+        style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
+      >
 
         <div 
-          style={{ backgroundImage: `url(${floralImg})`, backgroundPosition:'5rem -10rem', backgroundColor: "rgb(254 250 240 / 50%)"}}
-          className="py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-6 md:gap-10 justify-center items-center">
+          className="py-14 px-4 sm:px-6 md:px-8 lg:px-24 flex flex-col gap-4 max-w-[1200px] items-center">
 
           {/* Section Top Text */}
           <div className="flex flex-col gap-1 justify-center items-center z-[1]">
             
             <div className="flex flex-col gap-2 justify-center items-center">
               
-              <h1 className="opacity-[.7] text-3xl fontTest font-semibold md:font-medium leading-normal">
+              <h1 className="text-3xl fontNothingYouCouldDo font-semibold md:font-medium leading-normal">
                 Services
               </h1>
 
-              <h2 className="text-[#2E4630] text-3xl leading-normal max-w-[679px] fontAbril text-center">
-                Take A Deep Breath And Just Enjoy Life
+              <h2 className="text-[#2E4630] text-3xl leading-normal font-semibold max-w-[679px] fontPrata text-center">
+                Personalized Skin Care Starts With You
               </h2>
 
             </div>
 
-            <p className="text-[#666] text-md md:text-lg leading-normal max-w-[743px] fontQuicksand text-center py-4 px-6 md-px-0 md-pb-0">
+            <p className="text-[#666] text-md md:text-lg leading-normal max-w-[743px] text-center py-4 px-6 md-px-0 md-pb-0">
               Without making it feel so…. clinical. We believe in having your
               cake and eating it too, with clinically proven treatments,
               licensed and insured aestheticians, ambient lighting, & heated beds.
@@ -90,9 +92,7 @@ function Services() {
 
           <div className="flex flex-row flex-wrap gap-12 justify-center items-center 2xl:gap-40 lg:max-w-[1000px]">
               
-            <div className="flex justify-evenly md:justify-center flex-wrap flex-row lg:flex-row md:gap-1 lg:gap-10">
-
-
+            <div className="flex justify-evenly md:justify-center flex-wrap flex-row lg:flex-row md:gap-1 lg:gap-4 xl:gap-10">
 
               {serviceList.map((item, index) => (
                 
@@ -116,19 +116,19 @@ function Services() {
                   <div className="flex flex-col items-center w-[100%] h-[204px] md:w-[265px] my-0 md:mt-[-100px]">
                     
                     <div
-                      style={{ backgroundColor: "ghostwhite", borderColor: "darkgreen"}}
+                      style={{ backgroundColor: "#f1eee5", borderColor: "darkgreen"}}
                       className={"flex flex-col h-[50%] md:h-auto gap-1 items-center px-2 md:px-6 pt-3 md:pb-6 shadow-md"}
                       >
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-[16px] md:text-[20px] font-semibold leading-normal"}
+                        className={"text-[#2E4630] fontPoiretOne text-[18px] md:text-[22px] font-semibold"}
                         // data-aos="fade-up"
                         >
                         {item.heading}
                       </p>
 
                       <p
-                        className={"text-[#2E4630] fontQuicksand text-center text-[10px] sm:text-[12px] md:text-[14px] leading-normal"}
+                        className={"text-[#2E4630] text-center text-[10px] sm:text-[12px] md:text-[14px]"}
                         // data-aos="fade-up"
                       >
                         {item.description}
@@ -138,7 +138,7 @@ function Services() {
 
                     <button
                       onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                      className={`w-fit flex text-white text-[12px] sm:text-md lg:text-lg font-quicksand bg-[#2E4630] mt-[-10px] opacity-90 hover:opacity-100`}
+                      className={`w-fit flex text-white text-[12px] sm:text-md lg:text-lg fontUrbanist bg-[#2E4630] mt-[-10px] opacity-90 hover:opacity-100`}
                       style={{ boxShadow: "3px 2px 6px #45452d",
                         padding: "4% 12%",
                       }}

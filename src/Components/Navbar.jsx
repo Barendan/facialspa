@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { useLocation } from "react-router-dom";
 
-import logo from "../Assets/esperanza-logo.png";
+// import logo from "../Assets/esperanza-logo.png";
+import logo from "../Assets/esplogo2.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,17 +40,19 @@ function Navbar() {
       {/* { console.log('params', useLocation().pathname === "/")} */}
 
       {/* Desktop Menu */}
-      <a className="z-[101] hidden md:block cursor-pointer w-[12%]" href="https://www.esperanzawellness.com/">
-        <img 
-          src={logo}
-          alt="esperanza wellness logo"
-          data-aos="fade-down"
-        />
-      </a>
+      <div className="z-[101] hidden md:block cursor-pointer w-[20%]">
+        <a href="https://www.esperanzawellness.com/">
+          <img 
+            src={logo}
+            alt="esperanza wellness logo"
+            data-aos="fade-down"
+            />
+        </a>
+      </div>
       
       <div 
-        className="z-10 hidden md:flex justify-center items-center gap-3 xl:gap-6 pt-3 nav"
-        data-aos="fade-down"
+        className="nav hidden md:flex justify-center items-center gap-3 xl:gap-6 pt-3 w-100"
+        // data-aos="fade-down"
         data-aos-delay="50"
       >
 
@@ -57,7 +60,7 @@ function Navbar() {
           <span
             key={section.id}
             onClick={() => scrollToSection(section.id)}
-            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl fontQuicksand leading-normal"
+            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl fontPoiretOne leading-normal font-medium"
           >
             {section.label}
           </span>
@@ -67,7 +70,7 @@ function Navbar() {
 
       <button 
         onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-        className="spa-btn hidden md:flex text-xs md:text-lg lg:text-xl xl:text-2xl fontQuicksand mt-3"
+        className="spa-btn hidden md:flex text-xs md:text-lg lg:text-xl xl:text-2xl mt-3"
         data-aos="fade-down"
         data-aos-delay="200"
       >
@@ -142,7 +145,7 @@ function Navbar() {
           // >
           <button 
             onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-            className="spa-btn flex text-md font-quicksand"
+            className="spa-btn flex text-md"
             // data-aos="fade-down"
             data-aos-delay="200"
           >
