@@ -35,7 +35,7 @@ function Navbar() {
 
   
   return (
-    <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-6 lg:px-16'>
+    <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-2 lg:px-16'>
 
       {/* { console.log('params', useLocation().pathname === "/")} */}
 
@@ -51,7 +51,7 @@ function Navbar() {
       </div>
       
       <div 
-        className="nav hidden md:flex justify-center items-center gap-3 xl:gap-6 pt-3 w-100"
+        className="nav hidden md:flex justify-center items-center gap-3 md:gap-0 lg:gap-3 xl:gap-6 pt-3 w-100"
         // data-aos="fade-down"
         data-aos-delay="50"
       >
@@ -60,7 +60,7 @@ function Navbar() {
           <span
             key={section.id}
             onClick={() => scrollToSection(section.id)}
-            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl fontPoiretOne leading-normal font-medium"
+            className="cursor-pointer text-[#80ab85] md:text-lg lg:text-xl xl:text-2xl font-medium"
           >
             {section.label}
           </span>
@@ -70,8 +70,8 @@ function Navbar() {
 
       <button 
         onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-        className="spa-btn hidden md:flex text-xs md:text-lg lg:text-xl xl:text-2xl mt-3"
-        data-aos="fade-down"
+        className="spa-btn hidden md:flex md:text-md lg:text-xl xl:text-2xl mt-3"
+        // data-aos="fade-down"
         data-aos-delay="200"
       >
         Book Now
@@ -86,11 +86,12 @@ function Navbar() {
 
 
       {/* Mobile Menu */}
-      <div className="flex md:hidden w-full justify-between items-center">
+      <div className="flex md:hidden flex-row-reverse w-full justify-between">
 
-        <a className="z-[101] cursor-pointer w-[25%] md:hidden" href="https://www.esperanzawellness.com/">
+        <a className="z-[101] cursor-pointer w-[50%] md:hidden" href="https://www.esperanzawellness.com/">
           <img src={logo} alt="esperanza wellness logo" />
         </a>
+
 
         { useLocation().pathname === "/" ? (
           <>

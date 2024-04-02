@@ -90,7 +90,7 @@ function InTouch() {
     <>
       <ToastContainer />
 
-      <div id="inTouchSection" className="bg-[#DDDAD2] text-[#2E4630] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-0 lg:px-6">
+      <div id="inTouchSection" className="bg-[#DDDAD2] text-[#2E4630] flex justify-center items-center pt-20 pb-10 px-4 sm:px-6 md:px-10 lg:px-6">
 
         <div 
           // data-aos="flip-up" 
@@ -100,7 +100,7 @@ function InTouch() {
 
           <div className="flex flex-col lg:flex-row">
             
-            <div className="w-full lg:w-[70%] bg-[#EDEBE4] rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 pb-[6rem] sm:pb-[10rem] sm:px-10 lg:py-[2rem] lg:pr-[15%]">
+            <div className="w-full lg:w-[70%] bg-[#EDEBE4] rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 pb-[6rem] sm:px-10 lg:py-[2rem] lg:pr-[15%]">
 
               {/* Intro Text and Form */}
               <div className="flex flex-col gap-8 px-2 pb-10 lg:mb-10 sm:px-8 lg:px-14 lg:pb-0">
@@ -171,8 +171,8 @@ function InTouch() {
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" 
                 title="Esperanza Location" 
-                style={{ border: 0, borderRadius: 10, position: "absolute", top: "52%"}}
-                className="lg:hidden w-[80%] h-[300px] sm:w-[80%] mt-[3%] sm:mt-3"
+                style={{ border: 0, borderRadius: 10, position: "absolute", top: "49%"}}
+                className="lg:hidden w-[80%] h-[300px] mt-[3%] sm:mt-5 md:mt-24 md:w-[80%]"
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
               /> 
@@ -194,40 +194,36 @@ function InTouch() {
 
         
           {/* Contact Information */}
-          <div className="flex flex-wrap gap-6 lg:gap-12 justify-start lg:justify-evenly pt-10">
+          <div className="flex flex-col md:flex-row gap-6 md:justify-evenly pt-10 m-auto lg:m-0">
 
 
             <div className="flex gap-3 justify-start items-center">
               
               <img src={locationIcon} className="md:hidden" width={32} height={32} alt="a map location icon" />
-              <img src={locationIcon} className="hidden md:block" width={28} height={28} alt="a map location icon" />
+              <img src={locationIcon} className="hidden md:block ml-[-4px]" width={28} height={28} alt="a map location icon" />
 
               <div className="flex flex-col">
-                <p className="font-medium text-xl leading-normal text-[#2E4630]">
+                <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Location
                 </p>
-                <p className="text-md leading-normal text-[#666]">
+                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
                   8275 W 12th Ave, Hialeah, Florida
                 </p>
               </div>
 
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-start items-center">
 
               <img src={phoneIcon} className="md:hidden" width={32} height={32} alt="a phone icon" />
-              <img src={phoneIcon} 
-                width={28} height={28}
-                className="hidden md:block" 
-                alt="a phone icon" 
-              />
+              <img src={phoneIcon} className="hidden md:block" width={28} height={28} alt="a phone icon" />
 
               <div className="flex flex-col">
-                <p className="font-medium text-xl leading-normal text-[#2E4630]">
+                <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Phone
                 </p>
-                <p className="text-md leading-normal text-[#666]">
-                  (305) 968 9862
+                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
+                  (786) 342-5955
                 </p>
               </div>
 
@@ -239,10 +235,10 @@ function InTouch() {
               <img src={mailIcon} className="hidden md:block" width={28} height={28} alt="an email icon" />
 
               <div className="flex flex-col">
-                <p className="font-medium text-xl leading-normal text-[#2E4630]">
+                <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Email
                 </p>
-                <p className="text-md leading-normal text-[#666]">
+                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
                   stephaniesperanzaskin@gmail.com
                 </p>
               </div>

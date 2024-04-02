@@ -8,7 +8,7 @@ function About() {
       className="bg-[#785445] flex justify-center items-center text-white px-12 pb-16 xl:px-16 gap-10 md:gap-0"
       // data-aos="zoom-out"
     >
-      <div className="absolute flex w-[96%] lg:w-full justify-between items-center">
+      <div className="hidden absolute lg:flex w-[96%] lg:w-full justify-between items-center">
         <img
           className="mt-[-1311px] lg:mt-[-200px] opacity-[0.5]"
           src={aboutBg1}
@@ -24,10 +24,10 @@ function About() {
       <div 
         // data-aos="flip-up" 
         // data-aos-delay="200" 
-        className="flex flex-col lg:flex-row max-w-[1200px]"
+        className="flex flex-col lg:flex-row items-center max-w-[1200px]"
       >
 
-        <div className="z-[100] md:w-[70%] lg:w-[80%] xl:w-auto flex flex-col gap-6 pt-12 md:pt-16 justify-center items-center">
+        <div className="z-[100] flex flex-col gap-6 pt-12 md:pt-16 md:px-12 justify-center items-center">
 
           <div className="flex flex-col gap-3 items-center">
             
@@ -38,7 +38,7 @@ function About() {
               About Us
             </p>
             
-            <p className="fontPrata text-center text-3xl sm:text-5xl font-semibold lg:leading-normal sm:px-12 lg:px-0">
+            <p className="fontPrata text-center tracking-wider md:leading-none text-[2rem] sm:text-[6.5vw] lg:text-5xl font-semibold lg:leading-normal lg:px-0">
               Making A Difference One Face At A Time
             </p>
             
@@ -52,19 +52,21 @@ function About() {
 
           </div>
 
-          <div className="flex flex-col gap-8 lg:pt-3">
-            <p className="text-[18px] text-base leading-normal max-w-[507px]">
-              With over 30 years of experience Esperanza Skin Care specializes in a range of advanced esthetic treatments from anti-aging to acne facials for all skin types and age groups. Each treatment is performed from the heart and is designed to promote skin health and longevity. <br/>
+          <div className="flex flex-col gap-8 lg:pt-3 text-justify">
+            <p className="text-[16px] md:text-[18px] leading-normal">
+              With over 30 years of experience Esperanza Skin Care specializes in a range of advanced esthetic treatments from anti-aging to acne facials for all skin types and age groups. Each treatment is performed from the heart and is designed to promote skin health and longevity. <br/><br/>
               We believe prevention is the key to maintaining youthful skin and the care you invest now, translates into how you will look in the future. We put our patient’s needs first and are passionate about creating a loving and accepting environment to help you look and feel your best.
             </p>
 
           </div>
         </div>
 
-        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[80%] xl:w-[80%] sm:ml-0">
+        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[80%] xl:w-[60%] sm:ml-0">
+          
           <img className="lg:py-14 lg:mt-6 lg:ml-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
             data-aos="fade"
           />
+
         </div>
 
       </div>

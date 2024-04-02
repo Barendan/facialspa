@@ -19,7 +19,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* font-family: Barkentina Test; */
   font-family: Quicksand;
 }
 
@@ -32,6 +31,86 @@ body {
 .fontNothingYouCouldDo {
   font-family: 'Nothing You Could Do', sans-serif;
 }
+
+
+
+
+
+
+.square {
+  z-index: 100;
+  position: absolute;
+  width: 3rem;
+  height: 2.8rem;
+}
+
+.sq-green {
+  background: #2E4630;
+  opacity: 0.9;
+}
+
+.sq-lightg {
+  background: #659769;
+  border: 2px solid #659769;
+}
+
+.sq-transparent {
+  z-index: 101;
+  background: transparent;
+  border: 2px solid #2E4630;
+}
+
+.pos1 {
+  top:65%;
+  left:3%;
+}
+.pos2 {
+  top:62%;
+  left:9%;
+}
+
+.pos3 {
+  top:72%;
+  left:20%;
+}
+.pos4 {
+  top:75%;
+  left:28%;
+}
+
+.pos5 {
+  width:2.5rem;
+  height:2.3rem;
+  top:94%;
+  left:33%;
+}
+.pos6 {
+  z-index:102;
+  width:2.6rem;
+  height:2.6rem;
+  top:92%;
+  left:37%;
+}
+
+.pos7 {
+  width:2.7rem;
+  height:2.3rem;
+  top:58%;
+  left:27%;
+}
+.pos8 {
+  z-index:102;
+  width:2.5rem;
+  height:2.3rem;
+  top:56%;
+  left:23%;
+}
+
+
+
+
+
+
 
 
 
@@ -221,12 +300,10 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
   justify-content: center;
   align-items: center;
   color: #2E4630;
-  padding: .5rem 2.3rem;
+  padding: .4rem 1.8rem;
   font-weight: 600;
   box-shadow: 1px 1px 1px 1px #0000003b;
   transition-duration: 300ms;
-  /* font-family: Quicksand; */
-  font-family: 'Urbanist', sans-serif;
 }
 
 .spa-btn:hover {
@@ -244,6 +321,19 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 
 
 
+
+.testimonial-container {
+  height: 60px;
+  overflow: scroll;
+}
+
+.testimonial-text {
+  font-size: clamp(12px, calc(12px + 0.3vw), 18px); /* Adjust as needed */
+} 
+
+.testimonial-container::-webkit-scrollbar {
+  display: none;
+}
 
 /* footer social media buttons */
 section {
@@ -433,6 +523,14 @@ html:hover [class^="ss-"] {
   section {
     font-size: 20px;
   }
+
+  .testimonial-container {
+    height: 70px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+  } 
 
   section a, section article span {
     width: 64px;
