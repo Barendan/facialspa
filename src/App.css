@@ -34,87 +34,6 @@ body {
 
 
 
-
-
-
-.square {
-  z-index: 100;
-  position: absolute;
-  width: 3rem;
-  height: 2.8rem;
-}
-
-.sq-green {
-  background: #2E4630;
-  opacity: 0.9;
-}
-
-.sq-lightg {
-  background: #659769;
-  border: 2px solid #659769;
-}
-
-.sq-transparent {
-  z-index: 101;
-  background: transparent;
-  border: 2px solid #2E4630;
-}
-
-.pos1 {
-  top:65%;
-  left:3%;
-}
-.pos2 {
-  top:62%;
-  left:9%;
-}
-
-.pos3 {
-  top:72%;
-  left:20%;
-}
-.pos4 {
-  top:75%;
-  left:28%;
-}
-
-.pos5 {
-  width:2.5rem;
-  height:2.3rem;
-  top:94%;
-  left:33%;
-}
-.pos6 {
-  z-index:102;
-  width:2.6rem;
-  height:2.6rem;
-  top:92%;
-  left:37%;
-}
-
-.pos7 {
-  width:2.7rem;
-  height:2.3rem;
-  top:58%;
-  left:27%;
-}
-.pos8 {
-  z-index:102;
-  width:2.5rem;
-  height:2.3rem;
-  top:56%;
-  left:23%;
-}
-
-
-
-
-
-
-
-
-
-
 /* new nav */
 .main-nav {
   position: absolute;
@@ -563,5 +482,80 @@ html:hover [class^="ss-"] {
     margin-top:-2px !important
   }
 }
+
+
+
+
+/* Hero Mobile Sample 1 */
+.square {
+  z-index: 1;
+  position: absolute;
+  width: 3rem;
+  height: 2.8rem;
+}
+
+.sq-green {
+  background: #2E4630;
+  opacity: 0.9;
+}
+
+.sq-lightg {
+  background: #659769;
+  border: 2px solid #659769;
+}
+
+.sq-transparent {
+  z-index: 101;
+  background: transparent;
+  border: 2px solid #2E4630;
+}
+
+.pos1 {
+  top:65%;
+  left:3%;
+}
+.pos2 {
+  top:62%;
+  left:9%;
+}
+
+.pos3 {
+  top:72%;
+  left:20%;
+}
+.pos4 {
+  top:75%;
+  left:28%;
+}
+
+.pos5 {
+  width:2.5rem;
+  height:2.3rem;
+  top:92%;
+  left:1%;
+}
+.pos6 {
+  z-index:102;
+  width:2.6rem;
+  height:2.6rem;
+  top:94%;
+  left:5%;
+}
+
+.pos7 {
+  width:2.7rem;
+  height:2.3rem;
+  top:58%;
+  left:27%;
+}
+.pos8 {
+  z-index:102;
+  width:2.5rem;
+  height:2.3rem;
+  top:56%;
+  left:23%;
+}
+
+/* Hero mobile sample 2 */
 
 

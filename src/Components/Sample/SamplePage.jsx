@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Hero from './SampleHero';
+// import Hero from './SampleHero';
+import Hero from './SampleHero2';
 // import Services from '../Services';
 // import Products from '../Products';
 // import About from '../About';
