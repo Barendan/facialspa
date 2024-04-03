@@ -61,15 +61,22 @@ function Products() {
               PCA SKIN uses clinically-backed research and science delivering on their mission of improving lives through transformative skincare.
             </p>
 
-            <button 
-              onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-              className="w-fit flex mt-4 hover:shadow-md hover:bg-[#2E4630] hover:text-white text-[#2E4630] text-sm md:text-xl font-normal font-quicksand leading-normal bg-white rounded-tr-[30px] rounded-bl-[30px] py-4 px-6 mr-5 hover:duration-300 shadow-lg"
-              // style={{ boxShadow: "2px 2px 2px" }}
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
-              View Our Store
-            </button>
+
+            <div className="bg-gradient-to-r from-[#9d9d89] to-[#0e6107] w-[65%] flex p-1 mt-5 relative text-white opacity-70"
+            style={{ boxShadow: "2px 2px 2px gray" }}>
+              
+
+              <button 
+                onClick={() => window.location.href = "https://esperanzawellness.store/"} 
+                className="w-[100%] relative flex px-5 py-2 border relative font-semibold"
+                // data-aos="fade-left"
+                // data-aos-delay="200"
+              >
+                View Our Store
+                <span class="absolute top-1/2 right-3 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+              </button>
+
+            </div>
 
           </div>
 
@@ -93,7 +100,7 @@ function Products() {
                 <div className="overflow-hidden w-[90%] h-[155px]">
 
                   <img
-                    className="md:flex min-h-[155px] rounded-lg py-2"
+                    className="md:flex min-h-[155px] rounded-lg py-2 opacity-70"
                     src={item.img}
                     loading="lazy"
                     alt="a skincare product"
@@ -118,10 +125,10 @@ function Products() {
                 <div className="flex justify-center items-center mb-[-30px] cursor-pointer w-[70%] sm:w-[40%]">
                   <a href="https://esperanzawellness.store/">
                     <img 
-                      src={cartIcon} 
+                      src={cartIcon}
                       alt="a shopping cart icon" 
-                      className="rounded-full shadow-lg hover:scale-125"
-                      style={{ boxShadow: "2px 2px 4px gray", opacity: "0.9"}}
+                      className="rounded-full hover:scale-110"
+                      style={{ boxShadow: "2px 2px 4px gray", opacity: "0.8", transition: "100ms"}}
                     />
                   </a>
                 </div>

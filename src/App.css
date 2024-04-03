@@ -215,11 +215,11 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 
 
 .spa-btn {
-  background-color: #bfd1c4;
+  /* background-color: #bfd1c4; */
   justify-content: center;
   align-items: center;
-  color: #2E4630;
-  padding: .4rem 1.8rem;
+  /* color: #2E4630; */
+  /* padding: .4rem 1.8rem; */
   font-weight: 600;
   box-shadow: 1px 1px 1px 1px #0000003b;
   transition-duration: 300ms;

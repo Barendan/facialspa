@@ -28,7 +28,7 @@ function Hero() {
           </p>
 
 
-          <div className="flex flex-col xl:flex-row xl:w-[100%] xl:justify-evenly xl:items-center mt-5">
+          {/* <div className="flex flex-col xl:flex-row xl:w-[100%] xl:justify-evenly xl:items-center mt-5">
 
             <button 
               onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
@@ -65,7 +65,45 @@ function Hero() {
 
             </button>
             
-          </div>
+          </div> */}
+
+
+
+<div className="flex flex-row justify-around px-10 text-white">
+
+<div className="bg-[#2E4630] flex w-[45%] p-1 justify-center relative opacity-80"
+style={{ boxShadow: "2px 2px 2px gray" }}>
+  <button 
+    onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+    className="spa-btn w-[100%] flex px-3 py-2 justify-center border relative"
+  >
+    Book Now
+    <span class="absolute top-1/2 right-5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+  </button>
+
+</div>
+
+
+<div className="relative bg-gradient-to-r from-[#9d9d89] to-[#0e6107] flex w-[45%] p-1 justify-center opacity-80">
+  <button 
+    onClick={() => window.location.href = "https://esperanzawellness.store/"} 
+    className="spa-btn w-[100%] flex px-3 py-2 justify-center border relative"
+    style={{ boxShadow: "2px 2px 2px gray" }}
+    // data-aos="fade-left"
+    // data-aos-delay="200"
+  >
+    Our Store
+    <span class="absolute top-1/2 right-5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+  </button> 
+</div>
+
+</div>
+
+
+
+
+
+
 
         </div>
 
