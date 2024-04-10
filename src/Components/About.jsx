@@ -8,6 +8,7 @@ function About() {
       className="bg-[#785445] flex justify-center items-center text-white px-12 pb-16 xl:px-16 gap-10 md:gap-0"
       // data-aos="zoom-out"
     >
+
       <div className="hidden absolute lg:flex w-[96%] lg:w-full justify-between items-center">
         <img
           className="mt-[-1311px] lg:mt-[-200px] opacity-[0.5]"
@@ -21,13 +22,16 @@ function About() {
         />
       </div>
 
+
+
       <div 
         // data-aos="flip-up" 
         // data-aos-delay="200" 
         className="flex flex-col lg:flex-row items-center max-w-[1200px]"
       >
 
-        <div className="z-[100] flex flex-col gap-6 pt-12 md:pt-16 md:px-12 justify-center items-center">
+        {/* about us text */}
+        <div className="z-[100] md:w-[100%] flex flex-col gap-6 pt-12 md:pt-16 md:px-12 justify-center items-center">
 
           <div className="flex flex-col gap-3 items-center">
             
@@ -61,12 +65,12 @@ function About() {
           </div>
         </div>
 
-        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[80%] xl:w-[60%] sm:ml-0">
-          
-          <img className="lg:py-14 lg:mt-6 lg:ml-6" src={aboutImg} alt="Stephanie and Esperanza smiling together" 
-            data-aos="fade"
-          />
 
+        {/* About us image */}
+        <div className="z-10 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[80%] sm:ml-0">
+          <img className="lg:py-14 lg:mt-6 lg:ml-[-10%] lg:max-w-[200%] lg:w-[120%]" src={aboutImg} alt="Stephanie and Esperanza smiling together"
+            // data-aos="fade"
+          />
         </div>
 
       </div>

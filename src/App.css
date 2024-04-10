@@ -2,16 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
-  font-family: 'Nothing You Could Do';
-  src: url('https://fonts.gstatic.com/s/nothingyoucoulddo/v11/oY1B8fbB98iM6oCVGXZTo-k-PNq0PwLg4w.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Prata';
-  src: url('https://fonts.gstatic.com/s/prata/v13/6xKjdSdOJHglUn-gDWAR3r8TKw.ttf') format('truetype');
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -194,8 +184,9 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 }
 
 .nav span {
-  padding: .3em .6em;
-  color: #80ab85;
+  padding: .35em .6em;
+  /* color: #80ab85; */
+  color: #2e4630;
   position: relative;
   text-decoration: none;
   box-shadow: 1px 1px 1px 1px #ccc;
@@ -209,17 +200,19 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 }
 
 
+#heroSection {
+  background-image: url(./Assets/hero/outer-bg.png);
+  background-size: 250% 170%;
+  background-position: 50% 50%;
+}
 
 
 
 
-
+/* 
 .spa-btn {
-  /* background-color: #bfd1c4; */
   justify-content: center;
   align-items: center;
-  /* color: #2E4630; */
-  /* padding: .4rem 1.8rem; */
   font-weight: 600;
   box-shadow: 1px 1px 1px 1px #0000003b;
   transition-duration: 300ms;
@@ -234,7 +227,9 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 #heroSection .spa-btn {
   width: 260px;
   height: 60px;
-}
+} */
+
+
 
 
 
@@ -247,7 +242,7 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 }
 
 .testimonial-text {
-  font-size: clamp(12px, calc(12px + 0.3vw), 18px); /* Adjust as needed */
+  font-size: clamp(12px, calc(12px + 0.3vw), 18px);
 } 
 
 .testimonial-container::-webkit-scrollbar {
@@ -400,11 +395,58 @@ html:hover [class^="ss-"] {
 
 
 
+.map-container {
+  display: none;
+}
 
+
+@media only screen and (min-width: 420px)  {
+  .portrait-container {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .header-container {
+    width: 80%;
+    /* margin-top: 1rem !important; */
+    margin: 0 auto;
+  }
+  #heroSection h1 {
+    /* font-size:5.5rem !important; */
+    line-height: 70px !important;
+  }
+  .form-container {
+    padding-bottom: 6rem;
+  }
+  .map-container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 640px)  {
+  .portrait-container {
+    width: 85vw;
+    margin-top: -6% !important;
+  }
+  .header-container {
+    width: 70vw;
+  }
+  #heroSection h1 {
+    font-size:5.5rem !important;
+    line-height: 90px !important;
+  }
+}
 
 
 
 @media only screen and (min-width: 768px)  {
+  .portrait-container img {
+    max-width: 200%;
+    width: 130% !important;
+    height: 150% !important;
+    margin-top: -60px !important;
+    margin-left: -50px !important;
+  }
+  
   section {
     font-size: 16px;
   }
@@ -439,6 +481,10 @@ html:hover [class^="ss-"] {
 }
 
 @media only screen and (min-width: 1030px)  {
+  #heroSection {
+    background-size: 150% 210%;
+    background-position: 50% 50%;
+  }
   section {
     font-size: 20px;
   }

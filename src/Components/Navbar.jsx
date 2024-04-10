@@ -35,7 +35,7 @@ function Navbar() {
 
   
   return (
-    <div className='bg-[#DDDAD2] flex justify-between items-center py-4 px-4 sm:px-6 md:px-2 lg:px-16'>
+    <div className='bg-[#DDDAD2] flex justify-around py-4 px-4 sm:px-6 md:px-2 lg:px-10'>
 
       {/* { console.log('params', useLocation().pathname === "/")} */}
 
@@ -51,7 +51,7 @@ function Navbar() {
       </div>
       
       <div 
-        className="nav hidden md:flex justify-center items-center gap-3 md:gap-0 lg:gap-3 xl:gap-6 pt-3 w-100"
+        className="nav hidden md:flex justify-center items-center gap-3 md:gap-1 lg:gap-3 xl:gap-6 w-100"
         // data-aos="fade-down"
         data-aos-delay="50"
       >
@@ -68,29 +68,33 @@ function Navbar() {
 
       </div>
 
-
-      <div className="bg-gradient-to-r from-[#9d9d89] to-[#0e6107] flex w-[15%] p-1 mt-2 justify-center relative text-white opacity-80" 
-            style={{ boxShadow: "2px 2px 2px #eee" }}>
+      <div className="hidden md:flex relative bg-[#2E4630] flex p-1 opacity-90 hover:opacity-100">
         <button 
           onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-          className="spa-btn w-[100%] flex px-3 py-2 justify-center border relative"
+          className="w-[100%] flex px-4 text-xs md:text-sm justify-center border items-center text-white border-slate-300 shadow-xl hover:shadow-md"
+          // data-aos="fade-left"
+          // data-aos-delay="200"
         >
           Book Now
-          <span class="absolute top-1/2 right-5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
-        </button>
-
+          <span className="relative left-1 top-1.5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+        </button> 
       </div>
+
+
+
+
+
 
 
       {/* Mobile Menu */}
       <div className="flex md:hidden flex-row-reverse w-full justify-between">
 
-        <a className="z-[101] cursor-pointer w-[50%] md:hidden" href="https://www.esperanzawellness.com/">
+        <a className="z-[101] cursor-pointer w-[50%] min-w-[160px] max-w-[200px] md:hidden" href="https://www.esperanzawellness.com/">
           <img src={logo} alt="esperanza wellness logo" />
         </a>
 
 
-        { useLocation().pathname === "/" ? (
+        { useLocation().pathname === "/" || "/sample" ? (
           <>
             <div className="container"/>
               
@@ -141,14 +145,28 @@ function Navbar() {
           //   data-aos="fade-down"
           //   data-aos-delay="200"
           // >
+
+          // <button 
+          //   onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+          //   className="spa-btn flex text-md"
+          //   // data-aos="fade-down"
+          //   data-aos-delay="200"
+          // >
+          //   Book Now
+          // </button>
+
+          <div className="bg-[#2E4630] relative flex p-1 my-5 justify-center opacity-90 hover:opacity-100">
           <button 
             onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-            className="spa-btn flex text-md"
-            // data-aos="fade-down"
-            data-aos-delay="200"
+            className="w-[100%] flex px-4 py-2 text-sm sm:text-md justify-center border items-center text-white border-slate-300 shadow-xl hover:shadow-md"
+            // data-aos="fade-left"
+            // data-aos-delay="200"
           >
             Book Now
-          </button>
+            <span className="relative left-1 top-1.5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+          </button> 
+          </div>
+          
         )}
                 
                 

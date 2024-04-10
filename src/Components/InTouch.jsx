@@ -100,7 +100,7 @@ function InTouch() {
 
           <div className="flex flex-col lg:flex-row">
             
-            <div className="w-full lg:w-[70%] bg-[#EDEBE4] rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 pb-[6rem] sm:px-10 lg:py-[2rem] lg:pr-[15%]">
+            <div className="form-container w-full lg:w-[70%] bg-[#EDEBE4] rounded-[20px] lg:rounded-tr-[0px] lg:rounded-br-[0px] flex flex-col gap-6 p-3 sm:px-10 lg:py-[2rem] lg:pr-[15%]">
 
               {/* Intro Text and Form */}
               <div className="flex flex-col gap-8 px-2 pb-10 lg:mb-10 sm:px-8 lg:px-14 lg:pb-0">
@@ -151,12 +151,14 @@ function InTouch() {
 
                   {formErrors.message && <p className="text-red-500">{formErrors.message}</p>}
 
-                  <button 
-                    onClick={handleSubmit}
-                    className="rounded-full text-white bg-[#2E4630] w-80 p-3 fontQuicksand text-md leading-normal self-center hover:shadow-md cursor-pointer"
-                  >
-                    Send Message
-                  </button>
+                  <div className="bg-[#2E4630] hover:bg-[#2e463099] flex w-[99%] p-1 justify-center self-center">
+                    <button 
+                      onClick={handleSubmit}
+                      className="w-[100%] text-white cursor-pointer px-3 py-2 text-sm md:text-base justify-center border relative items-center"
+                      >
+                      Send Message
+                    </button>
+                  </div>
                 
                 </div>
 
@@ -166,13 +168,13 @@ function InTouch() {
 
 
             {/* Two google maps, one for desktop and one for mobile */}
-            <div className="w-full lg:w-[30%] bg-[#2E4630] rounded-bl-[20px] rounded-br-[20px] lg:rounded-tl-[0px] lg:rounded-tr-[20px] lg:rounded-bl-[0px] flex justify-center items-center py-28 lg:py-0">
+            <div className="map-container w-full lg:w-[30%] bg-[#2E4630] rounded-bl-[20px] rounded-br-[20px] lg:rounded-tl-[0px] lg:rounded-tr-[20px] lg:rounded-bl-[0px] flex justify-center items-center py-28 lg:py-0">
 
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.135994871039!2d-80.31046002404587!3d25.897899502962797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bace5d1235b1%3A0x40b5cb76ccd4410a!2sEsperanza%20Skin%20Care!5e0!3m2!1sen!2sus!4v1705526970563!5m2!1sen!2sus" 
                 title="Esperanza Location" 
                 style={{ border: 0, borderRadius: 10, position: "absolute", top: "49%"}}
-                className="lg:hidden w-[80%] h-[300px] mt-[3%] sm:mt-5 md:mt-24 md:w-[80%]"
+                className="lg:hidden w-[80%] h-[300px] mt-[5%] sm:mt-5 md:mt-24 md:w-[80%]"
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
               /> 

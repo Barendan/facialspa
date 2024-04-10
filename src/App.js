@@ -7,7 +7,6 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
-import SamplePage from "./Components/Sample/SamplePage";
 import ServiceDetail from "./Components/ServiceDetails";
 
 
@@ -22,7 +21,6 @@ function App() {
         <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/sample" element={<SamplePage />} />
             <Route path="/services/:serviceId" element={<ServiceDetail />} />
           </Routes>
           <Footer />

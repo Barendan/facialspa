@@ -41,39 +41,44 @@ function Products() {
         <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1] max-w-[1200px]">
           
           <div
-            className="w-full lg:w-[45%] 2xl:w-[45%] flex flex-col gap-5 px-8 py-8 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] bg-no-repeat bg-cover mb-6"
-            // style={{ backgroundImage: `url(${productMainImg})` ,backgroundPosition:'center', backgroundSize:'cover'}}
-            data-aos="zoom-in-right"
+            className="w-[90%] lg:w-[45%] 2xl:w-[45%] flex flex-col justify-center gap-3 sm:gap-1 py-4 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] mb-6 mx-auto text-white"
+            // data-aos="zoom-in-right"
           >
 
             <div className="flex flex-col gap-2">
-              <p className="text-white fontNothingYouCouldDo text-sm md:text-2xl font-semibold md:font-medium leading-normal">
-                {/* Our Products */}
+              <p className="fontNothingYouCouldDo text-sm md:text-2xl font-semibold md:font-medium">
                 PCA Skin
               </p>
-              <p className="text-white fontPrata text-5xl font-semibold xl:leading-normal xl:max-w-[318px]">
-                The Science of Timeless Beauty
+              <p className="fontPrata text-[11vw] sm:leading-[5rem] sm:text-[4rem] lg:text-[3.5rem] font-semibold xl:max-w-[318px]"
+              style={{ 
+                // fontSize: "clamp(8vw, 11vw, 48px)",
+                letterSpacing: "1px"
+              }}>
+                The Science <br/> 
+                of Timeless Beauty
               </p>
             </div>
 
-            <p className="text-white text-sm md:text-lg xl:max-w-[438px]">
-              {/* PCA SKIN uses clinically-backed research and science to develop safe and effective products that deliver healthy, beautiful skin delivering on our mission of improving lives through transformative skincare. */}
+            <p className="hidden md:flex text-lg lg:text-base md:max-w-[90%]">
+              PCA SKIN uses clinically-backed research and science to develop safe and effective products that deliver healthy, beautiful skin delivering on our mission of improving lives through transformative skincare.
+            </p>
+            <p className="text-sm sm:text-base md:hidden max-w-[380px] sm:max-w-[90%]">
               PCA SKIN uses clinically-backed research and science delivering on their mission of improving lives through transformative skincare.
             </p>
 
 
-            <div className="bg-gradient-to-r from-[#9d9d89] to-[#0e6107] w-[65%] flex p-1 mt-5 relative text-white opacity-70"
+            <div className="bg-[#2E4630] opacity-90 hover:opacity-100 max-w-[200px] flex p-1 mt-5 text-white"
             style={{ boxShadow: "2px 2px 2px gray" }}>
               
 
               <button 
                 onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-                className="w-[100%] relative flex px-5 py-2 border relative font-semibold"
+                className="w-[100%] relative flex px-5 py-2 border"
                 // data-aos="fade-left"
                 // data-aos-delay="200"
               >
                 View Our Store
-                <span class="absolute top-1/2 right-3 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+                <span className="absolute top-1/2 right-3 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
               </button>
 
             </div>
@@ -82,7 +87,7 @@ function Products() {
 
 
           {/* Products container with items inside */}
-          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] sm:w-full lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 sm:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 sm:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 lg:my-10 justify-center items-center bg-no-repeat bg-cover bg-opacity-50 mx-auto"
+          <div className="lg:rounded-tr-[20px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px] w-[90%] lg:w-[70%] xl:w-[100%] bg-[#EDEBE4] flex flex-col sm:flex-row gap-2 md:gap-6 lg:gap-3 xl:gap-10 py-10 pb-6 md:pb-16 md:py-20 xl:py-0 md:px-6 lg:px-12 lg:my-10 justify-center items-center bg-opacity-50 mx-auto"
           >
 
             {products.map((item, i) => (
