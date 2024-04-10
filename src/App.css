@@ -400,6 +400,23 @@ html:hover [class^="ss-"] {
 }
 
 
+@media only screen and (max-width: 410px)  {
+  .service-container {
+    width: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 410px)  {
+  .service-title {
+    font-size: 14px;
+  }
+  .service-btn {
+    font-size: 10px;
+  }
+}
+
+
 @media only screen and (min-width: 420px)  {
   .portrait-container {
     width: 85vw;

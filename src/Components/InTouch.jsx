@@ -109,7 +109,7 @@ function InTouch() {
                   <p className="text-[40px] sm:text-[48px] fontPrata font-semibold">
                     Get in Touch
                   </p>
-                  <p className="text-[#666] leading-normal text-md md:text-lg">
+                  <p className="text-[#666] leading-normal md:text-lg">
                     We would love to make you feel amazing. <br/>
                     Contact us and let's make it happen!
                   </p>
@@ -208,7 +208,7 @@ function InTouch() {
                 <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Location
                 </p>
-                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
+                <p className=" md:text-sm lg:text-lg leading-normal text-[#666]">
                   8275 W 12th Ave, Hialeah, Florida
                 </p>
               </div>
@@ -224,7 +224,7 @@ function InTouch() {
                 <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Phone
                 </p>
-                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
+                <p className="md:text-sm lg:text-lg leading-normal text-[#666]">
                   (786) 342-5955
                 </p>
               </div>
@@ -240,7 +240,7 @@ function InTouch() {
                 <p className="font-medium text-xl md:text-lg lg:text-xl leading-normal text-[#2E4630]">
                   Email
                 </p>
-                <p className="text-md md:text-sm lg:text-lg leading-normal text-[#666]">
+                <p className="md:text-sm lg:text-lg leading-normal text-[#666]">
                   stephaniesperanzaskin@gmail.com
                 </p>
               </div>

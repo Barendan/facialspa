@@ -95,6 +95,7 @@ function ServiceDetail() {
         />
 
         <div className="flex flex-col w-100 lg:w-[40%]">
+          
           <p className="text-base font-normal text-[#9BA858]"
             data-aos="fade-in"
           >
@@ -111,7 +112,7 @@ function ServiceDetail() {
             <ul>
 
               {selectedService.benefits.split(".").slice(0, -3).map((element, i) => {
-                return <li data-aos="zoom-in" data-aos-delay={i * 200}> 
+                return <li data-aos="zoom-in" key={i} data-aos-delay={i * 200}> 
                   <span className="text-[green] font-bold text-[20px]">+</span>{element} 
                 </li>
               }
@@ -120,23 +121,27 @@ function ServiceDetail() {
             </ul>
           </div>
         
-          <p className="text-md md:text-base text-[#2E4630] my-3 mb-6">
-            {selectedService.description}</p>
-        
-          <button
-            onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
-            className="flex shadow-lg hover:shadow-md hover:bg-[#DDDAD2] hover:text-black text-[#2E4630] text-lg md:text-xl font-quicksand leading-normal py-4 px-6 hover:duration-300 border border-[#bbb] hover:border-black"
-            // style={{ boxShadow: "1px 1px 2px 1px" }}
-            // data-aos="fade-left"
-            // data-aos-delay="100"
-          >
-            Book this Treatment
-          </button>
+          <p className="text-sm md:text-base text-[#2E4630] my-3 mb-6">
+            {selectedService.description}
+          </p>
+
+
+
+          <div className="z-10 relative bg-[#2E4630] flex p-1 opacity-90 hover:opacity-100 text-white">
+            <button 
+              onClick={() => window.location.href = "https://www.fresha.com/book-now/esperanza-wellness-qzyn44dd/services?lid=1175294&eid=2766541&pId=1114843"} 
+              className="w-[100%] flex py-3 px-5 text-xl md:text-xl border border-slate-300 shadow-xl hover:shadow-md items-center justify-between"
+            >
+              Book this Treatment
+              <span className="relative left-1 top-1.5 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
+            </button> 
+          </div>
+    
 
         </div>
         
-        </div>
       </div>
+    </div>
   );
 }
 

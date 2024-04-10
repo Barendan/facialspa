@@ -70,7 +70,9 @@ function Services() {
           
           <div className="flex flex-col gap-2 justify-center items-center">
             
-            <h1 className="text-3xl fontNothingYouCouldDo font-semibold md:font-medium leading-normal">
+            <h1 className="text-3xl fontNothingYouCouldDo md:font-medium leading-normal"
+                data-aos="zoom-in-right"
+                data-aos-delay="100">
               Services
             </h1>
 
@@ -80,7 +82,7 @@ function Services() {
 
           </div>
 
-          <p className="text-[#666] text-md md:text-lg leading-normal max-w-[743px] text-center py-4 px-6 md-px-0 md-pb-0">
+          <p className="text-[#666] text-sm sm:text-base leading-normal max-w-[743px] text-center py-4 px-6 md-px-0 md-pb-0">
             Without making it feel so…. clinical. We believe in having your
             cake and eating it too, with clinically proven treatments,
             licensed and insured aestheticians, ambient lighting, & heated beds.
@@ -93,11 +95,13 @@ function Services() {
             
           <div className="flex justify-evenly md:justify-center flex-wrap flex-row lg:flex-row md:gap-1 lg:gap-4 xl:gap-10">
 
-            {serviceList.map((item, index) => (
+            {serviceList.map((item, i) => (
               
               <div 
-                key={index} 
-                className="w-[45%] sm:w-[40%] lg:w-[30%] flex flex-col md:mb-3 justify-center items-center"
+                key={i} 
+                className="service-container w-[45%] sm:w-[40%] lg:w-[30%] flex flex-col md:mb-3 justify-center items-center"
+                data-aos="zoom-in"
+                data-aos-delay={ i * 100}
               >
                 {/* Chemical Peels image needs to be adjusted slightly but no others */}
                 { item.heading === "Chemical Peels" ? 
@@ -120,15 +124,13 @@ function Services() {
                     >
 
                     <p
-                      className={"text-[#2E4630] fontPoiretOne text-[18px] md:text-[22px] font-semibold"}
-                      // data-aos="fade-up"
+                      className={"service-title text-[#2E4630] fontPoiretOne text-[18px] md:text-[22px] font-semibold"}
                       >
                       {item.heading}
                     </p>
 
                     <p
-                      className={"text-[#2E4630] text-center text-[10px] sm:text-[12px] md:text-[14px]"}
-                      // data-aos="fade-up"
+                      className={"service-text text-[#2E4630] text-center text-[10px] sm:text-[12px] md:text-[14px]"}
                     >
                       {item.description}
                     </p>
@@ -136,16 +138,13 @@ function Services() {
                   </div>
 
 
-                  <div className="bg-[#2E4630] text-white flex w-[55%] p-0.5 justify-center mt-[-10px] opacity-90 hover:opacity-100">
+                  <div 
+                    className="bg-[#2E4630] text-white flex w-[55%] p-0.5 justify-center mt-[-10px] opacity-90 hover:opacity-100"
+                    // data-aos="fade-up"
+                  >
                     <button
                       onClick={() => navigate(`/services/${item.heading.toLowerCase().replace(/\s+/g, "-")}`)}
-                      className={`w-[100%] text-[12px] sm:text-md lg:text-lg fontUrbanist py-2 px-2 flex justify-center items-center border border-slate-300 shadow-xl font-light tracking-wide`}
-                      
-                      // style={{ boxShadow: "3px 2px 6px #45452d",
-                      //   padding: "4% 12%",
-                      // }}
-
-                      // data-aos="fade-up"
+                      className={"service-btn w-[100%] text-[12px] lg:text-base fontUrbanist py-2 px-2 flex justify-center items-center border border-slate-300 shadow-xl font-light tracking-wide"}
                     >
                       Read More
                     </button>
