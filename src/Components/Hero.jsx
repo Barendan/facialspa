@@ -40,8 +40,8 @@ function Hero() {
                 fontSize: "clamp(16vw, 17vw, 64px)",
                 lineHeight: "64px"
               }}
-              data-aos="fade-left"
-              data-aos-delay="50"
+              // data-aos="fade-left"
+              // data-aos-delay="50"
             >
               Esperanza Wellness
             </h1>
@@ -49,8 +49,8 @@ function Hero() {
 
             <h2 
               className="text-[#2E4630] text-[4.1vw] sm:text-[3.4vw] md:text-[20px] px-5"
-              data-aos="fade-left"
-              data-aos-delay="100"
+              // data-aos="fade-left"
+              // data-aos-delay="100"
             >
               Unveil Your Natural Beauty
             </h2>
@@ -59,8 +59,8 @@ function Hero() {
 
           {/* CTA Buttons */}
           <div className="w-[100%] flex flex-row justify-around text-white py-5"
-            data-aos="fade-left"
-            data-aos-delay="150"
+            // data-aos="fade-left"
+            // data-aos-delay="150"
           >
 
             <div className="bg-[#2E4630] flex w-[45%] max-w-[200px] p-1 justify-center opacity-90 hover:opacity-100">
