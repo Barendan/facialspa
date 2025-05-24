@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./App.css";
@@ -9,6 +9,23 @@ import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import ServiceDetail from "./Components/ServiceDetails";
 
+export const pageview = (url) => {
+  if (typeof window.gtag === 'function') {
+    window.gtag('config', 'G-GZ7490SRML', {
+      page_path: url,
+    });
+  }
+};
+
+const RouteChangeTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
+
+  return null;
+};
 
 function App() {
   useEffect(() => {
@@ -17,6 +34,7 @@ function App() {
 
   return (
     <Router>
+      <RouteChangeTracker />
       <div className="App overflow-hidden">
         <Navbar />
           <Routes>
