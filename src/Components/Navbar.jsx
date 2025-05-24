@@ -1,26 +1,35 @@
 import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import logo from "../Assets/esplogo2.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   const ref = useRef(null);
 
   useClickAway(ref, () => setMenuOpen(false));
   
   const scrollToSection = (id) => {
     setMenuOpen(false);
-    console.log('whats menu', menuOpen)
 
-    const element = document.getElementById(id);
-
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" ,  block: "start", 
-      inline: "nearest",});
-    };
-
+    if (location.pathname !== "/") {
+      navigate("/");
+  
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 300); // Wait for the DOM to load
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
   };
 
   const sections = [
@@ -31,12 +40,8 @@ function Navbar() {
     { id: "inTouchSection", label: "Contact" },
   ];
   
-
-  
   return (
     <div className='bg-[#DDDAD2] flex justify-around py-4 px-4 sm:px-6 md:px-2 lg:px-10'>
-
-      {/* { console.log('params', useLocation().pathname === "/")} */}
 
       {/* Desktop Menu */}
       <div className="z-[101] hidden md:block cursor-pointer w-[20%] max-w-[200px]">

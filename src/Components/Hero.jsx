@@ -1,6 +1,17 @@
 import portraitBG from "../Assets/hero/portrait-bg.png";
 
 function Hero() {
+  const handleGoToStore = () => {
+    if (window.location.pathname !== "/") {
+      window.location.href = "/#productsSection";
+    } else {
+      const el = document.getElementById("productsSection");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
     <div id="heroSection" className="bg-[#DDDAD2] relative overflow-hidden min-h-[95vh]">
       
@@ -78,7 +89,7 @@ function Hero() {
             {/* <div className="relative bg-gradient-to-r from-[#8b8b8b] to-[#3b9933] flex w-[45%] max-w-[200px] p-1 justify-center"> */}
             <div className="relative bg-[#2E4630] flex w-[45%] max-w-[200px] p-1 justify-center opacity-90 hover:opacity-100">
               <button 
-                onClick={() => window.location.href = "https://esperanzawellness.store/"} 
+                onClick={handleGoToStore} 
                 className="w-[100%] flex px-3 py-2 text-sm sm:text-base justify-center border border-slate-300 shadow-xl hover:shadow-md items-center"
               >
                 Our Store

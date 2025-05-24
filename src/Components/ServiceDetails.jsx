@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import rfServiceImg from "../Assets/services/radiofrequency.webp";
 import cpServiceImg from "../Assets/services/chemicalpeel.webp";
 import mnServiceImg from "../Assets/services/microneedling.webp";
-import otServiceImg from "../Assets/services/oxygentherapy.webp";
+import otServiceImg from "../Assets/services/microblading.png";
 import hfServiceImg from "../Assets/services/hydrafacial.webp";
 import mdServiceImg from "../Assets/services/microderm.webp";
 import { FiArrowLeft } from "react-icons/fi";
@@ -18,9 +18,9 @@ const serviceList = [
   },
   {
     img: otServiceImg,
-    heading: "Oxygenation Trio",
-    description: "The ultimate skin revitalization is finally possible with our dynamic three-step oxygenation trio, a non-invasive alternative, transcending traditional skincare. Immerse yourself in the gentle caress of pure oxygen, infusing your skin with vitality and vibrancy while promoting cellular regeneration and collagen production. This rejuvenating process repairs and prevents damage caused by free radicals, transforming sluggish, stressed, or acne-affected skin into a plump radiant glow.",
-    benefits: " Stimulates oxygenation and circulation. Reduces inflammation. Promotes exfoliation. Provides hydration. Plumps skin.",
+    heading: "Microblading & Shading",
+    description: "At Esperanza Skin Care, we specialize in Microblading and Shading using the renowned Phi Brows technique, a precise, semi-permanent method that enhances your natural brows with realistic, hair like strokes. Our expertise spans all skin types and ages, ensuring results that blend seamlessly and look naturally full. With years of experience, we tailor each treatment to your unique features, delivering beautiful, balanced brows that frame your face with elegance and confidence.",
+    benefits: " Renowned Phi Brows technique. Enhances natural beauty. Semi-permanent. Provides hydration. Plumps skin.",
   },
   {
     img: cpServiceImg,
@@ -55,7 +55,8 @@ function ServiceDetail() {
   const navigate = useNavigate();
   const { serviceId } = useParams();
 
-  useEffect(()=>{ window.scrollTo(0, 0);
+  useEffect(()=>
+    { window.scrollTo(0, 0);
   },[])
   
   const handleMenuItemClick = (id) => {
@@ -74,11 +75,12 @@ function ServiceDetail() {
     <div className="bg-[#DDDAD2] fontQuicksand">
 
       <div 
-        className="flex items-center mx-10 pt-1 lg:pt-6 gap-2 font-bold cursor-pointer"
-        onClick={() => handleMenuItemClick("heroSection")}
+        className="flex items-center mx-10 pt-1 lg:pt-6 gap-2 font-bold"
       >
         <FiArrowLeft className="z-[101] font-bold text-2xl"/> 
-        <span className="z-[101] text-xl">
+        <span 
+          onClick={() => handleMenuItemClick("heroSection")}
+          className="z-[101] text-xl cursor-pointer">
           Back
         </span>
       

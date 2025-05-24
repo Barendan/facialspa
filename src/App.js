@@ -35,7 +35,7 @@ function App() {
   return (
     <Router>
       <RouteChangeTracker />
-      <div className="App overflow-hidden">
+      <div className="App overflow-hidden flex flex-col min-h-[100vh] justify-evenly">
         <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />

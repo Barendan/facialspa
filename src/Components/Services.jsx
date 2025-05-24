@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import rfServiceImg from "../Assets/services/radiofrequency.webp";
 import cpServiceImg from "../Assets/services/chemicalpeel.webp";
 import mnServiceImg from "../Assets/services/microneedling.webp";
-import otServiceImg from "../Assets/services/oxygentherapy.webp";
+import otServiceImg from "../Assets/services/microblading.png";
 import hfServiceImg from "../Assets/services/hydrafacial.webp";
 import mdServiceImg from "../Assets/services/microderm.webp";
 import floralImg from "../Assets/services/floral-bg3.webp";
@@ -21,9 +21,9 @@ function Services() {
     },
     {
       img: otServiceImg,
-      heading: "Oxygenation Trio",
+      heading: "Microblading & Shading",
       description:
-        "Transform your sluggish, stressed, or acne-affected skin into a radiant glow.",
+        "Enhances your brows with realistic, and natural hair like strokes.",
       green: false,
     },
     {
@@ -77,15 +77,13 @@ function Services() {
             </h1>
 
             <h2 className="text-[#2E4630] text-3xl leading-normal font-semibold max-w-[679px] fontPrata text-center">
-              Personalized Skin Care Starts With You
+              Your skin is as unique as your story
             </h2>
 
           </div>
 
           <p className="text-[#666] text-sm sm:text-base leading-normal max-w-[743px] text-center py-4 px-6 md-px-0 md-pb-0">
-            Without making it feel so…. clinical. We believe in having your
-            cake and eating it too, with clinically proven treatments,
-            licensed and insured aestheticians, ambient lighting, & heated beds.
+            Every treatment starts with a genuine conversation about you, your skin, and your lifestyle goals. From acne to aging, melasma to maintenance, we create a plan that fits your skin and your life.
           </p>
 
         </div>
@@ -124,7 +122,7 @@ function Services() {
                     >
 
                     <p
-                      className={"service-title text-[#2E4630] fontPoiretOne text-[18px] md:text-[22px] font-semibold"}
+                      className={"service-title text-[#2E4630] fontPoiretOne text-[18px] md:text-[19px] text-center font-semibold"}
                       >
                       {item.heading}
                     </p>

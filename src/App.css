@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Quicksand;
+  background-color: #dddad2;
 }
 
 /* Fonts for Big letter headers */

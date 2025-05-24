@@ -1,5 +1,6 @@
 import bg from "../Assets/products/product-bg.svg";
-import cartIcon from "../Assets/products/cart-icon.svg";
+// import cartIcon from "../Assets/products/cart-icon.svg";
+import cartIcon from "../Assets/products/store.png";
 import productImg1 from "../Assets/products/product-img-11.jpg";
 import productImg2 from "../Assets/products/product-img-22.jpg";
 import productImg3 from "../Assets/products/product-img-33.jpg";
@@ -41,7 +42,7 @@ function Products() {
         <div className="flex flex-col lg:flex-row rounded-[20px] w-full z-[1] max-w-[1200px]">
           
           <div
-            className="w-[90%] lg:w-[45%] 2xl:w-[45%] flex flex-col justify-center gap-3 sm:gap-1 py-4 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] mb-6 mx-auto text-white"
+            className="w-[90%] lg:w-[45%] 2xl:w-[45%] flex flex-col justify-center gap-3 sm:gap-1 py-4 lg:py-20 rounded-tl-[20px] rounded-tr-[20px] xl:rounded-tr-[0px] xl:rounded-br-[0px] mb-6 mx-auto text-[#2E4630]"
           >
 
             <div className="flex flex-col gap-2">
@@ -60,25 +61,17 @@ function Products() {
             </div>
 
             <p className="hidden md:flex text-lg lg:text-base md:max-w-[90%]">
-              PCA SKIN uses clinically-backed research and science to develop safe and effective products that deliver healthy, beautiful skin delivering on our mission of improving lives through transformative skincare.
+              PCA SKIN uses clinically-backed research and science to develop safe and effective products that deliver healthy, beautiful skin delivering on our mission of improving lives through transformative skincare. These products and many more are available for the lowest prices at our location, come by and take a look.
             </p>
             <p className="text-sm sm:text-base md:hidden max-w-[380px] sm:max-w-[90%]">
-              PCA SKIN uses clinically-backed research and science delivering on their mission of improving lives through transformative skincare.
+              PCA SKIN uses clinically-backed research and science delivering on their mission of improving lives through transformative skincare. These products and many more are available for the lowest prices at our location, come by and take a look.
             </p>
 
 
-            <div className="bg-[#2E4630] opacity-90 hover:opacity-100 max-w-[200px] flex p-1 mt-5 text-white"
-            style={{ boxShadow: "2px 2px 2px gray" }}>
-              
-
-              <button 
-                onClick={() => window.location.href = "https://esperanzawellness.store/"} 
-                className="w-[100%] relative flex px-5 py-2 border"
-              >
-                View Our Store
-                <span className="absolute top-1/2 right-3 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 transform rotate-45 bg-transparent"></span>
-              </button>
-
+            <div className="bg-[#c5c9b9] opacity-100 max-w-[200px] flex p-1 mt-5 shadow-md">
+              <p className="w-[100%] relative flex px-5 py-2 border text-gray">
+                Pick-Up Only
+              </p>
             </div>
 
           </div>
@@ -94,8 +87,8 @@ function Products() {
                 key={i}
                 data-aos="fade-right"
                 data-aos-delay={ i * 100}
-                className={`bg-[#EDEBE4] h-fit w-[70%] sm:w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 mb-10 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2] cursor-pointer`}
-                onClick={() => window.location.href = "https://esperanzawellness.store/"}
+                className={`bg-[#EDEBE4] h-fit w-[70%] sm:w-[30%] lg:w-[32%] flex flex-col gap-3 md:gap-6 px-4 pt-2 mb-10 rounded-[16px] border border-[#CFC4C0] items-center shadow-lg hover:shadow-sm hover:bg-[#DDDAD2]`}
+                // onClick={() => window.location.href = "https://esperanzawellness.store/"}
               >
 
                 {/* Images for Products (Desktop and Mobile) */}
@@ -117,22 +110,26 @@ function Products() {
                   lg:text-sm leading-normal fontTest leading-normal">
                     {item.description}
                   </p>
-
+{/* 
                   <p className="text-[#666] text-center text-base leading-normal fontQuicksand leading-normal">
                     {item.price}
-                  </p>
+                  </p> */}
 
                 </div>
 
-                <div className="flex justify-center items-center mb-[-30px] cursor-pointer w-[70%] sm:w-[40%]">
-                  <a href="https://esperanzawellness.store/">
-                    <img 
-                      src={cartIcon}
-                      alt="a shopping cart icon" 
-                      className="rounded-full hover:scale-110"
-                      style={{ boxShadow: "2px 2px 4px gray", opacity: "0.8", transition: "100ms"}}
-                    />
-                  </a>
+                <div className="flex justify-center items-center mb-[-30px] w-[70%] sm:w-[40%]">
+                <p
+                  className="rounded-full w-12 h-12"
+                  style={{ 
+                    backgroundImage: `url(${cartIcon})`,
+                    backgroundSize: '60%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#c5c9b9',
+                    color: 'white',
+                    boxShadow: "1px 1px 2px gray", 
+                  }}
+                />
                 </div>
 
               </div>
